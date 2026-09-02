@@ -1,0 +1,73 @@
+.radar-page { padding: 38px 38px 64px; }
+.radar-page.is-embedded { padding: 28px 0 0; }
+.radar-header { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 36px; margin-bottom: 24px; }
+.radar-header h1 { margin: 0; font-family: var(--font-editorial); font-size: clamp(2.5rem, 5vw, 4.6rem); font-weight: 500; line-height: 1; }
+.radar-page.is-embedded .radar-header { display: block; padding-inline: 16px; }
+.radar-page.is-embedded .radar-header h1 { font-family: var(--font-ui); font-size: 1.6rem; font-weight: 600; }
+.radar-header > p { margin: 0; color: var(--muted); font-size: 1.05rem; }
+.radar-actions { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 16px; padding: 14px 16px; border: 1px solid var(--rule); }
+.radar-toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.radar-filter-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.radar-filter-grid label { display: grid; gap: 3px; color: var(--muted); font-size: 0.68rem; }
+.radar-filter-grid select, .radar-search input { min-height: 40px; border: 1px solid var(--rule-strong); border-radius: 4px; background: white; }
+.radar-filter-grid select { min-width: 116px; padding: 0 30px 0 10px; }
+.radar-search { display: flex; align-items: center; min-width: min(100%, 240px); }
+.radar-search input { width: 100%; padding: 0 44px 0 12px; }
+.radar-search > span:last-child { width: 34px; margin-left: -40px; color: var(--muted); font-size: 0.75rem; text-align: center; }
+.comparison-action { display: flex; align-items: center; gap: 14px; white-space: nowrap; }
+.comparison-action > span { color: var(--accent); font-size: 0.78rem; font-weight: 600; }
+.compare-link { display: flex; min-height: 42px; align-items: center; gap: 24px; padding: 0 18px; border-radius: 4px; background: var(--accent); color: white; font-weight: 600; text-decoration: none; }
+.compare-link:hover { background: var(--accent-dark); color: white; }
+.compare-link.is-disabled { pointer-events: none; opacity: 0.45; }
+.layer-legend { display: flex; flex-wrap: wrap; gap: 16px; padding: 9px 14px; border-inline: 1px solid var(--rule); color: var(--muted); font-size: 0.68rem; }
+.layer-legend span::before { content: ''; display: inline-block; width: 6px; height: 6px; margin-right: 5px; border-radius: 50%; background: var(--accent); }
+.radar-table-wrap { overflow: visible; }
+.radar-table { width: 100%; border-collapse: collapse; border: 1px solid var(--rule); font-size: 0.78rem; }
+.radar-table th, .radar-table td { padding: 11px 12px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-align: left; vertical-align: middle; }
+.radar-table thead th { color: var(--muted); font-weight: 500; }
+.radar-table tbody tr.is-selected { background: var(--selected); box-shadow: inset 3px 0 var(--accent); }
+.radar-table tbody th { font-size: 0.88rem; }
+.radar-table tbody th a { color: var(--ink); text-decoration: none; }
+.radar-table tbody th small { display: block; margin-top: 2px; color: var(--muted); font-weight: 400; }
+.radar-table input[type='checkbox'], .mobile-radar-row input[type='checkbox'] { width: 18px; height: 18px; accent-color: var(--accent); }
+.layer-coverage { display: grid; grid-template-columns: repeat(7, minmax(7px, 1fr)); width: 112px; gap: 3px; }
+.layer-coverage span { height: 8px; border: 1px solid var(--rule-strong); background: white; }
+.layer-coverage .layer-supported { border-color: var(--accent); background: var(--accent); }
+.layer-coverage .layer-partial { border-color: var(--watch); background: var(--watch); }
+.evidence-kinds { display: grid; gap: 3px; font-size: 0.68rem; }
+.radar-disclosure { margin-top: 7px; }
+.radar-disclosure summary { color: var(--accent); cursor: pointer; font-size: 0.68rem; }
+.radar-disclosure p { max-width: 340px; margin: 8px 0; color: var(--muted); }
+.radar-disclosure .source-link { margin-top: 7px; font-size: 0.68rem; }
+.mobile-radar-list { display: none; }
+.radar-empty { padding: 44px 20px; border: 1px solid var(--rule); text-align: center; }
+.radar-empty button { min-height: 44px; border: 1px solid var(--accent); background: white; color: var(--accent); }
+.full-radar-link { display: block; padding: 14px 16px; border: 1px solid var(--rule); border-top: 0; text-align: right; font-weight: 600; text-decoration: none; }
+@media (max-width: 1180px) {
+  .radar-actions { grid-template-columns: 1fr; }
+  .comparison-action { justify-content: flex-end; }
+  .radar-table th:nth-child(5), .radar-table td:nth-child(5) { display: none; }
+}
+@media (max-width: 780px) {
+  .radar-page { padding: 28px 16px 48px; }
+  .radar-page.is-embedded { padding-inline: 0; }
+  .radar-header { grid-template-columns: 1fr; gap: 12px; }
+  .radar-actions { padding-inline: 0; border-inline: 0; }
+  .radar-filter-grid { display: grid; grid-template-columns: repeat(2, 1fr); width: 100%; }
+  .radar-filter-grid label:nth-child(n+4) { display: none; }
+  .radar-filter-grid select { width: 100%; min-width: 0; }
+  .radar-search { width: 100%; max-width: none; }
+  .comparison-action { justify-content: space-between; }
+  .compare-link { gap: 12px; padding-inline: 12px; }
+  .radar-table-wrap { display: none; }
+  .mobile-radar-list { display: block; border-top: 1px solid var(--rule-strong); }
+  .mobile-radar-row { padding: 15px 0; border-bottom: 1px solid var(--rule); }
+  .mobile-radar-row.is-selected { margin-inline: -8px; padding-inline: 8px; background: var(--selected); box-shadow: inset 3px 0 var(--accent); }
+  .mobile-radar-heading { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; align-items: start; gap: 10px; }
+  .mobile-radar-heading h3 { margin: 0; font-size: 0.98rem; }
+  .mobile-radar-heading p { margin: 2px 0 0; color: var(--muted); font-size: 0.7rem; text-transform: capitalize; }
+  .mobile-radar-heading .status-mark { font-size: 0.68rem; }
+  .mobile-radar-meta { display: flex; justify-content: space-between; gap: 16px; margin: 12px 0; color: var(--muted); font-size: 0.68rem; }
+  .mobile-radar-meta .evidence-kinds { display: flex; flex-wrap: wrap; justify-content: flex-end; }
+  .mobile-radar-row .layer-coverage { width: 100%; }
+}
