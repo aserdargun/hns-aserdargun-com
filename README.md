@@ -67,9 +67,16 @@ The accepted direction is “research newspaper × living systems radar”: true
 - [`docs/design/hns-primary-mobile.png`](docs/design/hns-primary-mobile.png)
 - [`docs/superpowers/specs/2026-09-02-hns-observatory-design.md`](docs/superpowers/specs/2026-09-02-hns-observatory-design.md)
 
-## Delivery boundary
+## Delivery
 
-This repository prepares a static Vite artifact and a `staticwebapp.config.json` contract for a later, separately authorized Azure Static Web Apps stage. The current CI validates only; it does not deploy. No production URL is claimed here.
+Production uses Azure Static Web Apps Free in West Europe. The deployment workflow validates the complete application, builds the static `dist/` artifact, reruns browser acceptance, and uploads only that prebuilt artifact. GitHub CI remains validation-only, and no Vercel integration is used.
+
+- Production URL: <https://gray-pebble-0b586d903.5.azurestaticapps.net>
+- Azure subscription: `aserdargun subscription 2`
+- Resource group: `rg-hns-aserdargun-com`
+- Static Web App: `swa-hns-aserdargun-com`
+- Production branch: `main`
+- Workflow: `.github/workflows/deploy-swa-hns-aserdargun-com.yml`
 
 ## License
 
