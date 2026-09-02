@@ -71,7 +71,7 @@ The accepted direction is “research newspaper × living systems radar”: true
 
 Production uses Azure Static Web Apps Free in West Europe. The deployment workflow validates the complete application, builds the static `dist/` artifact, reruns browser acceptance, and uploads only that prebuilt artifact. GitHub CI remains validation-only, and no Vercel integration is used.
 
-- Production URL: <https://gray-pebble-0b586d903.5.azurestaticapps.net>
+- Production URL: <https://hns.aserdargun.com>
 - Azure subscription: `aserdargun subscription 2`
 - Resource group: `rg-hns-aserdargun-com`
 - Static Web App: `swa-hns-aserdargun-com`

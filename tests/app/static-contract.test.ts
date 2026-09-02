@@ -12,7 +12,7 @@ describe('static delivery contract', () => {
   it('publishes crawler and favicon assets', async () => {
     expect(await readFile('public/robots.txt', 'utf8')).toContain('Allow: /')
     expect(await readFile('public/favicon.svg', 'utf8')).toContain('HNS')
-    expect(await readFile('index.html', 'utf8')).toContain('https://gray-pebble-0b586d903.5.azurestaticapps.net/')
+    expect(await readFile('index.html', 'utf8')).toContain('https://hns.aserdargun.com/')
   })
 
   it('keeps validation separate from the single Azure production workflow', async () => {
