@@ -3,6 +3,7 @@ import { AppShell } from '../components/AppShell'
 import type { Locale } from '../content/schema'
 import { copy, t } from '../i18n/copy'
 import { readStoredLocale } from '../i18n/locale'
+import { WeeklyPage } from '../features/weekly/WeeklyPage'
 
 function Placeholder({ page }: { page: string }) {
   return <section className="placeholder-page"><p className="section-kicker">HNS / {page}</p><h1>{page === 'Weekly' ? 'Harness Engineering Observatory' : page}</h1></section>
@@ -18,8 +19,8 @@ function NotFound({ locale }: { locale: Locale }) {
 function LocalizedRoutes({ locale }: { locale: Locale }) {
   return (
     <AppShell locale={locale}><Routes>
-      <Route index element={<Placeholder page="Weekly" />} />
-      <Route path="weekly/:week" element={<Placeholder page="Weekly" />} />
+      <Route index element={<WeeklyPage locale={locale} />} />
+      <Route path="weekly/:week" element={<WeeklyPage locale={locale} />} />
       <Route path="radar" element={<Placeholder page="Radar" />} />
       <Route path="compare" element={<Placeholder page="Compare" />} />
       <Route path="knowledge" element={<Placeholder page="Knowledge" />} />

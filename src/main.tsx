@@ -8,6 +8,7 @@ import '@fontsource/ibm-plex-sans/700.css'
 import '@fontsource/source-serif-4/500.css'
 import './styles/global.css'
 import './styles/shell.css'
+import './styles/weekly.css'
 
 const root = document.getElementById('root')
 
