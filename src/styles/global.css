@@ -1,0 +1,23 @@
+@import './tokens.css';
+* { box-sizing: border-box; }
+html { color-scheme: light; scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: var(--canvas); color: var(--ink); font-family: var(--font-ui); font-size: 16px; line-height: 1.5; text-rendering: optimizeLegibility; }
+button, input, select { color: inherit; font: inherit; }
+a { color: var(--accent); text-underline-offset: 0.18em; }
+a:hover { color: var(--accent-dark); }
+:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 70%, white); outline-offset: 3px; }
+h1, h2, h3, p { margin-top: 0; }
+button, a { -webkit-tap-highlight-color: transparent; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.skip-link { position: fixed; left: 12px; top: 8px; z-index: 100; transform: translateY(-160%); padding: 10px 14px; background: var(--ink); color: white; }
+.skip-link:focus { transform: none; }
+.section-kicker { margin-bottom: 12px; color: var(--accent); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.status-mark { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; }
+.status-dot { width: 8px; height: 8px; flex: 0 0 auto; border-radius: 50%; background: var(--muted); }
+.status-evidence .status-dot, .status-adopt .status-dot, .status-supported .status-dot { background: var(--evidence); }
+.status-synthesis .status-dot { background: var(--accent); }
+.status-watch-signal .status-dot, .status-watch .status-dot, .status-trial .status-dot, .status-partial .status-dot { background: var(--watch); }
+.source-link { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; color: var(--ink); text-decoration: none; }
+.source-link:hover span:first-child { color: var(--accent); text-decoration: underline; }
+.source-link small { color: var(--muted); grid-column: 1; }
+.external-mark { grid-column: 2; grid-row: 1 / span 2; align-self: center; color: var(--accent); }

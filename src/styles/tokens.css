@@ -1,0 +1,15 @@
+:root {
+  --canvas: #ffffff;
+  --ink: #07132d;
+  --muted: #46516a;
+  --accent: #0b4fea;
+  --accent-dark: #0737a6;
+  --evidence: #159c34;
+  --watch: #e99a00;
+  --rule: #d8dfea;
+  --rule-strong: #bfc9d9;
+  --selected: #f4f7ff;
+  --font-ui: "IBM Plex Sans", system-ui, sans-serif;
+  --font-editorial: "Source Serif 4", Georgia, serif;
+  --content-max: 1600px;
+}

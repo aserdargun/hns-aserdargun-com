@@ -4,5 +4,5 @@ import { App } from '../../src/app/App'
 it('renders the HNS product identity', () => {
   render(<App />)
 
-  expect(screen.getByText('Harness Engineering Observatory')).toBeVisible()
+  expect(screen.getByRole('link', { name: /HNS — Harness Engineering Observatory/ })).toBeVisible()
 })

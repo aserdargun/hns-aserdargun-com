@@ -1,8 +1,10 @@
+import { BrowserRouter } from 'react-router-dom'
+import { AppRoutes } from './routes'
+
 export function App() {
   return (
-    <main>
-      <h1>HNS</h1>
-      <p>Harness Engineering Observatory</p>
-    </main>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   )
 }
