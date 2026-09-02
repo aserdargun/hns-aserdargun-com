@@ -15,6 +15,9 @@
     "test": "vitest",
     "test:run": "vitest run",
     "test:e2e": "playwright test",
+    "preview:start": "node scripts/preview-control.mjs start",
+    "preview:status": "node scripts/preview-control.mjs status",
+    "preview:stop": "node scripts/preview-control.mjs stop",
     "check": "npm run content:check && npm run typecheck && npm run lint && npm run test:run && npm run build"
   },
   "dependencies": {
