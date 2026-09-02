@@ -71,3 +71,31 @@
   .mobile-radar-meta .evidence-kinds { display: flex; flex-wrap: wrap; justify-content: flex-end; }
   .mobile-radar-row .layer-coverage { width: 100%; }
 }
+.compare-page { padding: 48px 38px 72px; }
+.compare-header { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr); gap: 16px 56px; align-items: end; margin-bottom: 28px; }
+.compare-header .section-kicker { grid-column: 1 / -1; margin-bottom: 0; }
+.compare-header h1 { margin: 0; font-family: var(--font-editorial); font-size: clamp(2.4rem, 5vw, 4.8rem); font-weight: 500; line-height: 1; }
+.compare-header > p:last-child { margin: 0; color: var(--muted); }
+.comparison-warning { padding: 12px 16px; border-left: 3px solid var(--watch); background: #fffaf0; }
+.comparison-empty { display: grid; gap: 12px; justify-items: start; padding: 44px 0; border-block: 1px solid var(--rule); }
+.comparison-empty p { margin: 0; color: var(--muted); }
+.comparison-empty a { font-weight: 600; text-decoration: none; }
+.comparison-matrix { width: 100%; border-collapse: collapse; border: 1px solid var(--rule); table-layout: fixed; }
+.comparison-matrix th, .comparison-matrix td { padding: 14px 16px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+.comparison-matrix thead th { color: var(--ink); font-size: 1rem; }
+.comparison-matrix thead th:first-child, .comparison-matrix tbody th { width: 190px; color: var(--muted); font-size: 0.76rem; font-weight: 500; }
+.comparison-matrix thead a { color: var(--ink); text-decoration: none; }
+.comparison-matrix thead small { display: block; margin-top: 3px; color: var(--muted); font-weight: 400; }
+.comparison-matrix td { font-size: 0.82rem; }
+.unknown-value { color: var(--muted); font-style: italic; }
+.comparison-sources { display: grid; gap: 10px; font-size: 0.68rem; }
+@media (max-width: 780px) {
+  .compare-page { padding: 30px 16px 52px; }
+  .compare-header { grid-template-columns: 1fr; gap: 14px; }
+  .comparison-matrix, .comparison-matrix tbody, .comparison-matrix tr, .comparison-matrix th, .comparison-matrix td { display: block; width: 100%; }
+  .comparison-matrix thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+  .comparison-matrix tr { border-bottom: 1px solid var(--rule-strong); }
+  .comparison-matrix tbody th { padding: 12px 0 5px; border: 0; color: var(--accent); font-weight: 600; }
+  .comparison-matrix td { padding: 10px 0; border: 0; }
+  .comparison-matrix td::before { content: attr(data-solution); display: block; color: var(--muted); font-size: 0.68rem; }
+}

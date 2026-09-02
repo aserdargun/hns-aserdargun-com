@@ -5,6 +5,7 @@ import { copy, t } from '../i18n/copy'
 import { readStoredLocale } from '../i18n/locale'
 import { WeeklyPage } from '../features/weekly/WeeklyPage'
 import { RadarPage } from '../features/radar/RadarPage'
+import { ComparePage } from '../features/compare/ComparePage'
 
 function Placeholder({ page }: { page: string }) {
   return <section className="placeholder-page"><p className="section-kicker">HNS / {page}</p><h1>{page === 'Weekly' ? 'Harness Engineering Observatory' : page}</h1></section>
@@ -23,7 +24,7 @@ function LocalizedRoutes({ locale }: { locale: Locale }) {
       <Route index element={<WeeklyPage locale={locale} />} />
       <Route path="weekly/:week" element={<WeeklyPage locale={locale} />} />
       <Route path="radar" element={<RadarPage locale={locale} />} />
-      <Route path="compare" element={<Placeholder page="Compare" />} />
+      <Route path="compare" element={<ComparePage locale={locale} />} />
       <Route path="knowledge" element={<Placeholder page="Knowledge" />} />
       <Route path="patterns" element={<Placeholder page="Patterns" />} />
       <Route path="timeline" element={<Placeholder page="Timeline" />} />
