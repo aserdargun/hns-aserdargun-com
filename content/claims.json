@@ -1,0 +1,290 @@
+[
+  {
+    "id": "codex-environment-feedback",
+    "kind": "evidence",
+    "text": { "tr": "OpenAI, agent-first mühendislikte ortamları, sınırları ve geri bildirim döngülerini temel kaldıraç olarak tanımlar.", "en": "OpenAI identifies environments, boundaries, and feedback loops as core leverage in agent-first engineering." },
+    "sourceIds": ["openai-harness-engineering"],
+    "subjectIds": ["openai-codex"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi mühendislik yazısında doğrudan açıklanıyor.", "en": "Directly described in an official engineering publication." }
+  },
+  {
+    "id": "codex-repository-system",
+    "kind": "evidence",
+    "text": { "tr": "Sürüm kontrollü repository artifact'ları ve mekanik mimari kuralları Codex çalışma sisteminin parçasıdır.", "en": "Versioned repository artifacts and mechanical architecture rules are part of the Codex working system." },
+    "sourceIds": ["openai-harness-engineering"],
+    "subjectIds": ["openai-codex"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi vaka anlatımında somut örneklerle destekleniyor.", "en": "Supported with concrete examples in the official case narrative." }
+  },
+  {
+    "id": "symphony-control-plane",
+    "kind": "evidence",
+    "text": { "tr": "Symphony, proje yönetimi panosunu sürekli çalışan coding agentlar için control plane olarak kullanır.", "en": "Symphony uses a project-management board as a control plane for continuously running coding agents." },
+    "sourceIds": ["openai-symphony"],
+    "subjectIds": ["openai-symphony"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi OpenAI spesifikasyon yazısında açıkça tanımlanıyor.", "en": "Explicitly defined in OpenAI's official specification article." }
+  },
+  {
+    "id": "anthropic-long-running-artifacts",
+    "kind": "evidence",
+    "text": { "tr": "Initializer, artımlı görev yürütümü ve handoff artifact'ları context pencereleri arasında ilerlemeyi destekler.", "en": "An initializer, incremental task execution, and handoff artifacts support progress across context windows." },
+    "sourceIds": ["anthropic-effective-harnesses"],
+    "subjectIds": ["anthropic-managed-agents"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Anthropic'in deneysel harness çalışmasında doğrudan gösteriliyor.", "en": "Directly demonstrated in Anthropic's experimental harness work." }
+  },
+  {
+    "id": "anthropic-planner-evaluator",
+    "kind": "evidence",
+    "text": { "tr": "Planner–generator–evaluator düzeni uzun süreli uygulama geliştirme harness'ında kullanıldı.", "en": "A planner–generator–evaluator arrangement was used in a long-running application-development harness." },
+    "sourceIds": ["anthropic-harness-design"],
+    "subjectIds": ["anthropic-managed-agents"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi deney yazısındaki mimari tanımına dayanıyor.", "en": "Based on the architecture described in the official experiment article." }
+  },
+  {
+    "id": "anthropic-stale-assumptions",
+    "kind": "evidence",
+    "text": { "tr": "Model geliştikçe harness bileşenlerinin dayandığı varsayımlar geçersizleşebilir.", "en": "As models improve, assumptions encoded by harness components can become stale." },
+    "sourceIds": ["anthropic-harness-design", "anthropic-managed-agents"],
+    "subjectIds": ["anthropic-managed-agents"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "İki resmi Anthropic mühendislik yazısında aynı ilke vurgulanıyor.", "en": "The same principle is emphasized in two official Anthropic engineering articles." }
+  },
+  {
+    "id": "anthropic-session-harness-sandbox",
+    "kind": "evidence",
+    "text": { "tr": "Managed Agents mimarisi session, harness ve sandbox arayüzlerini birbirinden ayırır.", "en": "The Managed Agents architecture separates session, harness, and sandbox interfaces." },
+    "sourceIds": ["anthropic-managed-agents"],
+    "subjectIds": ["anthropic-managed-agents"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi mimari anlatımında doğrudan belirtiliyor.", "en": "Directly stated in the official architecture description." }
+  },
+  {
+    "id": "deepseek-plugin-architecture",
+    "kind": "evidence",
+    "text": { "tr": "DeepSeek Harness, Cordis üzerinde 'everything is a plugin' mimarisi kullanır.", "en": "DeepSeek Harness uses an 'everything is a plugin' architecture powered by Cordis." },
+    "sourceIds": ["deepseek-harness-repo"],
+    "subjectIds": ["deepseek-harness"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi depo README'sinde tanımlanıyor.", "en": "Defined in the official repository README." }
+  },
+  {
+    "id": "deepseek-developer-preview",
+    "kind": "evidence",
+    "text": { "tr": "DeepSeek Harness developer preview durumundadır ve breaking change beklenmektedir.", "en": "DeepSeek Harness is in developer preview and compatibility-breaking changes are expected." },
+    "sourceIds": ["deepseek-harness-repo"],
+    "subjectIds": ["deepseek-harness"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi depo açık bir preview uyarısı yayımlıyor.", "en": "The official repository publishes an explicit preview warning." }
+  },
+  {
+    "id": "microsoft-batteries-included",
+    "kind": "evidence",
+    "text": { "tr": "Microsoft Agent Framework Harness loop, planning, memory, context management, approvals ve telemetry sağlar.", "en": "Microsoft Agent Framework Harness provides loop, planning, memory, context management, approvals, and telemetry." },
+    "sourceIds": ["microsoft-agent-framework-harness"],
+    "subjectIds": ["microsoft-agent-framework"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi yayın duyurusundaki özellik listesine dayanıyor.", "en": "Based on the feature list in the official release announcement." }
+  },
+  {
+    "id": "microsoft-python-dotnet",
+    "kind": "evidence",
+    "text": { "tr": "Harness hem Python hem .NET uygulamaları için sunulmaktadır.", "en": "The harness is offered for both Python and .NET applications." },
+    "sourceIds": ["microsoft-agent-framework-harness"],
+    "subjectIds": ["microsoft-agent-framework"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi Microsoft duyurusunda doğrudan belirtiliyor.", "en": "Directly stated in Microsoft's official announcement." }
+  },
+  {
+    "id": "langchain-stack-taxonomy",
+    "kind": "evidence",
+    "text": { "tr": "LangChain dokümanı framework, runtime ve harness katmanlarını ayrı ürün sınıfları olarak ele alır.", "en": "LangChain documentation treats framework, runtime, and harness as distinct product classes." },
+    "sourceIds": ["langchain-products"],
+    "subjectIds": ["langchain-deep-agents", "langgraph"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi ürün taksonomisi tablosuna dayanıyor.", "en": "Based on the official product taxonomy table." }
+  },
+  {
+    "id": "deep-agents-capabilities",
+    "kind": "evidence",
+    "text": { "tr": "Deep Agents planning, subagent delegation, filesystem ve context management yeteneklerini LangGraph üzerinde birleştirir.", "en": "Deep Agents combines planning, subagent delegation, filesystem, and context management on LangGraph." },
+    "sourceIds": ["langchain-products"],
+    "subjectIds": ["langchain-deep-agents"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi ürün dokümantasyonundaki yetenek listesine dayanıyor.", "en": "Based on the capability list in official product documentation." }
+  },
+  {
+    "id": "langgraph-durable-runtime",
+    "kind": "evidence",
+    "text": { "tr": "LangGraph uzun süre çalışan stateful agentlar için durable execution ve düşük seviyeli orkestrasyon runtime'ı sağlar.", "en": "LangGraph provides durable execution and a low-level orchestration runtime for long-running stateful agents." },
+    "sourceIds": ["langchain-products"],
+    "subjectIds": ["langgraph"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi LangChain ürün karşılaştırmasında tanımlanıyor.", "en": "Defined in LangChain's official product comparison." }
+  },
+  {
+    "id": "google-persistent-sandbox",
+    "kind": "evidence",
+    "text": { "tr": "Google Agent Runtime aynı sandbox durumunu bir ADK görev oturumu boyunca koruyabilir.", "en": "Google Agent Runtime can preserve one sandbox state across an ADK task session." },
+    "sourceIds": ["google-agent-runtime"],
+    "subjectIds": ["google-adk", "google-agent-runtime"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi ADK code execution dokümanında işleyiş adımı olarak açıklanıyor.", "en": "Explained as part of the execution flow in official ADK documentation." }
+  },
+  {
+    "id": "google-restate-durable",
+    "kind": "evidence",
+    "text": { "tr": "ADK Restate entegrasyonu durable LLM/tool yürütümü, HITL pause/resume ve kalıcı oturumlar sağlar.", "en": "The ADK Restate integration provides durable LLM/tool execution, HITL pause/resume, and persistent sessions." },
+    "sourceIds": ["google-adk-restate"],
+    "subjectIds": ["google-adk"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi entegrasyon dokümanındaki yetenek tablosuna dayanıyor.", "en": "Based on the capability table in official integration documentation." }
+  },
+  {
+    "id": "openhands-sdk-capabilities",
+    "kind": "evidence",
+    "text": { "tr": "OpenHands SDK yerel/bulut agentları, özel araçlar, Bash, web, MCP ve uzak agent server'ı sunar.", "en": "OpenHands SDK offers local/cloud agents, custom tools, Bash, web, MCP, and a remote agent server." },
+    "sourceIds": ["openhands-sdk"],
+    "subjectIds": ["openhands-sdk"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi SDK giriş sayfasındaki özelliklere dayanıyor.", "en": "Based on features listed on the official SDK introduction page." }
+  },
+  {
+    "id": "mini-linear-minimal",
+    "kind": "evidence",
+    "text": { "tr": "mini-SWE-agent yalnız Bash, doğrusal message history ve küçük bir agent sınıfını bilinçli baseline olarak kullanır.", "en": "mini-SWE-agent deliberately uses Bash, linear message history, and a small agent class as a baseline." },
+    "sourceIds": ["mini-swe-agent-repo"],
+    "subjectIds": ["mini-swe-agent"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi depo README'sindeki mimari motivasyona dayanıyor.", "en": "Based on the architectural motivation in the official repository README." }
+  },
+  {
+    "id": "pydantic-durable-integrations",
+    "kind": "evidence",
+    "text": { "tr": "Pydantic AI, Temporal, DBOS, Prefect ve Restate için resmi durable execution desteği sağlar.", "en": "Pydantic AI officially supports durable execution through Temporal, DBOS, Prefect, and Restate." },
+    "sourceIds": ["pydantic-durable-execution"],
+    "subjectIds": ["pydantic-ai"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Resmi durable execution dokümantasyonunda listeleniyor.", "en": "Listed in official durable-execution documentation." }
+  },
+  {
+    "id": "codex-radar-adopt",
+    "kind": "synthesis",
+    "text": { "tr": "Codex, repository-aware harness engineering için güçlü bir ADOPT referansıdır.", "en": "Codex is a strong ADOPT reference for repository-aware harness engineering." },
+    "sourceIds": ["openai-harness-engineering"],
+    "subjectIds": ["openai-codex"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "HNS yorumu; resmi vaka anlatımı ve operasyonel pratiklere dayanıyor.", "en": "HNS interpretation based on the official case narrative and operational practices." }
+  },
+  {
+    "id": "symphony-radar-watch",
+    "kind": "watch-signal",
+    "text": { "tr": "Symphony, coding-agent fleet orkestrasyonu için izlenmesi gereken yeni bir control-plane yaklaşımıdır.", "en": "Symphony is an emerging control-plane approach to watch for coding-agent fleet orchestration." },
+    "sourceIds": ["openai-symphony"],
+    "subjectIds": ["openai-symphony"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Spesifikasyon yayımlanmış olsa da geniş üretim olgunluğu bu kaynakla doğrulanmıyor.", "en": "The specification is published, but broad production maturity is not established by this source." }
+  },
+  {
+    "id": "anthropic-radar-watch",
+    "kind": "watch-signal",
+    "text": { "tr": "Managed Agents, modelle birlikte evrilen harness arayüzleri için önemli bir WATCH referansıdır.", "en": "Managed Agents is an important WATCH reference for harness interfaces that evolve with models." },
+    "sourceIds": ["anthropic-managed-agents", "anthropic-harness-design"],
+    "subjectIds": ["anthropic-managed-agents"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "HNS yorumu; mimari yenilik açık, dış olgunluk sinyali sınırlı.", "en": "HNS interpretation: the architecture is explicit, while external maturity evidence is limited." }
+  },
+  {
+    "id": "deepseek-radar-trial",
+    "kind": "watch-signal",
+    "text": { "tr": "DeepSeek Harness'ın açık eklenti mimarisi denemeye değer; preview uyarısı üretim temkinini gerektirir.", "en": "DeepSeek Harness's open plugin architecture merits a trial; its preview warning requires production caution." },
+    "sourceIds": ["deepseek-harness-repo"],
+    "subjectIds": ["deepseek-harness"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "TRIAL kararı resmi preview durumuyla sınırlanmıştır.", "en": "The TRIAL decision is bounded by the official preview status." }
+  },
+  {
+    "id": "microsoft-radar-trial",
+    "kind": "synthesis",
+    "text": { "tr": "Microsoft harness kurumsal yetenek kapsamı nedeniyle TRIAL; yeni sürüm olduğu için olgunluk izlenmelidir.", "en": "Microsoft's harness is TRIAL for its enterprise capability coverage; maturity should be monitored because the release is new." },
+    "sourceIds": ["microsoft-agent-framework-harness"],
+    "subjectIds": ["microsoft-agent-framework"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "HNS yorumu; özellik kapsamı resmi, olgunluk değerlendirmesi editoryaldir.", "en": "HNS interpretation: capability coverage is official; the maturity assessment is editorial." }
+  },
+  {
+    "id": "deep-agents-radar-adopt",
+    "kind": "synthesis",
+    "text": { "tr": "Deep Agents, framework/runtime/harness ayrımını incelemek için ADOPT referans mimarisidir.", "en": "Deep Agents is an ADOPT reference architecture for studying the framework/runtime/harness distinction." },
+    "sourceIds": ["langchain-products"],
+    "subjectIds": ["langchain-deep-agents"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "HNS yorumu; resmi taksonomi ve özellik setine dayanıyor.", "en": "HNS interpretation based on official taxonomy and capability set." }
+  },
+  {
+    "id": "langgraph-radar-adopt",
+    "kind": "synthesis",
+    "text": { "tr": "LangGraph, durable stateful agent runtime'larını anlamak için ADOPT referansıdır.", "en": "LangGraph is an ADOPT reference for understanding durable stateful agent runtimes." },
+    "sourceIds": ["langchain-products"],
+    "subjectIds": ["langgraph"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "HNS yorumu; resmi runtime tanımı ve dayanıklılık özelliklerine dayanıyor.", "en": "HNS interpretation based on the official runtime definition and durability features." }
+  },
+  {
+    "id": "google-adk-radar-trial",
+    "kind": "synthesis",
+    "text": { "tr": "ADK, durable eklentiler ve execution entegrasyonları nedeniyle TRIAL için uygundur.", "en": "ADK is suitable for TRIAL because of its durable plugins and execution integrations." },
+    "sourceIds": ["google-agent-runtime", "google-adk-restate"],
+    "subjectIds": ["google-adk"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "HNS yorumu; iki resmi entegrasyon dokümanına dayanıyor.", "en": "HNS interpretation based on two official integration documents." }
+  },
+  {
+    "id": "google-runtime-radar-watch",
+    "kind": "watch-signal",
+    "text": { "tr": "Agent Runtime'ın kalıcı sandbox yaklaşımı yürütme katmanı için izlenmelidir.", "en": "Agent Runtime's persistent sandbox approach should be watched at the execution layer." },
+    "sourceIds": ["google-agent-runtime"],
+    "subjectIds": ["google-agent-runtime"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Erken sinyal; resmi capability doğrulansa da bağımsız olgunluk verisi yoktur.", "en": "Early signal: the capability is official, but independent maturity evidence is unavailable." }
+  },
+  {
+    "id": "openhands-radar-trial",
+    "kind": "synthesis",
+    "text": { "tr": "OpenHands SDK, model-agnostic software-agent altyapısı için TRIAL adayıdır.", "en": "OpenHands SDK is a TRIAL candidate for model-agnostic software-agent infrastructure." },
+    "sourceIds": ["openhands-sdk"],
+    "subjectIds": ["openhands-sdk"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "HNS yorumu; resmi SDK kapsamına dayanıyor.", "en": "HNS interpretation based on the official SDK scope." }
+  },
+  {
+    "id": "mini-radar-experiment",
+    "kind": "synthesis",
+    "text": { "tr": "mini-SWE-agent, harness karmaşıklığının etkisini ayırmak için EXPERIMENT baseline'ıdır.", "en": "mini-SWE-agent is an EXPERIMENT baseline for isolating the effect of harness complexity." },
+    "sourceIds": ["mini-swe-agent-repo"],
+    "subjectIds": ["mini-swe-agent"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "HNS yorumu; projenin bilinçli minimal tasarımına dayanıyor.", "en": "HNS interpretation based on the project's deliberately minimal design." }
+  },
+  {
+    "id": "pydantic-radar-trial",
+    "kind": "synthesis",
+    "text": { "tr": "Pydantic AI, birden çok durable backend'i karşılaştırmak için TRIAL referansıdır.", "en": "Pydantic AI is a TRIAL reference for comparing multiple durable backends." },
+    "sourceIds": ["pydantic-durable-execution"],
+    "subjectIds": ["pydantic-ai"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "HNS yorumu; resmi desteklenen entegrasyon listesine dayanıyor.", "en": "HNS interpretation based on the list of officially supported integrations." }
+  },
+  {
+    "id": "weekly-layer-convergence",
+    "kind": "synthesis",
+    "text": { "tr": "Önde gelen ekosistemler framework, runtime, harness ve orchestration katmanlarını daha açık biçimde ayırmaya başlıyor.", "en": "Leading ecosystems are beginning to separate framework, runtime, harness, and orchestration layers more explicitly." },
+    "sourceIds": ["openai-symphony", "microsoft-agent-framework-harness", "langchain-products", "google-agent-runtime"],
+    "subjectIds": ["openai-symphony", "microsoft-agent-framework", "langchain-deep-agents", "langgraph", "google-agent-runtime"],
+    "reviewedAt": "2026-09-02",
+    "confidence": { "tr": "Birden çok resmi kaynaktan türetilen HNS sentezidir; bağımsız pazar ölçümü değildir.", "en": "HNS synthesis derived from multiple official sources; it is not an independent market measurement." }
+  }
+]

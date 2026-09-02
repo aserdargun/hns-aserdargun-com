@@ -1,0 +1,44 @@
+[
+  {
+    "id": "foundations",
+    "title": { "tr": "Harness Engineering Nedir?", "en": "What is Harness Engineering?" },
+    "summary": { "tr": "Model kabiliyetini güvenilir bir çalışma sistemine dönüştüren çevresel mühendislik katmanı.", "en": "The surrounding engineering layer that turns model capability into a reliable working system." },
+    "sections": [
+      {
+        "title": { "tr": "Temel ayrım", "en": "Core distinction" },
+        "body": { "tr": "Prompt Engineering modele ne söyleneceğini, Context Engineering neyi göreceğini, Harness Engineering ise hangi sistem içinde çalışacağını tasarlar.", "en": "Prompt Engineering designs what to tell the model, Context Engineering what it sees, and Harness Engineering the system in which it works." }
+      },
+      {
+        "title": { "tr": "Çalışma tezi", "en": "Working thesis" },
+        "body": { "tr": "Model kabiliyet sağlar; harness bu kabiliyeti gözlemlenebilir, doğrulanabilir ve yönetilebilir bir sisteme dönüştürür.", "en": "The model provides capability; the harness turns that capability into an observable, verifiable, governable system." }
+      }
+    ],
+    "sourceIds": ["openai-harness-engineering", "anthropic-managed-agents", "microsoft-agent-framework-harness"]
+  },
+  {
+    "id": "harness-anatomy",
+    "title": { "tr": "Harness Anatomy", "en": "Harness Anatomy" },
+    "summary": { "tr": "HNS, harness'ı yedi bağımsız ama ilişkili mühendislik katmanında inceler.", "en": "HNS examines a harness across seven independent but related engineering layers." },
+    "sections": [
+      { "title": { "tr": "Execution", "en": "Execution" }, "body": { "tr": "Sandbox, filesystem, shell, browser, process ve network sınırları.", "en": "Sandbox, filesystem, shell, browser, process, and network boundaries." } },
+      { "title": { "tr": "Tools", "en": "Tools" }, "body": { "tr": "Araç sözleşmeleri, MCP, plugin, response bütçesi ve hata semantiği.", "en": "Tool contracts, MCP, plugins, response budgets, and failure semantics." } },
+      { "title": { "tr": "Context & Memory", "en": "Context & Memory" }, "body": { "tr": "Repository bilgisi, skills, working memory, compaction ve kalıcı durum.", "en": "Repository knowledge, skills, working memory, compaction, and persistent state." } },
+      { "title": { "tr": "Lifecycle", "en": "Lifecycle" }, "body": { "tr": "Loop, planning, retries, checkpoints, handoff ve orchestration.", "en": "Loop, planning, retries, checkpoints, handoff, and orchestration." } },
+      { "title": { "tr": "Observability", "en": "Observability" }, "body": { "tr": "Trajectory, tool calls, maliyet, latency, hata ve sonuç görünürlüğü.", "en": "Visibility into trajectories, tool calls, cost, latency, failure, and outcomes." } },
+      { "title": { "tr": "Verification", "en": "Verification" }, "body": { "tr": "Testler, evaluator'lar, kabul ölçütleri ve regression sinyalleri.", "en": "Tests, evaluators, acceptance criteria, and regression signals." } },
+      { "title": { "tr": "Governance", "en": "Governance" }, "body": { "tr": "Permissions, approval, secrets, blast radius, audit ve rollback.", "en": "Permissions, approvals, secrets, blast radius, audit, and rollback." } }
+    ],
+    "sourceIds": ["openai-harness-engineering", "anthropic-managed-agents", "microsoft-agent-framework-harness", "langchain-products"]
+  },
+  {
+    "id": "classification",
+    "title": { "tr": "Framework ≠ Runtime ≠ Harness", "en": "Framework ≠ Runtime ≠ Harness" },
+    "summary": { "tr": "Benzer ürünler aynı sınıfa konulduğunda karşılaştırma anlamını kaybeder.", "en": "Comparison loses meaning when adjacent products are forced into one class." },
+    "sections": [
+      { "title": { "tr": "Framework", "en": "Framework" }, "body": { "tr": "Agent uygulaması kurmak için abstraction ve integration sağlar.", "en": "Provides abstractions and integrations for building an agent application." } },
+      { "title": { "tr": "Runtime", "en": "Runtime" }, "body": { "tr": "State, durable execution, streaming ve recovery yürütür.", "en": "Executes state, durable execution, streaming, and recovery." } },
+      { "title": { "tr": "Harness", "en": "Harness" }, "body": { "tr": "Modele görev, araç, context, loop, kontrol ve doğrulama sunan opinionated çalışma sistemi.", "en": "An opinionated working system that gives a model tasks, tools, context, loops, control, and verification." } }
+    ],
+    "sourceIds": ["langchain-products", "microsoft-agent-framework-harness"]
+  }
+]

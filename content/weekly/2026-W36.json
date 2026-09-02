@@ -1,0 +1,48 @@
+{
+  "id": "weekly-2026-w36",
+  "week": "2026-W36",
+  "cutoffDate": "2026-09-02",
+  "headline": {
+    "tr": "Harness, sistemin kendisine dönüşüyor.",
+    "en": "The harness is becoming the system."
+  },
+  "summary": {
+    "tr": "Agent ekosistemleri model çevresindeki runtime, context, orchestration, verification ve governance katmanlarını açık ürün sınırlarına dönüştürüyor.",
+    "en": "Agent ecosystems are turning runtime, context, orchestration, verification, and governance around the model into explicit product boundaries."
+  },
+  "mostImportant": {
+    "title": {
+      "tr": "Harness katmanları ayrı ürün sınıflarına dönüşüyor",
+      "en": "Harness layers are becoming explicit product classes"
+    },
+    "body": {
+      "tr": "OpenAI orkestrasyonu, Microsoft batteries-included harness'ı, LangChain ürün taksonomisini ve Google kalıcı execution katmanını ayrı biçimde tanımlıyor. Ortak sinyal, değerin yalnız modelden çalışma sistemine kaymasıdır.",
+      "en": "OpenAI now defines orchestration, Microsoft a batteries-included harness, LangChain a product taxonomy, and Google a persistent execution layer. The shared signal is a shift in value from the model alone to the working system around it."
+    },
+    "claimIds": ["weekly-layer-convergence"]
+  },
+  "solutionsToWatch": ["deepseek-harness", "microsoft-agent-framework", "google-adk", "google-agent-runtime"],
+  "patternOfWeek": "harness-model-coevolution",
+  "researchOfWeek": {
+    "title": {
+      "tr": "Uzun süreli uygulama geliştirme için harness tasarımı",
+      "en": "Harness design for long-running application development"
+    },
+    "body": {
+      "tr": "Planner–generator–evaluator düzeni ve model geliştikçe eski harness varsayımlarını yeniden sınama ilkesi bu haftanın araştırma odağıdır.",
+      "en": "The planner–generator–evaluator arrangement and the principle of retesting stale harness assumptions are this week's research focus."
+    },
+    "sourceIds": ["anthropic-harness-design"]
+  },
+  "experimentCandidate": {
+    "title": {
+      "tr": "Minimal loop mu, structured evaluator mı?",
+      "en": "Minimal loop or structured evaluator?"
+    },
+    "body": {
+      "tr": "Aynı bounded repository görevini mini-SWE-agent benzeri doğrusal loop ve planner–generator–evaluator harness ile çalıştır; başarı, müdahale, token, süre ve doğrulama sonucunu karşılaştır.",
+      "en": "Run the same bounded repository task with a mini-SWE-agent-like linear loop and a planner–generator–evaluator harness; compare success, interventions, tokens, time, and verification outcome."
+    }
+  },
+  "correctionNotes": []
+}

@@ -1,0 +1,184 @@
+[
+  {
+    "id": "openai-harness-engineering",
+    "title": "Harness engineering: leveraging Codex in an agent-first world",
+    "publisher": "OpenAI",
+    "url": "https://openai.com/index/harness-engineering/",
+    "publishedAt": "2026-02-11",
+    "checkedAt": "2026-09-02",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Agentların güvenilir çalışması için ortam, sınır, dokümantasyon ve geri bildirim döngülerini mühendislik konusu yapar.",
+      "en": "Treats environments, boundaries, documentation, and feedback loops for reliable agent work as an engineering discipline."
+    }
+  },
+  {
+    "id": "openai-symphony",
+    "title": "An open-source spec for Codex orchestration: Symphony",
+    "publisher": "OpenAI",
+    "url": "https://openai.com/index/open-source-codex-orchestration-symphony/",
+    "publishedAt": "2026-04-27",
+    "checkedAt": "2026-09-02",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Proje yönetimi panosunu coding-agent control plane'e dönüştüren bir orkestrasyon spesifikasyonu sunar.",
+      "en": "Presents an orchestration specification that turns a project-management board into a coding-agent control plane."
+    }
+  },
+  {
+    "id": "anthropic-effective-harnesses",
+    "title": "Effective harnesses for long-running agents",
+    "publisher": "Anthropic",
+    "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+    "publishedAt": "2025-11-26",
+    "checkedAt": "2026-09-02",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Uzun görevlerde initializer, artımlı ilerleme ve kalıcı handoff artifact'larını inceler.",
+      "en": "Studies initializer agents, incremental progress, and durable handoff artifacts for long-running tasks."
+    }
+  },
+  {
+    "id": "anthropic-harness-design",
+    "title": "Harness design for long-running application development",
+    "publisher": "Anthropic",
+    "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+    "publishedAt": "2026-03-24",
+    "checkedAt": "2026-09-02",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Planner–generator–evaluator yapısını ve model geliştikçe harness varsayımlarını yeniden sınama ihtiyacını açıklar.",
+      "en": "Describes a planner–generator–evaluator structure and the need to retest harness assumptions as models improve."
+    }
+  },
+  {
+    "id": "anthropic-managed-agents",
+    "title": "Scaling Managed Agents: Decoupling the brain from the hands",
+    "publisher": "Anthropic",
+    "url": "https://www.anthropic.com/engineering/managed-agents",
+    "publishedAt": "2026-04-08",
+    "checkedAt": "2026-09-02",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Session, harness ve sandbox'ı değişebilen uygulamalardan daha kalıcı arayüzler olarak ayırır.",
+      "en": "Separates session, harness, and sandbox as durable interfaces above changing implementations."
+    }
+  },
+  {
+    "id": "deepseek-harness-repo",
+    "title": "DeepSeek Harness",
+    "publisher": "DeepSeek AI",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-repository",
+    "access": "available",
+    "summary": {
+      "tr": "Cordis tabanlı, her şeyin eklenti olduğu açık kaynak bir agent harness; developer preview durumundadır.",
+      "en": "An open-source Cordis-based agent harness where everything is a plugin; currently in developer preview."
+    }
+  },
+  {
+    "id": "microsoft-agent-framework-harness",
+    "title": "The Microsoft Agent Framework Harness is now released",
+    "publisher": "Microsoft",
+    "url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+    "publishedAt": "2026-07-22",
+    "checkedAt": "2026-09-02",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Python ve .NET için loop, planning, memory, context management, approvals ve telemetry içeren bir harness tanımlar.",
+      "en": "Defines a Python and .NET harness with loop, planning, memory, context management, approvals, and telemetry."
+    }
+  },
+  {
+    "id": "langchain-products",
+    "title": "Frameworks, runtimes, and harnesses",
+    "publisher": "LangChain",
+    "url": "https://docs.langchain.com/oss/python/concepts/products",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "LangChain'i framework, LangGraph'ı runtime, Deep Agents'ı harness olarak ayırır.",
+      "en": "Distinguishes LangChain as a framework, LangGraph as a runtime, and Deep Agents as a harness."
+    }
+  },
+  {
+    "id": "google-agent-runtime",
+    "title": "Agent Runtime Code Execution tool for ADK",
+    "publisher": "Google",
+    "url": "https://google.github.io/adk-docs/tools/google-cloud/code-exec-agent-engine/",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "ADK görev oturumu boyunca kalıcı ve izole bir sandbox içinde kod yürütmeyi açıklar.",
+      "en": "Documents persistent, isolated code execution in one sandbox across an ADK task session."
+    }
+  },
+  {
+    "id": "google-adk-restate",
+    "title": "Restate plugin for ADK",
+    "publisher": "Google",
+    "url": "https://google.github.io/adk-docs/integrations/restate/",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "ADK için durable execution, pause/resume, kalıcı oturum, HITL ve resilient multi-agent orkestrasyonu sunar.",
+      "en": "Adds durable execution, pause/resume, persistent sessions, HITL, and resilient multi-agent orchestration to ADK."
+    }
+  },
+  {
+    "id": "openhands-sdk",
+    "title": "Software Agent SDK",
+    "publisher": "OpenHands",
+    "url": "https://docs.openhands.dev/sdk/index",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Yerel veya bulut ortamında code agentları için Python/REST API, araçlar ve agent server sağlar.",
+      "en": "Provides Python/REST APIs, tools, and an agent server for software agents running locally or in the cloud."
+    }
+  },
+  {
+    "id": "mini-swe-agent-repo",
+    "title": "The minimal AI software engineering agent",
+    "publisher": "SWE-agent",
+    "url": "https://github.com/SWE-agent/mini-swe-agent",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-repository",
+    "access": "available",
+    "summary": {
+      "tr": "Bash, doğrusal history ve küçük bir agent loop'u ile minimal harness yaklaşımını araştırır.",
+      "en": "Explores a minimal harness with Bash, linear history, and a small agent loop."
+    }
+  },
+  {
+    "id": "pydantic-durable-execution",
+    "title": "Durable Execution",
+    "publisher": "Pydantic",
+    "url": "https://pydantic.dev/docs/ai/capabilities/durable_execution/overview/",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Pydantic AI için Temporal, DBOS, Prefect ve Restate ile durable execution desteğini açıklar.",
+      "en": "Documents durable execution support for Pydantic AI through Temporal, DBOS, Prefect, and Restate."
+    }
+  }
+]

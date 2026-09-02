@@ -8,13 +8,14 @@
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc -b && vite build",
+    "build": "npm run content:check && tsc -b && vite build",
+    "content:check": "tsx scripts/validate-content.ts",
     "typecheck": "tsc -b --pretty false",
     "lint": "eslint .",
     "test": "vitest",
     "test:run": "vitest run",
     "test:e2e": "playwright test",
-    "check": "npm run typecheck && npm run lint && npm run test:run && npm run build"
+    "check": "npm run content:check && npm run typecheck && npm run lint && npm run test:run && npm run build"
   },
   "dependencies": {
     "react": "^19.2.8",

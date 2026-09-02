@@ -1,0 +1,51 @@
+[
+  {
+    "id": "anthropic-effective-harnesses-2025",
+    "date": "2025-11-26",
+    "title": { "tr": "Anthropic uzun görevler için handoff harness'ı yayımladı", "en": "Anthropic published a handoff harness for long-running agents" },
+    "summary": { "tr": "Initializer, artımlı ilerleme ve durable artifact yaklaşımı.", "en": "Initializer, incremental progress, and durable artifacts." },
+    "sourceIds": ["anthropic-effective-harnesses"]
+  },
+  {
+    "id": "openai-harness-engineering-2026",
+    "date": "2026-02-11",
+    "title": { "tr": "OpenAI Harness Engineering yaklaşımını yayımladı", "en": "OpenAI published its Harness Engineering approach" },
+    "summary": { "tr": "Agent-first repository, mekanik kurallar ve feedback loop'ları ayrı mühendislik katmanı oldu.", "en": "Agent-first repositories, mechanical rules, and feedback loops became an explicit engineering layer." },
+    "sourceIds": ["openai-harness-engineering"]
+  },
+  {
+    "id": "anthropic-harness-design-2026",
+    "date": "2026-03-24",
+    "title": { "tr": "Planner–generator–evaluator harness deneyi", "en": "Planner–generator–evaluator harness experiment" },
+    "summary": { "tr": "Uzun uygulama geliştirmede multi-agent evaluator yapısı ve sadeleştirme ablation'ları.", "en": "A multi-agent evaluator structure and simplification ablations for long-running app development." },
+    "sourceIds": ["anthropic-harness-design"]
+  },
+  {
+    "id": "anthropic-managed-agents-2026",
+    "date": "2026-04-08",
+    "title": { "tr": "Managed Agents, session/harness/sandbox ayrımını tanımladı", "en": "Managed Agents defined the session/harness/sandbox split" },
+    "summary": { "tr": "Değişen harness uygulamalarının üstünde kararlı arayüzler.", "en": "Stable interfaces above changing harness implementations." },
+    "sourceIds": ["anthropic-managed-agents"]
+  },
+  {
+    "id": "openai-symphony-2026",
+    "date": "2026-04-27",
+    "title": { "tr": "OpenAI Symphony orkestrasyon spesifikasyonunu açtı", "en": "OpenAI opened the Symphony orchestration specification" },
+    "summary": { "tr": "Proje yönetimi panosunu coding-agent control plane'e dönüştürme yaklaşımı.", "en": "An approach for turning a project board into a coding-agent control plane." },
+    "sourceIds": ["openai-symphony"]
+  },
+  {
+    "id": "microsoft-harness-2026",
+    "date": "2026-07-22",
+    "title": { "tr": "Microsoft Agent Framework Harness yayımlandı", "en": "Microsoft Agent Framework Harness was released" },
+    "summary": { "tr": "Python ve .NET için planning, memory, approvals ve telemetry kapsamı.", "en": "Planning, memory, approvals, and telemetry for Python and .NET." },
+    "sourceIds": ["microsoft-agent-framework-harness"]
+  },
+  {
+    "id": "hns-baseline-2026",
+    "date": "2026-09-02",
+    "title": { "tr": "HNS ilk kaynaklı baseline'ını oluşturdu", "en": "HNS established its first source-backed baseline" },
+    "summary": { "tr": "12 çözüm, 13 birincil kaynak ve ilk haftalık snapshot.", "en": "Twelve solutions, thirteen primary sources, and the first weekly snapshot." },
+    "sourceIds": ["openai-harness-engineering", "microsoft-agent-framework-harness", "langchain-products"]
+  }
+]
