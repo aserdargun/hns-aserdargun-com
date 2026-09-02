@@ -45,6 +45,12 @@ jobs:
           test -f dist/favicon.svg
           test -f dist/robots.txt
 
+      - name: Stamp release identity
+        run: |
+          node scripts/stamp-release.mjs
+          test -f dist/release.json
+          grep -F "${GITHUB_SHA}" dist/release.json
+
       - name: Deploy prebuilt artifact
         uses: Azure/static-web-apps-deploy@1a947af9992250f3bc2e68ad0754c0b0c11566c9 # v1
         with:

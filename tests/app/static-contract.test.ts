@@ -25,6 +25,7 @@ describe('static delivery contract', () => {
     expect(deployment).toContain('cancel-in-progress: false')
     expect(deployment).toContain('app_location: dist')
     expect(deployment).toContain('skip_app_build: true')
+    expect(deployment).toContain('node scripts/stamp-release.mjs')
     expect(deployment).toContain('AZURE_STATIC_WEB_APPS_API_TOKEN_SWA_HNS_ASERDARGUN_COM')
     expect(deployment).toMatch(/actions\/checkout@[a-f0-9]{40}/)
     expect(deployment).toMatch(/actions\/setup-node@[a-f0-9]{40}/)
