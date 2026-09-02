@@ -19,7 +19,7 @@ function Module({ label, children, wide = false }: { label: string; children: Re
   return (
     <section className={`weekly-module${wide ? ' is-wide' : ''}`}>
       <button type="button" aria-expanded={open} onClick={() => setOpen((value) => !value)}>
-        <span>{label}</span><span aria-hidden="true">{open ? '−' : '+'}</span>
+        <span>{label}</span><span className={open ? 'disclosure-chevron is-open' : 'disclosure-chevron'} aria-hidden="true">›</span>
       </button>
       <div className={open ? 'weekly-module-body' : 'weekly-module-body is-collapsed'}>{children}</div>
     </section>
@@ -32,16 +32,17 @@ export function WeeklyIndex({ locale, snapshot }: { locale: Locale; snapshot: We
 
   return (
     <div className="weekly-index">
+      <h2 className="weekly-index-mobile-title">{locale === 'tr' ? 'Bu hafta' : 'This week'}</h2>
       <Module label={getLocalizedText(labels.important, locale)} wide>
         <StatusMark status="synthesis">{locale === 'tr' ? 'Sentez' : 'Synthesis'}</StatusMark>
         <h2>{getLocalizedText(snapshot.mostImportant.title, locale)}</h2>
         <p>{getLocalizedText(snapshot.mostImportant.body, locale)}</p>
-        <div className="module-sources">
+        <details className="module-sources"><summary>{locale === 'tr' ? 'Kanıt kaynakları' : 'Evidence sources'} ({importantClaims.flatMap((claim) => claim?.sourceIds ?? []).length})</summary>
           {importantClaims.flatMap((claim) => claim?.sourceIds ?? []).slice(0, 2).map((id) => {
             const source = catalog.sourcesById.get(id)
             return source ? <SourceLink key={id} source={source} locale={locale} /> : null
           })}
-        </div>
+        </details>
       </Module>
       <Module label={getLocalizedText(labels.watch, locale)}>
         <ul className="watch-list">
@@ -60,12 +61,12 @@ export function WeeklyIndex({ locale, snapshot }: { locale: Locale; snapshot: We
         <StatusMark status="evidence">{locale === 'tr' ? 'Kanıt' : 'Evidence'}</StatusMark>
         <h2>{getLocalizedText(snapshot.researchOfWeek.title, locale)}</h2>
         <p>{getLocalizedText(snapshot.researchOfWeek.body, locale)}</p>
-        <div className="module-sources">
+        <details className="module-sources"><summary>{locale === 'tr' ? 'Araştırmayı aç' : 'Open research source'}</summary>
           {snapshot.researchOfWeek.sourceIds.map((id) => {
             const source = catalog.sourcesById.get(id)
             return source ? <SourceLink key={id} source={source} locale={locale} /> : null
           })}
-        </div>
+        </details>
       </Module>
       <Module label={getLocalizedText(labels.experiment, locale)}>
         <StatusMark status="synthesis">{locale === 'tr' ? 'Sentez' : 'Synthesis'}</StatusMark>

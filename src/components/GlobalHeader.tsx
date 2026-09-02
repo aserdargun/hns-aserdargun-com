@@ -6,7 +6,7 @@ import { LanguageSwitch } from './LanguageSwitch'
 
 const routes = [
   ['', 'weekly'], ['/radar', 'radar'], ['/compare', 'compare'], ['/knowledge', 'knowledge'],
-  ['/patterns', 'patterns'], ['/timeline', 'timeline'], ['/methodology', 'methodology'],
+  ['/timeline', 'timeline'], ['/methodology', 'methodology'],
 ] as const
 
 export function GlobalHeader({ locale }: { locale: Locale }) {
@@ -20,7 +20,10 @@ export function GlobalHeader({ locale }: { locale: Locale }) {
         <span className="product-name">{t(copy.product, locale)}</span>
       </div>
       <button className="menu-button" type="button" aria-expanded={menuOpen} aria-controls="primary-navigation" onClick={() => setMenuOpen((value) => !value)}>
-        {t(copy.menu, locale)} <span aria-hidden="true">{menuOpen ? '×' : '＋'}</span>
+        {t(copy.menu, locale)}
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          {menuOpen ? <path d="M5 5l14 14M19 5 5 19" /> : <path d="M4 6h16M4 12h16M4 18h16" />}
+        </svg>
       </button>
       <nav id="primary-navigation" className={menuOpen ? 'primary-nav is-open' : 'primary-nav'} aria-label="Primary">
         {routes.map(([path, key]) => (

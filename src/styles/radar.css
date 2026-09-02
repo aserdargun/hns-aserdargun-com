@@ -87,6 +87,7 @@
 .comparison-matrix thead a { color: var(--ink); text-decoration: none; }
 .comparison-matrix thead small { display: block; margin-top: 3px; color: var(--muted); font-weight: 400; }
 .comparison-matrix td { font-size: 0.82rem; }
+.mobile-solution-name { display: none; }
 .unknown-value { color: var(--muted); font-style: italic; }
 .comparison-sources { display: grid; gap: 10px; font-size: 0.68rem; }
 @media (max-width: 780px) {
@@ -97,5 +98,5 @@
   .comparison-matrix tr { border-bottom: 1px solid var(--rule-strong); }
   .comparison-matrix tbody th { padding: 12px 0 5px; border: 0; color: var(--accent); font-weight: 600; }
   .comparison-matrix td { padding: 10px 0; border: 0; }
-  .comparison-matrix td::before { content: attr(data-solution); display: block; color: var(--muted); font-size: 0.68rem; }
+  .mobile-solution-name { display: block; margin-bottom: 3px; color: var(--muted); font-size: 0.68rem; }
 }

@@ -21,3 +21,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .source-link:hover span:first-child { color: var(--accent); text-decoration: underline; }
 .source-link small { color: var(--muted); grid-column: 1; }
 .external-mark { grid-column: 2; grid-row: 1 / span 2; align-self: center; color: var(--accent); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

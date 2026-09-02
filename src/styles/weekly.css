@@ -2,21 +2,26 @@
 .weekly-lead { padding: 18px 16px 28px; border-bottom: 1px solid var(--rule-strong); }
 .weekly-meta { display: flex; justify-content: space-between; gap: 24px; color: var(--muted); font-size: 0.78rem; }
 .weekly-meta a { font-size: 1rem; font-weight: 600; text-decoration: none; }
-.weekly-lead-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(340px, 0.75fr); align-items: end; gap: 42px; }
-.weekly-lead h1 { max-width: 930px; margin: 22px 0 8px; font-family: var(--font-editorial); font-size: clamp(3rem, 5.2vw, 5.6rem); font-weight: 500; letter-spacing: -0.035em; line-height: 0.98; }
+.weekly-lead-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(300px, 0.55fr); align-items: end; gap: 42px; }
+.weekly-lead h1 { max-width: 1120px; margin: 22px 0 8px; font-family: var(--font-editorial); font-size: clamp(3rem, 4.1vw, 4rem); font-weight: 500; letter-spacing: -0.035em; line-height: 0.98; }
 .weekly-lead p { max-width: 740px; margin: 0; color: var(--muted); font-size: clamp(1rem, 1.4vw, 1.25rem); }
 .signal-loop { width: 100%; max-height: 178px; color: color-mix(in srgb, var(--accent) 32%, white); stroke-width: 1.25; }
 .weekly-content-grid { display: grid; grid-template-columns: minmax(0, 1fr) 270px; }
 .weekly-index { display: grid; grid-template-columns: 1.35fr 1fr 1fr 1fr; border-left: 1px solid var(--rule); }
+.weekly-index-mobile-title { display: none; }
 .weekly-module { min-width: 0; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
 .weekly-module.is-wide { grid-row: span 2; }
+.weekly-module:nth-of-type(2), .weekly-module:nth-of-type(3) { grid-row: span 2; }
 .weekly-module button { width: 100%; min-height: 50px; display: flex; align-items: center; justify-content: space-between; padding: 11px 16px 8px; border: 0; background: transparent; color: var(--accent); text-align: left; font-size: 0.78rem; font-weight: 700; }
 .weekly-module button span:last-child { display: none; font-size: 1.3rem; }
 .weekly-module-body { padding: 0 16px 20px; }
 .weekly-module-body > .status-mark { margin: 4px 0 10px; font-size: 0.72rem; }
 .weekly-module h2 { margin-bottom: 10px; font-family: var(--font-editorial); font-size: 1.35rem; font-weight: 500; line-height: 1.18; }
 .weekly-module p { color: var(--muted); font-size: 0.88rem; }
-.module-sources { display: grid; gap: 10px; padding-top: 12px; border-top: 1px dashed var(--rule); font-size: 0.72rem; }
+.module-sources { padding-top: 10px; border-top: 1px dashed var(--rule); font-size: 0.72rem; }
+.module-sources summary { color: var(--accent); cursor: pointer; font-weight: 600; }
+.module-sources[open] { display: grid; gap: 10px; }
+.module-sources[open] summary { margin-bottom: 4px; }
 .watch-list { display: grid; gap: 14px; margin: 4px 0 0; padding: 0; list-style: none; font-size: 0.84rem; }
 .watch-list .status-mark { align-items: flex-start; font-weight: 500; }
 .module-link { font-size: 0.78rem; font-weight: 600; text-decoration: none; }
@@ -43,16 +48,18 @@
 @media (max-width: 760px) {
   .weekly-page { padding: 0 16px 40px; }
   .weekly-lead { padding: 18px 0 24px; }
-  .weekly-lead-grid { grid-template-columns: 1fr; gap: 18px; }
+  .weekly-lead-grid { grid-template-columns: 1fr; gap: 0; }
   .weekly-lead h1 { margin-top: 28px; font-size: clamp(2.65rem, 13vw, 4rem); line-height: 0.98; }
-  .signal-loop { max-height: 98px; }
+  .weekly-lead p, .signal-loop { display: none; }
   .weekly-index { display: block; border-left: 0; border-top: 1px solid var(--rule-strong); }
+  .weekly-index-mobile-title { display: block; margin: 0; padding: 18px 0 10px; font-size: 1.15rem; }
   .weekly-module, .weekly-module.is-wide { border-right: 0; }
   .weekly-module button { min-height: 52px; padding-inline: 0; font-size: 0.82rem; }
-  .weekly-module button span:last-child { display: inline; }
+  .weekly-module button .disclosure-chevron { display: inline; font-size: 1.4rem; transition: transform 120ms ease; }
+  .weekly-module button .disclosure-chevron.is-open { transform: rotate(90deg); }
   .weekly-module-body { padding: 4px 0 22px; }
   .weekly-module-body.is-collapsed { display: none; }
-  .intelligence-rail { display: block; border-left: 0; border-right: 0; }
+  .intelligence-rail { display: none; }
   .rail-item { border-right: 0; padding-inline: 0; }
   .intelligence-rail > h2 { padding-inline: 0; }
   .radar-entry { grid-template-columns: 1fr; padding-inline: 0; border-inline: 0; }
