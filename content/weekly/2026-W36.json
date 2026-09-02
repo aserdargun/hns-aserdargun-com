@@ -44,5 +44,10 @@
       "en": "Run the same bounded repository task with a mini-SWE-agent-like linear loop and a planner–generator–evaluator harness; compare success, interventions, tokens, time, and verification outcome."
     }
   },
-  "correctionNotes": []
+  "correctionNotes": [
+    {
+      "tr": "W36 düzeltmesi (2026-09-02): radar Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, OpenAI Codex CLI, AWS Kiro ve Manus AI ile genişletildi. Çözüm sayısı 12'den 21'e, kaynak sayısı 13'ten 25'e, claim sayısı 31'den 72'ye yükseldi. Yeni cross-cutting sentezler: weekly-canonicalization (Claude Code / Codex CLI / OpenCode üçlüsü), weekly-permission-divergence (kernel vs application vs per-action approval) ve weekly-open-governance (AAIF/Linux Foundation dönüm noktası).",
+      "en": "W36 correction (2026-09-02): radar expanded with Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, OpenAI Codex CLI, AWS Kiro, and Manus AI. Solution count grew from 12 to 21, sources from 13 to 25, claims from 31 to 72. New cross-cutting syntheses: weekly-canonicalization (the Claude Code / Codex CLI / OpenCode trio), weekly-permission-divergence (kernel vs application vs per-action approval), and weekly-open-governance (the AAIF/Linux Foundation turning point)."
+    }
+  ]
 }

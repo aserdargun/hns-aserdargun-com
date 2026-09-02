@@ -47,5 +47,61 @@
     "title": { "tr": "HNS ilk kaynaklı baseline'ını oluşturdu", "en": "HNS established its first source-backed baseline" },
     "summary": { "tr": "12 çözüm, 13 birincil kaynak ve ilk haftalık snapshot.", "en": "Twelve solutions, thirteen primary sources, and the first weekly snapshot." },
     "sourceIds": ["openai-harness-engineering", "microsoft-agent-framework-harness", "langchain-products"]
+  },
+  {
+    "id": "aaif-launch-2025",
+    "date": "2025-12-09",
+    "title": { "tr": "Linux Foundation Agentic AI Foundation'ı kurdu", "en": "Linux Foundation formed the Agentic AI Foundation" },
+    "summary": { "tr": "MCP, goose ve AGENTS.md üç kurucu proje olarak AAIF çatısı altında toplandı.", "en": "MCP, goose, and AGENTS.md were gathered as three founding projects under the AAIF." },
+    "sourceIds": ["aaif-launch"]
+  },
+  {
+    "id": "goose-aaif-move-2026",
+    "date": "2026-04-07",
+    "title": { "tr": "Goose AAIF'e taşındı", "en": "Goose moved to the AAIF" },
+    "summary": { "tr": "Block, Goose'u Linux Foundation/AAIF'e bağışladı; governance tarafsızlaştı.", "en": "Block donated Goose to the Linux Foundation's AAIF; governance became neutral." },
+    "sourceIds": ["goose-aaif-blog"]
+  },
+  {
+    "id": "hermes-agent-launch-2026",
+    "date": "2026-02-25",
+    "title": { "tr": "Nous Research Hermes Agent'ı yayımladı", "en": "Nous Research released Hermes Agent" },
+    "summary": { "tr": "MIT lisanslı, kalıcı bellek ve kapalı öğrenme döngüsüne sahip agent runtime açık kaynak olarak yayımlandı.", "en": "An MIT-licensed agent runtime with persistent memory and a closed learning loop was released as open source." },
+    "sourceIds": ["hermes-agent-repo"]
+  },
+  {
+    "id": "opencode-hn-2026",
+    "date": "2026-03-20",
+    "title": { "tr": "OpenCode Hacker News'te birinci oldu", "en": "OpenCode hit #1 on Hacker News" },
+    "summary": { "tr": "Anomaly'nin sağlayıcı-agnostik OpenCode'u geniş ilgi gördü.", "en": "Anomaly's provider-agnostic OpenCode drew broad attention." },
+    "sourceIds": ["opencode-repo"]
+  },
+  {
+    "id": "codex-cli-rewrite-2026",
+    "date": "2026-03-31",
+    "title": { "tr": "Codex CLI Rust yeniden yazımı tamamlandı", "en": "Codex CLI Rust rewrite completed" },
+    "summary": { "tr": "Codex CLI kod tabanı büyük ölçüde Rust'a taşındı; kernel seviyesinde sandbox mimarisi olgunlaştı.", "en": "Codex CLI was largely rewritten in Rust; the kernel-level sandbox architecture matured." },
+    "sourceIds": ["codex-cli-repo"]
+  },
+  {
+    "id": "kiro-ga-2026",
+    "date": "2026-05-07",
+    "title": { "tr": "AWS Kiro uluslararası kullanıma açıldı", "en": "AWS Kiro opened to international use" },
+    "summary": { "tr": "Amazon Q Developer'ın yerini alan spec-driven agentic IDE genel erişime açıldı.", "en": "The spec-driven agentic IDE that replaces Amazon Q Developer opened to general access." },
+    "sourceIds": ["kiro-docs"]
+  },
+  {
+    "id": "claude-code-w32-2026",
+    "date": "2026-08-07",
+    "title": { "tr": "Claude Code sessions arası mesajlaşma ve auto mode duyuruldu", "en": "Claude Code announced cross-session messaging and auto mode" },
+    "summary": { "tr": "Oturumlar arası mesajlaşma, self-hosted runner ve auto mode varsayılan izin olarak etkinleştirildi.", "en": "Cross-session messaging, self-hosted runners, and auto mode as the default permission were enabled." },
+    "sourceIds": ["claude-code-whats-new-w32"]
+  },
+  {
+    "id": "hns-w36-expansion-2026",
+    "date": "2026-09-02",
+    "title": { "tr": "HNS W36 radar genişlemesi: 9 yeni çözüm", "en": "HNS W36 radar expansion: nine new solutions" },
+    "summary": { "tr": "Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, Codex CLI, AWS Kiro ve Manus AI çözümlerine eklendi.", "en": "Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, Codex CLI, AWS Kiro, and Manus AI were added." },
+    "sourceIds": ["hermes-agent-repo", "claude-code-docs", "opencode-repo", "aider-repo", "cline-repo", "goose-aaif-blog", "codex-cli-repo", "kiro-docs", "manus-features"]
   }
 ]

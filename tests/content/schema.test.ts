@@ -3,8 +3,8 @@ import { rawCatalog } from '../../src/content/catalog'
 import { parseCatalog } from '../../src/content/schema'
 
 describe('HNS content contract', () => {
-  it('ships exactly twelve verified baseline solutions', () => {
-    expect(parseCatalog(rawCatalog).solutions).toHaveLength(12)
+  it('ships the W36 expanded radar with twenty-one verified solutions', () => {
+    expect(parseCatalog(rawCatalog).solutions).toHaveLength(21)
   })
 
   it('rejects a claim with a missing source', () => {

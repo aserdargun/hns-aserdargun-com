@@ -180,5 +180,173 @@
       "tr": "Pydantic AI için Temporal, DBOS, Prefect ve Restate ile durable execution desteğini açıklar.",
       "en": "Documents durable execution support for Pydantic AI through Temporal, DBOS, Prefect, and Restate."
     }
+  },
+  {
+    "id": "hermes-agent-repo",
+    "title": "Hermes Agent — The self-improving AI agent",
+    "publisher": "Nous Research",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "publishedAt": "2026-02-25",
+    "checkedAt": "2026-09-02",
+    "kind": "official-repository",
+    "access": "available",
+    "summary": {
+      "tr": "MIT lisanslı, kalıcı bellek, otomatik skill üretimi ve çok-platformlu gateway ile çalışan açık kaynak agent runtime'ı.",
+      "en": "MIT-licensed open-source agent runtime with persistent memory, automated skill generation, and a multi-platform gateway."
+    }
+  },
+  {
+    "id": "hermes-agent-docs",
+    "title": "Hermes Agent — Features Overview",
+    "publisher": "Nous Research",
+    "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/overview",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Toolsets, Skills, Memory, Cron, Subagent Delegation, Code Execution ve MCP özelliklerini belgeler.",
+      "en": "Documents toolsets, skills, memory, cron, subagent delegation, code execution, and MCP features."
+    }
+  },
+  {
+    "id": "claude-code-docs",
+    "title": "Claude Code — Subagents",
+    "publisher": "Anthropic",
+    "url": "https://code.claude.com/docs/en/sub-agents",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Claude Code'un izole context, worktree izolasyonu ve izin modeliyle subagent mimarisini açıklar.",
+      "en": "Describes Claude Code's subagent architecture with isolated context, worktree isolation, and a permission model."
+    }
+  },
+  {
+    "id": "claude-code-whats-new-w32",
+    "title": "Week 32 — Claude Code sessions message each other; auto mode default",
+    "publisher": "Anthropic",
+    "url": "https://code.claude.com/docs/en/whats-new/2026-w32",
+    "publishedAt": "2026-08-07",
+    "checkedAt": "2026-09-02",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Oturumlar arası mesajlaşma, self-hosted runner ve auto mode'un varsayılan izin modu olmasını duyurur.",
+      "en": "Announces cross-session messaging, self-hosted runners, and auto mode as the default permission mode."
+    }
+  },
+  {
+    "id": "opencode-repo",
+    "title": "OpenCode — The open source coding agent",
+    "publisher": "Anomaly",
+    "url": "https://github.com/anomalyco/opencode",
+    "publishedAt": "2026-03-20",
+    "checkedAt": "2026-09-02",
+    "kind": "official-repository",
+    "access": "available",
+    "summary": {
+      "tr": "Go tabanlı TUI, 75+ sağlayıcı, LSP ve Build/Plan agent modları sunan MIT lisanslı terminal ajanı.",
+      "en": "MIT-licensed terminal agent with a Go TUI, 75+ providers, LSP, and Build/Plan agent modes."
+    }
+  },
+  {
+    "id": "aider-repo",
+    "title": "Aider — AI pair programming in your terminal",
+    "publisher": "Aider-AI",
+    "url": "https://github.com/Aider-AI/aider",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-repository",
+    "access": "available",
+    "summary": {
+      "tr": "Repo-map, architect/editor ayrımı ve atomic git commit'leriyle çalışan pair programming aracı.",
+      "en": "Pair programming tool with repo-map, architect/editor split, and atomic git commits."
+    }
+  },
+  {
+    "id": "cline-repo",
+    "title": "Cline — Autonomous coding agent",
+    "publisher": "Cline",
+    "url": "https://github.com/cline/cline",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-repository",
+    "access": "available",
+    "summary": {
+      "tr": "Plan/Act modları, MCP marketplace ve BYOK ile VS Code, JetBrains, CLI ve SDK yüzeylerinde çalışır.",
+      "en": "Runs across VS Code, JetBrains, CLI, and SDK with Plan/Act modes, MCP marketplace, and BYOK."
+    }
+  },
+  {
+    "id": "goose-aaif-blog",
+    "title": "goose has a new home — the Agentic AI Foundation (AAIF)",
+    "publisher": "AAIF / Linux Foundation",
+    "url": "https://goose-docs.ai/blog/2026/04/07/goose-moves-to-aaif/",
+    "publishedAt": "2026-04-07",
+    "checkedAt": "2026-09-02",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Block'un Goose'u Linux Foundation altındaki AAIF'e bağışladığını ve governance'in tarafsızlaştığını duyurur.",
+      "en": "Announces Block's donation of Goose to AAIF under the Linux Foundation and the move to neutral governance."
+    }
+  },
+  {
+    "id": "aaif-launch",
+    "title": "Linux Foundation Announces the Formation of the Agentic AI Foundation",
+    "publisher": "Linux Foundation",
+    "url": "https://www.prnewswire.com/news-releases/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation-aaif-anchored-by-new-project-contributions-including-model-context-protocol-mcp-goose-and-agentsmd-302636897.html",
+    "publishedAt": "2025-12-09",
+    "checkedAt": "2026-09-02",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "MCP, goose ve AGENTS.md'nin Linux Foundation çatısı altında kurulan AAIF'e katıldığını açıklar.",
+      "en": "Announces that MCP, goose, and AGENTS.md have joined the newly formed AAIF under the Linux Foundation."
+    }
+  },
+  {
+    "id": "codex-cli-repo",
+    "title": "OpenAI Codex CLI (codex-rs)",
+    "publisher": "OpenAI",
+    "url": "https://github.com/openai/codex",
+    "publishedAt": "2025-04-01",
+    "checkedAt": "2026-09-02",
+    "kind": "official-repository",
+    "access": "available",
+    "summary": {
+      "tr": "Rust ile yazılmış, kernel-seviyesinde sandbox ve OS düzeyinde güvenlik uygulayan terminal ajanı.",
+      "en": "Terminal agent written in Rust with kernel-level sandboxing and OS-enforced security boundaries."
+    }
+  },
+  {
+    "id": "kiro-docs",
+    "title": "Kiro — Spec-driven development",
+    "publisher": "Amazon Web Services",
+    "url": "https://kiro.dev/",
+    "publishedAt": "2026-05-07",
+    "checkedAt": "2026-09-02",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Spec-driven geliştirme, agent hooks, steering files ve paralel agent'ları birleştiren AWS agentic IDE.",
+      "en": "AWS agentic IDE combining spec-driven development, agent hooks, steering files, and parallel agents."
+    }
+  },
+  {
+    "id": "manus-features",
+    "title": "Manus — AI Agent Capabilities",
+    "publisher": "Butterfly Effect (Manus)",
+    "url": "https://manus.im/features",
+    "publishedAt": null,
+    "checkedAt": "2026-09-02",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Cloud sandbox içinde çok adımlı planlama, browser automation, dosya üretimi ve paralel araştırma özelliklerini belgeler.",
+      "en": "Documents multi-step planning, browser automation, file generation, and parallel research within a cloud sandbox."
+    }
   }
 ]
