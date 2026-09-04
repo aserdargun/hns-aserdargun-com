@@ -20,7 +20,7 @@ const sections = {
   },
   radar: {
     title: { tr: 'Radar yorumu', en: 'Radar interpretation' },
-    body: { tr: 'ADOPT, TRIAL, ASSESS, WATCH, HOLD ve EXPERIMENT bağlama bağlı araştırma konumlarıdır. Bir ürünün evrensel kalitesi ya da satın alma tavsiyesi değildir.', en: 'ADOPT, TRIAL, ASSESS, WATCH, HOLD, and EXPERIMENT are context-dependent research positions. They are not universal product quality grades or buying advice.' },
+    body: { tr: 'Benimse, Dene, Değerlendir, İzle, Beklet ve Deney bağlama bağlı araştırma konumlarıdır. Bir ürünün evrensel kalitesi ya da satın alma tavsiyesi değildir.', en: 'ADOPT, TRIAL, ASSESS, WATCH, HOLD, and EXPERIMENT are context-dependent research positions. They are not universal product quality grades or buying advice.' },
   },
   ranking: {
     title: { tr: 'Bir sıralama değildir', en: 'This is not a ranking' },

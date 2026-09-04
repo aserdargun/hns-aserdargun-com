@@ -23,4 +23,23 @@ describe('research library', () => {
     expect(screen.getByText('Kanıt, sentez ve izleme sinyalleri')).toBeVisible()
     expect(screen.getByText(/sessizce yeniden yazılmaz/i)).toBeVisible()
   })
+
+  it('renders timeline entries in chronological order', () => {
+    renderAt('/en/timeline')
+    const dates = screen.getAllByRole('time').map((time) => time.getAttribute('datetime'))
+
+    expect(dates).toEqual([...dates].sort())
+  })
+
+  it('uses natural Turkish terminology in Knowledge and Patterns', () => {
+    const knowledge = renderAt('/tr/knowledge')
+    expect(screen.getByRole('heading', { name: 'Harness anatomisi' })).toBeVisible()
+    expect(screen.getByRole('heading', { name: 'Bağlam ve bellek' })).toBeVisible()
+    knowledge.unmount()
+
+    renderAt('/tr/patterns')
+    expect(screen.getByRole('heading', { name: 'Kalıcı yürütme' })).toBeVisible()
+    expect(screen.getByRole('heading', { name: 'Temiz bağlam devri' })).toBeVisible()
+    expect(screen.getByRole('heading', { name: 'Deterministik doğrulama' })).toBeVisible()
+  })
 })

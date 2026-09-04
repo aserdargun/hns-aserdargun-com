@@ -7,7 +7,7 @@
     "en": "The harness is becoming the system."
   },
   "summary": {
-    "tr": "Agent ekosistemleri model çevresindeki runtime, context, orchestration, verification ve governance katmanlarını açık ürün sınırlarına dönüştürüyor.",
+    "tr": "Ajan ekosistemleri model çevresindeki çalışma zamanı, bağlam, orkestrasyon, doğrulama ve yönetişim katmanlarını açık ürün sınırlarına dönüştürüyor.",
     "en": "Agent ecosystems are turning runtime, context, orchestration, verification, and governance around the model into explicit product boundaries."
   },
   "mostImportant": {
@@ -16,7 +16,7 @@
       "en": "Harness layers are becoming explicit product classes"
     },
     "body": {
-      "tr": "OpenAI orkestrasyonu, Microsoft batteries-included harness'ı, LangChain ürün taksonomisini ve Google kalıcı execution katmanını ayrı biçimde tanımlıyor. Ortak sinyal, değerin yalnız modelden çalışma sistemine kaymasıdır.",
+      "tr": "OpenAI orkestrasyonu, Microsoft kapsamlı harness'ı, LangChain ürün sınıflandırmasını ve Google kalıcı yürütme katmanını ayrı biçimde tanımlıyor. Ortak sinyal, değerin yalnız modelden çalışma sistemine kaymasıdır.",
       "en": "OpenAI now defines orchestration, Microsoft a batteries-included harness, LangChain a product taxonomy, and Google a persistent execution layer. The shared signal is a shift in value from the model alone to the working system around it."
     },
     "claimIds": ["weekly-layer-convergence"]
@@ -29,25 +29,29 @@
       "en": "Harness design for long-running application development"
     },
     "body": {
-      "tr": "Planner–generator–evaluator düzeni ve model geliştikçe eski harness varsayımlarını yeniden sınama ilkesi bu haftanın araştırma odağıdır.",
+      "tr": "Planlayıcı–üretici–değerlendirici düzeni ve model geliştikçe eski harness varsayımlarını yeniden sınama ilkesi bu haftanın araştırma odağıdır.",
       "en": "The planner–generator–evaluator arrangement and the principle of retesting stale harness assumptions are this week's research focus."
     },
     "sourceIds": ["anthropic-harness-design"]
   },
   "experimentCandidate": {
     "title": {
-      "tr": "Minimal loop mu, structured evaluator mı?",
+      "tr": "Minimal döngü mü, yapılandırılmış değerlendirici mi?",
       "en": "Minimal loop or structured evaluator?"
     },
     "body": {
-      "tr": "Aynı bounded repository görevini mini-SWE-agent benzeri doğrusal loop ve planner–generator–evaluator harness ile çalıştır; başarı, müdahale, token, süre ve doğrulama sonucunu karşılaştır.",
+      "tr": "Aynı sınırlı depo görevini mini-SWE-agent benzeri doğrusal döngü ve planlayıcı–üretici–değerlendirici harness ile çalıştır; başarı, müdahale, belirteç, süre ve doğrulama sonucunu karşılaştır.",
       "en": "Run the same bounded repository task with a mini-SWE-agent-like linear loop and a planner–generator–evaluator harness; compare success, interventions, tokens, time, and verification outcome."
     }
   },
   "correctionNotes": [
     {
-      "tr": "W36 düzeltmesi (2026-09-02): radar Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, OpenAI Codex CLI, AWS Kiro ve Manus AI ile genişletildi. Çözüm sayısı 12'den 21'e, kaynak sayısı 13'ten 25'e, claim sayısı 31'den 72'ye yükseldi. Yeni cross-cutting sentezler: weekly-canonicalization (Claude Code / Codex CLI / OpenCode üçlüsü), weekly-permission-divergence (kernel vs application vs per-action approval) ve weekly-open-governance (AAIF/Linux Foundation dönüm noktası).",
+      "tr": "W36 düzeltmesi (2026-09-02): Radar; Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, OpenAI Codex CLI, AWS Kiro ve Manus AI ile genişletildi. Çözüm sayısı 12'den 21'e, kaynak sayısı 13'ten 25'e, iddia sayısı 31'den 72'ye yükseldi. Yeni yatay sentezler; kanonikleşme (Claude Code / Codex CLI / OpenCode üçlüsü), izin yaklaşımlarındaki ayrışma (çekirdek, uygulama ve eylem bazlı onay) ve açık yönetişim (AAIF/Linux Foundation dönüm noktası) oldu.",
       "en": "W36 correction (2026-09-02): radar expanded with Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, OpenAI Codex CLI, AWS Kiro, and Manus AI. Solution count grew from 12 to 21, sources from 13 to 25, claims from 31 to 72. New cross-cutting syntheses: weekly-canonicalization (the Claude Code / Codex CLI / OpenCode trio), weekly-permission-divergence (kernel vs application vs per-action approval), and weekly-open-governance (the AAIF/Linux Foundation turning point)."
+    },
+    {
+      "tr": "W36 düzeltmesi (2026-09-04): Türkçe terimler ve durum etiketleri tutarlı hâle getirildi; artık çalışmayan Manus özellik bağlantısı, doğrulanan üç resmî ürün yazısıyla değiştirildi.",
+      "en": "W36 correction (2026-09-04): Turkish terminology and status labels were made consistent; the unavailable Manus features link was replaced with three verified official product articles."
     }
   ]
 }

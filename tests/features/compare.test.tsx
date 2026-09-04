@@ -25,4 +25,14 @@ describe('comparison', () => {
     renderCompare('/en/compare')
     expect(screen.getByRole('link', { name: /Choose solutions in Radar/ })).toHaveAttribute('href', '/en/radar')
   })
+
+  it('localizes Turkish comparison values', () => {
+    renderCompare('/tr/compare?solutions=claude-code,langchain-deep-agents')
+
+    expect(screen.getAllByText('Üretim').length).toBeGreaterThan(0)
+    expect(screen.getByText('Hayır')).toBeVisible()
+    expect(screen.getAllByText('Destekleniyor').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('Yerleşik').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('Benimse').length).toBeGreaterThan(0)
+  })
 })

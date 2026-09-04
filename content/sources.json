@@ -9,7 +9,7 @@
     "kind": "official-engineering",
     "access": "available",
     "summary": {
-      "tr": "Agentların güvenilir çalışması için ortam, sınır, dokümantasyon ve geri bildirim döngülerini mühendislik konusu yapar.",
+      "tr": "Ajanların güvenilir çalışması için ortam, sınır, belgeleme ve geri bildirim döngülerini mühendislik konusu yapar.",
       "en": "Treats environments, boundaries, documentation, and feedback loops for reliable agent work as an engineering discipline."
     }
   },
@@ -23,7 +23,7 @@
     "kind": "official-engineering",
     "access": "available",
     "summary": {
-      "tr": "Proje yönetimi panosunu coding-agent control plane'e dönüştüren bir orkestrasyon spesifikasyonu sunar.",
+      "tr": "Proje yönetimi panosunu kodlama ajanları için bir denetim düzlemine dönüştüren orkestrasyon belirtimi sunar.",
       "en": "Presents an orchestration specification that turns a project-management board into a coding-agent control plane."
     }
   },
@@ -37,7 +37,7 @@
     "kind": "official-engineering",
     "access": "available",
     "summary": {
-      "tr": "Uzun görevlerde initializer, artımlı ilerleme ve kalıcı handoff artifact'larını inceler.",
+      "tr": "Uzun görevlerde başlatıcı, artımlı ilerleme ve kalıcı devir kayıtlarını inceler.",
       "en": "Studies initializer agents, incremental progress, and durable handoff artifacts for long-running tasks."
     }
   },
@@ -51,7 +51,7 @@
     "kind": "official-engineering",
     "access": "available",
     "summary": {
-      "tr": "Planner–generator–evaluator yapısını ve model geliştikçe harness varsayımlarını yeniden sınama ihtiyacını açıklar.",
+      "tr": "Planlayıcı–üretici–değerlendirici yapısını ve model geliştikçe harness varsayımlarını yeniden sınama ihtiyacını açıklar.",
       "en": "Describes a planner–generator–evaluator structure and the need to retest harness assumptions as models improve."
     }
   },
@@ -65,7 +65,7 @@
     "kind": "official-engineering",
     "access": "available",
     "summary": {
-      "tr": "Session, harness ve sandbox'ı değişebilen uygulamalardan daha kalıcı arayüzler olarak ayırır.",
+      "tr": "Oturum, harness ve korumalı alanı değişebilen uygulamalardan daha kalıcı arayüzler olarak ayırır.",
       "en": "Separates session, harness, and sandbox as durable interfaces above changing implementations."
     }
   },
@@ -79,7 +79,7 @@
     "kind": "official-repository",
     "access": "available",
     "summary": {
-      "tr": "Cordis tabanlı, her şeyin eklenti olduğu açık kaynak bir agent harness; developer preview durumundadır.",
+      "tr": "Cordis tabanlı, her şeyin eklenti olduğu açık kaynak bir ajan harness'ı; geliştirici önizlemesi durumundadır.",
       "en": "An open-source Cordis-based agent harness where everything is a plugin; currently in developer preview."
     }
   },
@@ -93,7 +93,7 @@
     "kind": "official-engineering",
     "access": "available",
     "summary": {
-      "tr": "Python ve .NET için loop, planning, memory, context management, approvals ve telemetry içeren bir harness tanımlar.",
+      "tr": "Python ve .NET için döngü, planlama, bellek, bağlam yönetimi, onaylar ve telemetri içeren bir harness tanımlar.",
       "en": "Defines a Python and .NET harness with loop, planning, memory, context management, approvals, and telemetry."
     }
   },
@@ -107,7 +107,7 @@
     "kind": "official-docs",
     "access": "available",
     "summary": {
-      "tr": "LangChain'i framework, LangGraph'ı runtime, Deep Agents'ı harness olarak ayırır.",
+      "tr": "LangChain'i çatı, LangGraph'ı çalışma zamanı, Deep Agents'ı harness olarak ayırır.",
       "en": "Distinguishes LangChain as a framework, LangGraph as a runtime, and Deep Agents as a harness."
     }
   },
@@ -121,7 +121,7 @@
     "kind": "official-docs",
     "access": "available",
     "summary": {
-      "tr": "ADK görev oturumu boyunca kalıcı ve izole bir sandbox içinde kod yürütmeyi açıklar.",
+      "tr": "ADK görev oturumu boyunca kalıcı ve yalıtılmış bir korumalı alanda kod yürütmeyi açıklar.",
       "en": "Documents persistent, isolated code execution in one sandbox across an ADK task session."
     }
   },
@@ -135,7 +135,7 @@
     "kind": "official-docs",
     "access": "available",
     "summary": {
-      "tr": "ADK için durable execution, pause/resume, kalıcı oturum, HITL ve resilient multi-agent orkestrasyonu sunar.",
+      "tr": "ADK için kalıcı yürütme, duraklatma/sürdürme, kalıcı oturum, insan katılımlı denetim ve dayanıklı çok ajanlı orkestrasyon sunar.",
       "en": "Adds durable execution, pause/resume, persistent sessions, HITL, and resilient multi-agent orchestration to ADK."
     }
   },
@@ -149,7 +149,7 @@
     "kind": "official-docs",
     "access": "available",
     "summary": {
-      "tr": "Yerel veya bulut ortamında code agentları için Python/REST API, araçlar ve agent server sağlar.",
+      "tr": "Yerel veya bulut ortamındaki kodlama ajanları için Python/REST API'si, araçlar ve ajan sunucusu sağlar.",
       "en": "Provides Python/REST APIs, tools, and an agent server for software agents running locally or in the cloud."
     }
   },
@@ -163,7 +163,7 @@
     "kind": "official-repository",
     "access": "available",
     "summary": {
-      "tr": "Bash, doğrusal history ve küçük bir agent loop'u ile minimal harness yaklaşımını araştırır.",
+      "tr": "Bash, doğrusal geçmiş ve küçük bir ajan döngüsüyle minimal harness yaklaşımını araştırır.",
       "en": "Explores a minimal harness with Bash, linear history, and a small agent loop."
     }
   },
@@ -177,7 +177,7 @@
     "kind": "official-docs",
     "access": "available",
     "summary": {
-      "tr": "Pydantic AI için Temporal, DBOS, Prefect ve Restate ile durable execution desteğini açıklar.",
+      "tr": "Pydantic AI için Temporal, DBOS, Prefect ve Restate ile kalıcı yürütme desteğini açıklar.",
       "en": "Documents durable execution support for Pydantic AI through Temporal, DBOS, Prefect, and Restate."
     }
   },
@@ -191,7 +191,7 @@
     "kind": "official-repository",
     "access": "available",
     "summary": {
-      "tr": "MIT lisanslı, kalıcı bellek, otomatik skill üretimi ve çok-platformlu gateway ile çalışan açık kaynak agent runtime'ı.",
+      "tr": "MIT lisanslı, kalıcı bellek, otomatik beceri üretimi ve çok platformlu ağ geçidiyle çalışan açık kaynak ajan çalışma zamanı.",
       "en": "MIT-licensed open-source agent runtime with persistent memory, automated skill generation, and a multi-platform gateway."
     }
   },
@@ -205,7 +205,7 @@
     "kind": "official-docs",
     "access": "available",
     "summary": {
-      "tr": "Toolsets, Skills, Memory, Cron, Subagent Delegation, Code Execution ve MCP özelliklerini belgeler.",
+      "tr": "Araç kümeleri, beceriler, bellek, zamanlama, alt ajanlara görev devri, kod yürütme ve MCP özelliklerini belgeler.",
       "en": "Documents toolsets, skills, memory, cron, subagent delegation, code execution, and MCP features."
     }
   },
@@ -219,7 +219,7 @@
     "kind": "official-docs",
     "access": "available",
     "summary": {
-      "tr": "Claude Code'un izole context, worktree izolasyonu ve izin modeliyle subagent mimarisini açıklar.",
+      "tr": "Claude Code'un yalıtılmış bağlam, çalışma ağacı yalıtımı ve izin modeliyle alt ajan mimarisini açıklar.",
       "en": "Describes Claude Code's subagent architecture with isolated context, worktree isolation, and a permission model."
     }
   },
@@ -233,7 +233,7 @@
     "kind": "official-engineering",
     "access": "available",
     "summary": {
-      "tr": "Oturumlar arası mesajlaşma, self-hosted runner ve auto mode'un varsayılan izin modu olmasını duyurur.",
+      "tr": "Oturumlar arası mesajlaşmayı, kendi altyapısında çalışan yürütücüyü ve otomatik modun varsayılan izin modu olmasını duyurur.",
       "en": "Announces cross-session messaging, self-hosted runners, and auto mode as the default permission mode."
     }
   },
@@ -247,7 +247,7 @@
     "kind": "official-repository",
     "access": "available",
     "summary": {
-      "tr": "Go tabanlı TUI, 75+ sağlayıcı, LSP ve Build/Plan agent modları sunan MIT lisanslı terminal ajanı.",
+      "tr": "Go tabanlı metin arayüzü, 75'ten fazla sağlayıcı, LSP ve oluşturma/planlama ajan modları sunan MIT lisanslı terminal ajanı.",
       "en": "MIT-licensed terminal agent with a Go TUI, 75+ providers, LSP, and Build/Plan agent modes."
     }
   },
@@ -261,7 +261,7 @@
     "kind": "official-repository",
     "access": "available",
     "summary": {
-      "tr": "Repo-map, architect/editor ayrımı ve atomic git commit'leriyle çalışan pair programming aracı.",
+      "tr": "Depo haritası, mimar/düzenleyici ayrımı ve atomik git işlemeleriyle çalışan eşli programlama aracı.",
       "en": "Pair programming tool with repo-map, architect/editor split, and atomic git commits."
     }
   },
@@ -275,7 +275,7 @@
     "kind": "official-repository",
     "access": "available",
     "summary": {
-      "tr": "Plan/Act modları, MCP marketplace ve BYOK ile VS Code, JetBrains, CLI ve SDK yüzeylerinde çalışır.",
+      "tr": "Planlama/Uygulama modları, MCP pazarı ve kendi anahtarını kullanma seçeneğiyle VS Code, JetBrains, CLI ve SDK yüzeylerinde çalışır.",
       "en": "Runs across VS Code, JetBrains, CLI, and SDK with Plan/Act modes, MCP marketplace, and BYOK."
     }
   },
@@ -289,7 +289,7 @@
     "kind": "official-engineering",
     "access": "available",
     "summary": {
-      "tr": "Block'un Goose'u Linux Foundation altındaki AAIF'e bağışladığını ve governance'in tarafsızlaştığını duyurur.",
+      "tr": "Block'un Goose'u Linux Foundation altındaki AAIF'e bağışladığını ve yönetişimin tarafsızlaştığını duyurur.",
       "en": "Announces Block's donation of Goose to AAIF under the Linux Foundation and the move to neutral governance."
     }
   },
@@ -317,7 +317,7 @@
     "kind": "official-repository",
     "access": "available",
     "summary": {
-      "tr": "Rust ile yazılmış, kernel-seviyesinde sandbox ve OS düzeyinde güvenlik uygulayan terminal ajanı.",
+      "tr": "Rust ile yazılmış, çekirdek seviyesinde korumalı alan ve işletim sistemi düzeyinde güvenlik uygulayan terminal ajanı.",
       "en": "Terminal agent written in Rust with kernel-level sandboxing and OS-enforced security boundaries."
     }
   },
@@ -331,22 +331,50 @@
     "kind": "official-docs",
     "access": "available",
     "summary": {
-      "tr": "Spec-driven geliştirme, agent hooks, steering files ve paralel agent'ları birleştiren AWS agentic IDE.",
+      "tr": "Belirtim odaklı geliştirme, ajan tetikleyicileri, yönlendirme dosyaları ve paralel ajanları birleştiren AWS ajan IDE'si.",
       "en": "AWS agentic IDE combining spec-driven development, agent hooks, steering files, and parallel agents."
     }
   },
   {
     "id": "manus-features",
-    "title": "Manus — AI Agent Capabilities",
+    "title": "Manus — Understanding Manus Sandbox",
     "publisher": "Butterfly Effect (Manus)",
-    "url": "https://manus.im/features",
+    "url": "https://manus.im/blog/manus-sandbox",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
-    "kind": "official-docs",
+    "checkedAt": "2026-09-04",
+    "kind": "official-engineering",
     "access": "available",
     "summary": {
-      "tr": "Cloud sandbox içinde çok adımlı planlama, browser automation, dosya üretimi ve paralel araştırma özelliklerini belgeler.",
-      "en": "Documents multi-step planning, browser automation, file generation, and parallel research within a cloud sandbox."
+      "tr": "Her görev için ayrılan yalıtılmış bulut sanal makinesinin kapsamını, yaşam döngüsünü ve güvenlik modelini açıklar.",
+      "en": "Explains the scope, lifecycle, and security model of the isolated cloud virtual machine allocated to each task."
+    }
+  },
+  {
+    "id": "manus-wide-research-source",
+    "title": "Manus — Introducing Wide Research",
+    "publisher": "Butterfly Effect (Manus)",
+    "url": "https://manus.im/blog/introducing-wide-research",
+    "publishedAt": null,
+    "checkedAt": "2026-09-04",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Wide Research'ün çok sayıdaki öğeyi paralel çalışan genel amaçlı alt ajanlara dağıtan yapısını açıklar.",
+      "en": "Explains how Wide Research distributes large sets of items across parallel, general-purpose subagents."
+    }
+  },
+  {
+    "id": "manus-browser-operator-source",
+    "title": "Manus — Introducing Browser Operator",
+    "publisher": "Butterfly Effect (Manus)",
+    "url": "https://manus.im/en/blog/manus-browser-operator",
+    "publishedAt": null,
+    "checkedAt": "2026-09-04",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Browser Operator'ın kullanıcının yetkilendirdiği yerel tarayıcı oturumunda nasıl çalıştığını ve denetim sınırlarını açıklar.",
+      "en": "Explains how Browser Operator works in a user-authorized local browser session and documents its control boundaries."
     }
   }
 ]

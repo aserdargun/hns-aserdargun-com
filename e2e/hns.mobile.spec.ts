@@ -18,6 +18,8 @@ test('mobile weekly to comparison workflow has no horizontal overflow', async ({
 
   await menu.click()
   await page.getByRole('link', { name: 'Radar', exact: true }).click()
+  await expect(page).toHaveURL('/en/radar')
+  await expect(page.getByText('Filter, disclose evidence, and compare two or three solutions layer by layer.')).toBeVisible()
   await page.getByLabel('Radar position').selectOption('trial')
   await page.getByRole('checkbox', { name: /DeepSeek Harness/ }).check()
   await page.getByRole('checkbox', { name: /Microsoft Agent Framework/ }).check()

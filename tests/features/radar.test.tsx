@@ -37,4 +37,22 @@ describe('Solutions Radar', () => {
     expect(screen.getByText('Governance')).toBeVisible()
     expect(screen.queryByText(/overall score/i)).not.toBeInTheDocument()
   })
+
+  it('uses the catalog count in the embedded Radar link', () => {
+    window.history.replaceState({}, '', '/tr')
+    render(<App />)
+
+    expect(screen.getByRole('link', { name: '21 çözümün tümünü incele →' })).toBeVisible()
+  })
+
+  it('localizes Turkish filter and solution values', () => {
+    renderRadar('/tr/radar')
+
+    expect(screen.getByRole('option', { name: "Kodlama harness'ı" })).toBeInTheDocument()
+    expect(screen.getByRole('option', { name: 'Benimse' })).toBeInTheDocument()
+    expect(screen.getByRole('option', { name: 'Kanıt' })).toBeInTheDocument()
+    expect(screen.getByRole('option', { name: 'Kısmen' })).toBeInTheDocument()
+    expect(screen.getAllByText('Yerleşik').length).toBeGreaterThan(0)
+    expect(screen.getAllByRole('img', { name: /Destekleniyor/ }).length).toBeGreaterThan(0)
+  })
 })

@@ -1,47 +1,47 @@
 [
   {
     "id": "harness-model-coevolution",
-    "title": { "tr": "Harness–Model Coevolution", "en": "Harness–Model Coevolution" },
+    "title": { "tr": "Harness–model birlikte evrimi", "en": "Harness–Model Coevolution" },
     "summary": { "tr": "Model geliştikçe harness'ın taşıdığı eski varsayımlar yeniden sınanır.", "en": "As the model improves, assumptions carried by the harness are retested." },
-    "mechanism": { "tr": "Her harness bileşeni hangi model eksikliğini telafi ettiğini açıklar; model sürümü değiştiğinde ablation ile yeniden ölçülür.", "en": "Each harness component states which model limitation it compensates for and is remeasured through ablation when the model changes." },
-    "tradeoffs": { "tr": "Sadeleştirme maliyet ve latency'yi düşürebilir; erken kaldırma güvenilirliği bozabilir.", "en": "Simplification can reduce cost and latency; premature removal can damage reliability." },
+    "mechanism": { "tr": "Her harness bileşeni hangi model eksikliğini telafi ettiğini açıklar; model sürümü değiştiğinde çıkarma deneyiyle yeniden ölçülür.", "en": "Each harness component states which model limitation it compensates for and is remeasured through ablation when the model changes." },
+    "tradeoffs": { "tr": "Sadeleştirme maliyeti ve gecikmeyi düşürebilir; erken kaldırma güvenilirliği bozabilir.", "en": "Simplification can reduce cost and latency; premature removal can damage reliability." },
     "experiment": { "tr": "Aynı görevi bileşen açık/kapalı ve iki model sürümüyle çalıştır.", "en": "Run the same task with the component on/off across two model generations." },
     "sourceIds": ["anthropic-harness-design", "anthropic-managed-agents"]
   },
   {
     "id": "durable-execution",
-    "title": { "tr": "Durable Execution", "en": "Durable Execution" },
-    "summary": { "tr": "Agent adımları failure ve restart sonrasında kaybolmadan devam eder.", "en": "Agent steps continue across failures and restarts without losing progress." },
-    "mechanism": { "tr": "LLM çağrıları, araçlar ve state journal/checkpoint içine alınır; retry deterministik sınırdan devam eder.", "en": "LLM calls, tools, and state are journaled or checkpointed so retries resume at a deterministic boundary." },
-    "tradeoffs": { "tr": "Dayanıklılık, idempotency ve versioning disiplinini zorunlu kılar.", "en": "Durability requires disciplined idempotency and versioning." },
-    "experiment": { "tr": "Araç yürütümü ortasında process'i sonlandır ve aynı sonucu yeniden üretmeden devam ettiğini doğrula.", "en": "Terminate the process during a tool execution and verify it resumes without duplicating the outcome." },
+    "title": { "tr": "Kalıcı yürütme", "en": "Durable Execution" },
+    "summary": { "tr": "Ajan adımları hata ve yeniden başlatma sonrasında kaybolmadan devam eder.", "en": "Agent steps continue across failures and restarts without losing progress." },
+    "mechanism": { "tr": "LLM çağrıları, araçlar ve durum bir günlüğe ya da denetim noktasına yazılır; yeniden deneme belirlenmiş sınırdan devam eder.", "en": "LLM calls, tools, and state are journaled or checkpointed so retries resume at a deterministic boundary." },
+    "tradeoffs": { "tr": "Dayanıklılık, yinelenebilirlik ve sürümleme disiplinini zorunlu kılar.", "en": "Durability requires disciplined idempotency and versioning." },
+    "experiment": { "tr": "Araç yürütülürken süreci sonlandır ve aynı sonucu ikinci kez üretmeden devam ettiğini doğrula.", "en": "Terminate the process during a tool execution and verify it resumes without duplicating the outcome." },
     "sourceIds": ["google-adk-restate", "pydantic-durable-execution", "langchain-products"]
   },
   {
     "id": "fresh-context-handoff",
-    "title": { "tr": "Fresh-Context Handoff", "en": "Fresh-Context Handoff" },
-    "summary": { "tr": "Yeni agent/session, önceki çalışmayı durable artifact üzerinden devralır.", "en": "A fresh agent or session takes over prior work through a durable artifact." },
-    "mechanism": { "tr": "Görev durumu, kararlar, doğrulama sonucu ve sonraki adım kısa yapılandırılmış artifact'a yazılır.", "en": "Task state, decisions, verification outcome, and next step are written to a concise structured artifact." },
-    "tradeoffs": { "tr": "Context temizlenir; eksik handoff kritik bilgiyi kaybettirebilir.", "en": "Context is refreshed; an incomplete handoff can lose critical information." },
-    "experiment": { "tr": "Uzun görevi session ortasında devret ve yeniden keşif maliyetini ölç.", "en": "Handoff a long task mid-session and measure rediscovery cost." },
+    "title": { "tr": "Temiz bağlam devri", "en": "Fresh-Context Handoff" },
+    "summary": { "tr": "Yeni ajan ya da oturum, önceki çalışmayı kalıcı bir kayıt üzerinden devralır.", "en": "A fresh agent or session takes over prior work through a durable artifact." },
+    "mechanism": { "tr": "Görev durumu, kararlar, doğrulama sonucu ve sonraki adım kısa, yapılandırılmış bir kayda yazılır.", "en": "Task state, decisions, verification outcome, and next step are written to a concise structured artifact." },
+    "tradeoffs": { "tr": "Bağlam temizlenir; eksik devir kritik bilgiyi kaybettirebilir.", "en": "Context is refreshed; an incomplete handoff can lose critical information." },
+    "experiment": { "tr": "Uzun görevi oturumun ortasında devret ve yeniden keşif maliyetini ölç.", "en": "Handoff a long task mid-session and measure rediscovery cost." },
     "sourceIds": ["anthropic-effective-harnesses"]
   },
   {
     "id": "approval-gate",
-    "title": { "tr": "Human Approval Gate", "en": "Human Approval Gate" },
+    "title": { "tr": "İnsan onayı kapısı", "en": "Human Approval Gate" },
     "summary": { "tr": "Riskli veya geri döndürülemez eylem insan onayı olmadan yürütülmez.", "en": "A risky or irreversible action does not execute without human approval." },
-    "mechanism": { "tr": "Policy, eylemi sınıflandırır; harness durumu kalıcılaştırır ve onay sinyalini bekler.", "en": "Policy classifies the action; the harness persists state and waits for an approval signal." },
-    "tradeoffs": { "tr": "Blast radius küçülür; gereksiz kapılar throughput'u düşürür.", "en": "Blast radius shrinks; unnecessary gates reduce throughput." },
-    "experiment": { "tr": "Aynı workflow'da risk sınıflarına göre müdahale sayısı ve hata önleme oranını ölç.", "en": "Measure interventions and prevented failures by risk class in the same workflow." },
+    "mechanism": { "tr": "İlke, eylemi sınıflandırır; harness durumu kalıcılaştırır ve onay sinyalini bekler.", "en": "Policy classifies the action; the harness persists state and waits for an approval signal." },
+    "tradeoffs": { "tr": "Etki alanı küçülür; gereksiz kapılar işlem hacmini düşürür.", "en": "Blast radius shrinks; unnecessary gates reduce throughput." },
+    "experiment": { "tr": "Aynı iş akışında risk sınıflarına göre müdahale sayısını ve hata önleme oranını ölç.", "en": "Measure interventions and prevented failures by risk class in the same workflow." },
     "sourceIds": ["microsoft-agent-framework-harness", "google-adk-restate"]
   },
   {
     "id": "deterministic-verification",
-    "title": { "tr": "Deterministic Verification", "en": "Deterministic Verification" },
-    "summary": { "tr": "Agent iddiası, mümkün olduğunda test ve statik kuralla bağımsız olarak doğrulanır.", "en": "An agent claim is independently verified with tests and static rules whenever possible." },
-    "mechanism": { "tr": "Başarı sözel finalden değil, environment sonucu ve kabul ölçütlerinden hesaplanır.", "en": "Success is computed from environment outcomes and acceptance criteria rather than the final narrative." },
-    "tradeoffs": { "tr": "Güven artar; yanlış verifier hedefi davranışı daraltabilir.", "en": "Confidence improves; a poorly chosen verifier can narrow behavior toward the wrong target." },
-    "experiment": { "tr": "Sözel başarı ile gerçek test sonucunun ayrıştığı örnekleri trajectory üzerinden say.", "en": "Count trajectories where claimed success diverges from actual test outcomes." },
+    "title": { "tr": "Deterministik doğrulama", "en": "Deterministic Verification" },
+    "summary": { "tr": "Ajan iddiası, mümkün olduğunda testler ve statik kurallarla bağımsız olarak doğrulanır.", "en": "An agent claim is independently verified with tests and static rules whenever possible." },
+    "mechanism": { "tr": "Başarı, sözel sonuçtan değil ortam çıktısı ve kabul ölçütlerinden hesaplanır.", "en": "Success is computed from environment outcomes and acceptance criteria rather than the final narrative." },
+    "tradeoffs": { "tr": "Güven artar; yanlış seçilmiş doğrulayıcı davranışı hatalı bir hedefe daraltabilir.", "en": "Confidence improves; a poorly chosen verifier can narrow behavior toward the wrong target." },
+    "experiment": { "tr": "Sözel başarı ile gerçek test sonucunun ayrıştığı örnekleri izlekler üzerinden say.", "en": "Count trajectories where claimed success diverges from actual test outcomes." },
     "sourceIds": ["openai-harness-engineering", "anthropic-harness-design"]
   }
 ]

@@ -33,4 +33,10 @@ describe('Weekly Intelligence', () => {
     await user.click(control)
     expect(screen.getByText('Harness katmanları ayrı ürün sınıflarına dönüşüyor')).toBeVisible()
   })
+
+  it('shows published correction notes instead of silently rewriting a week', () => {
+    renderWeekly()
+
+    expect(screen.getByRole('note', { name: 'Corrections' })).toHaveTextContent('W36 correction (2026-09-02)')
+  })
 })

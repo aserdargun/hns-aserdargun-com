@@ -2,50 +2,50 @@
   {
     "id": "anthropic-effective-harnesses-2025",
     "date": "2025-11-26",
-    "title": { "tr": "Anthropic uzun görevler için handoff harness'ı yayımladı", "en": "Anthropic published a handoff harness for long-running agents" },
-    "summary": { "tr": "Initializer, artımlı ilerleme ve durable artifact yaklaşımı.", "en": "Initializer, incremental progress, and durable artifacts." },
+    "title": { "tr": "Anthropic uzun görevler için devir harness'ı yayımladı", "en": "Anthropic published a handoff harness for long-running agents" },
+    "summary": { "tr": "Başlatıcı, artımlı ilerleme ve kalıcı kayıt yaklaşımı.", "en": "Initializer, incremental progress, and durable artifacts." },
     "sourceIds": ["anthropic-effective-harnesses"]
   },
   {
     "id": "openai-harness-engineering-2026",
     "date": "2026-02-11",
     "title": { "tr": "OpenAI Harness Engineering yaklaşımını yayımladı", "en": "OpenAI published its Harness Engineering approach" },
-    "summary": { "tr": "Agent-first repository, mekanik kurallar ve feedback loop'ları ayrı mühendislik katmanı oldu.", "en": "Agent-first repositories, mechanical rules, and feedback loops became an explicit engineering layer." },
+    "summary": { "tr": "Ajan öncelikli depo, mekanik kurallar ve geri bildirim döngüleri ayrı bir mühendislik katmanı oldu.", "en": "Agent-first repositories, mechanical rules, and feedback loops became an explicit engineering layer." },
     "sourceIds": ["openai-harness-engineering"]
   },
   {
     "id": "anthropic-harness-design-2026",
     "date": "2026-03-24",
-    "title": { "tr": "Planner–generator–evaluator harness deneyi", "en": "Planner–generator–evaluator harness experiment" },
-    "summary": { "tr": "Uzun uygulama geliştirmede multi-agent evaluator yapısı ve sadeleştirme ablation'ları.", "en": "A multi-agent evaluator structure and simplification ablations for long-running app development." },
+    "title": { "tr": "Planlayıcı–üretici–değerlendirici harness deneyi", "en": "Planner–generator–evaluator harness experiment" },
+    "summary": { "tr": "Uzun uygulama geliştirmede çok ajanlı değerlendirici yapısı ve sadeleştirme deneyleri.", "en": "A multi-agent evaluator structure and simplification ablations for long-running app development." },
     "sourceIds": ["anthropic-harness-design"]
   },
   {
     "id": "anthropic-managed-agents-2026",
     "date": "2026-04-08",
-    "title": { "tr": "Managed Agents, session/harness/sandbox ayrımını tanımladı", "en": "Managed Agents defined the session/harness/sandbox split" },
+    "title": { "tr": "Managed Agents, oturum/harness/korumalı alan ayrımını tanımladı", "en": "Managed Agents defined the session/harness/sandbox split" },
     "summary": { "tr": "Değişen harness uygulamalarının üstünde kararlı arayüzler.", "en": "Stable interfaces above changing harness implementations." },
     "sourceIds": ["anthropic-managed-agents"]
   },
   {
     "id": "openai-symphony-2026",
     "date": "2026-04-27",
-    "title": { "tr": "OpenAI Symphony orkestrasyon spesifikasyonunu açtı", "en": "OpenAI opened the Symphony orchestration specification" },
-    "summary": { "tr": "Proje yönetimi panosunu coding-agent control plane'e dönüştürme yaklaşımı.", "en": "An approach for turning a project board into a coding-agent control plane." },
+    "title": { "tr": "OpenAI Symphony orkestrasyon belirtimini açtı", "en": "OpenAI opened the Symphony orchestration specification" },
+    "summary": { "tr": "Proje yönetimi panosunu kodlama ajanları için bir denetim düzlemine dönüştürme yaklaşımı.", "en": "An approach for turning a project board into a coding-agent control plane." },
     "sourceIds": ["openai-symphony"]
   },
   {
     "id": "microsoft-harness-2026",
     "date": "2026-07-22",
     "title": { "tr": "Microsoft Agent Framework Harness yayımlandı", "en": "Microsoft Agent Framework Harness was released" },
-    "summary": { "tr": "Python ve .NET için planning, memory, approvals ve telemetry kapsamı.", "en": "Planning, memory, approvals, and telemetry for Python and .NET." },
+    "summary": { "tr": "Python ve .NET için planlama, bellek, onay ve telemetri kapsamı.", "en": "Planning, memory, approvals, and telemetry for Python and .NET." },
     "sourceIds": ["microsoft-agent-framework-harness"]
   },
   {
     "id": "hns-baseline-2026",
     "date": "2026-09-02",
-    "title": { "tr": "HNS ilk kaynaklı baseline'ını oluşturdu", "en": "HNS established its first source-backed baseline" },
-    "summary": { "tr": "12 çözüm, 13 birincil kaynak ve ilk haftalık snapshot.", "en": "Twelve solutions, thirteen primary sources, and the first weekly snapshot." },
+    "title": { "tr": "HNS ilk kaynak-temelli tabanını oluşturdu", "en": "HNS established its first source-backed baseline" },
+    "summary": { "tr": "12 çözüm, 13 birincil kaynak ve ilk haftalık görünüm.", "en": "Twelve solutions, thirteen primary sources, and the first weekly snapshot." },
     "sourceIds": ["openai-harness-engineering", "microsoft-agent-framework-harness", "langchain-products"]
   },
   {
@@ -59,42 +59,42 @@
     "id": "goose-aaif-move-2026",
     "date": "2026-04-07",
     "title": { "tr": "Goose AAIF'e taşındı", "en": "Goose moved to the AAIF" },
-    "summary": { "tr": "Block, Goose'u Linux Foundation/AAIF'e bağışladı; governance tarafsızlaştı.", "en": "Block donated Goose to the Linux Foundation's AAIF; governance became neutral." },
+    "summary": { "tr": "Block, Goose'u Linux Foundation/AAIF'e bağışladı; yönetişim tarafsızlaştı.", "en": "Block donated Goose to the Linux Foundation's AAIF; governance became neutral." },
     "sourceIds": ["goose-aaif-blog"]
   },
   {
     "id": "hermes-agent-launch-2026",
     "date": "2026-02-25",
     "title": { "tr": "Nous Research Hermes Agent'ı yayımladı", "en": "Nous Research released Hermes Agent" },
-    "summary": { "tr": "MIT lisanslı, kalıcı bellek ve kapalı öğrenme döngüsüne sahip agent runtime açık kaynak olarak yayımlandı.", "en": "An MIT-licensed agent runtime with persistent memory and a closed learning loop was released as open source." },
+    "summary": { "tr": "MIT lisanslı, kalıcı bellek ve kapalı öğrenme döngüsüne sahip ajan çalışma zamanı açık kaynak olarak yayımlandı.", "en": "An MIT-licensed agent runtime with persistent memory and a closed learning loop was released as open source." },
     "sourceIds": ["hermes-agent-repo"]
   },
   {
     "id": "opencode-hn-2026",
     "date": "2026-03-20",
     "title": { "tr": "OpenCode Hacker News'te birinci oldu", "en": "OpenCode hit #1 on Hacker News" },
-    "summary": { "tr": "Anomaly'nin sağlayıcı-agnostik OpenCode'u geniş ilgi gördü.", "en": "Anomaly's provider-agnostic OpenCode drew broad attention." },
+    "summary": { "tr": "Anomaly'nin sağlayıcıdan bağımsız OpenCode'u geniş ilgi gördü.", "en": "Anomaly's provider-agnostic OpenCode drew broad attention." },
     "sourceIds": ["opencode-repo"]
   },
   {
     "id": "codex-cli-rewrite-2026",
     "date": "2026-03-31",
     "title": { "tr": "Codex CLI Rust yeniden yazımı tamamlandı", "en": "Codex CLI Rust rewrite completed" },
-    "summary": { "tr": "Codex CLI kod tabanı büyük ölçüde Rust'a taşındı; kernel seviyesinde sandbox mimarisi olgunlaştı.", "en": "Codex CLI was largely rewritten in Rust; the kernel-level sandbox architecture matured." },
+    "summary": { "tr": "Codex CLI kod tabanı büyük ölçüde Rust'a taşındı; çekirdek seviyesindeki korumalı alan mimarisi olgunlaştı.", "en": "Codex CLI was largely rewritten in Rust; the kernel-level sandbox architecture matured." },
     "sourceIds": ["codex-cli-repo"]
   },
   {
     "id": "kiro-ga-2026",
     "date": "2026-05-07",
     "title": { "tr": "AWS Kiro uluslararası kullanıma açıldı", "en": "AWS Kiro opened to international use" },
-    "summary": { "tr": "Amazon Q Developer'ın yerini alan spec-driven agentic IDE genel erişime açıldı.", "en": "The spec-driven agentic IDE that replaces Amazon Q Developer opened to general access." },
+    "summary": { "tr": "Amazon Q Developer'ın yerini alan, belirtim odaklı ajan IDE'si genel erişime açıldı.", "en": "The spec-driven agentic IDE that replaces Amazon Q Developer opened to general access." },
     "sourceIds": ["kiro-docs"]
   },
   {
     "id": "claude-code-w32-2026",
     "date": "2026-08-07",
-    "title": { "tr": "Claude Code sessions arası mesajlaşma ve auto mode duyuruldu", "en": "Claude Code announced cross-session messaging and auto mode" },
-    "summary": { "tr": "Oturumlar arası mesajlaşma, self-hosted runner ve auto mode varsayılan izin olarak etkinleştirildi.", "en": "Cross-session messaging, self-hosted runners, and auto mode as the default permission were enabled." },
+    "title": { "tr": "Claude Code oturumlar arası mesajlaşmayı ve otomatik modu duyurdu", "en": "Claude Code announced cross-session messaging and auto mode" },
+    "summary": { "tr": "Oturumlar arası mesajlaşma, kendi altyapısında çalışan yürütücü ve varsayılan izin olarak otomatik mod etkinleştirildi.", "en": "Cross-session messaging, self-hosted runners, and auto mode as the default permission were enabled." },
     "sourceIds": ["claude-code-whats-new-w32"]
   },
   {
@@ -102,6 +102,6 @@
     "date": "2026-09-02",
     "title": { "tr": "HNS W36 radar genişlemesi: 9 yeni çözüm", "en": "HNS W36 radar expansion: nine new solutions" },
     "summary": { "tr": "Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, Codex CLI, AWS Kiro ve Manus AI çözümlerine eklendi.", "en": "Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, Codex CLI, AWS Kiro, and Manus AI were added." },
-    "sourceIds": ["hermes-agent-repo", "claude-code-docs", "opencode-repo", "aider-repo", "cline-repo", "goose-aaif-blog", "codex-cli-repo", "kiro-docs", "manus-features"]
+    "sourceIds": ["hermes-agent-repo", "claude-code-docs", "opencode-repo", "aider-repo", "cline-repo", "goose-aaif-blog", "codex-cli-repo", "kiro-docs", "manus-features", "manus-wide-research-source", "manus-browser-operator-source"]
   }
 ]

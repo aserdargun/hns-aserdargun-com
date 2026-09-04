@@ -2,34 +2,34 @@
   {
     "id": "codex-environment-feedback",
     "kind": "evidence",
-    "text": { "tr": "OpenAI, agent-first mühendislikte ortamları, sınırları ve geri bildirim döngülerini temel kaldıraç olarak tanımlar.", "en": "OpenAI identifies environments, boundaries, and feedback loops as core leverage in agent-first engineering." },
+    "text": { "tr": "OpenAI, ajan öncelikli mühendislikte ortamları, sınırları ve geri bildirim döngülerini temel kaldıraç olarak tanımlar.", "en": "OpenAI identifies environments, boundaries, and feedback loops as core leverage in agent-first engineering." },
     "sourceIds": ["openai-harness-engineering"],
     "subjectIds": ["openai-codex"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi mühendislik yazısında doğrudan açıklanıyor.", "en": "Directly described in an official engineering publication." }
+    "confidence": { "tr": "Resmî mühendislik yazısında doğrudan açıklanıyor.", "en": "Directly described in an official engineering publication." }
   },
   {
     "id": "codex-repository-system",
     "kind": "evidence",
-    "text": { "tr": "Sürüm kontrollü repository artifact'ları ve mekanik mimari kuralları Codex çalışma sisteminin parçasıdır.", "en": "Versioned repository artifacts and mechanical architecture rules are part of the Codex working system." },
+    "text": { "tr": "Sürüm kontrollü depo kayıtları ve mekanik mimari kuralları Codex çalışma sisteminin parçasıdır.", "en": "Versioned repository artifacts and mechanical architecture rules are part of the Codex working system." },
     "sourceIds": ["openai-harness-engineering"],
     "subjectIds": ["openai-codex"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi vaka anlatımında somut örneklerle destekleniyor.", "en": "Supported with concrete examples in the official case narrative." }
+    "confidence": { "tr": "Resmî vaka anlatımında somut örneklerle destekleniyor.", "en": "Supported with concrete examples in the official case narrative." }
   },
   {
     "id": "symphony-control-plane",
     "kind": "evidence",
-    "text": { "tr": "Symphony, proje yönetimi panosunu sürekli çalışan coding agentlar için control plane olarak kullanır.", "en": "Symphony uses a project-management board as a control plane for continuously running coding agents." },
+    "text": { "tr": "Symphony, proje yönetimi panosunu sürekli çalışan kodlama ajanları için denetim düzlemi olarak kullanır.", "en": "Symphony uses a project-management board as a control plane for continuously running coding agents." },
     "sourceIds": ["openai-symphony"],
     "subjectIds": ["openai-symphony"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi OpenAI spesifikasyon yazısında açıkça tanımlanıyor.", "en": "Explicitly defined in OpenAI's official specification article." }
+    "confidence": { "tr": "Resmî OpenAI belirtim yazısında açıkça tanımlanıyor.", "en": "Explicitly defined in OpenAI's official specification article." }
   },
   {
     "id": "anthropic-long-running-artifacts",
     "kind": "evidence",
-    "text": { "tr": "Initializer, artımlı görev yürütümü ve handoff artifact'ları context pencereleri arasında ilerlemeyi destekler.", "en": "An initializer, incremental task execution, and handoff artifacts support progress across context windows." },
+    "text": { "tr": "Başlatıcı, artımlı görev yürütümü ve devir kayıtları bağlam pencereleri arasında ilerlemeyi destekler.", "en": "An initializer, incremental task execution, and handoff artifacts support progress across context windows." },
     "sourceIds": ["anthropic-effective-harnesses"],
     "subjectIds": ["anthropic-managed-agents"],
     "reviewedAt": "2026-09-02",
@@ -38,11 +38,11 @@
   {
     "id": "anthropic-planner-evaluator",
     "kind": "evidence",
-    "text": { "tr": "Planner–generator–evaluator düzeni uzun süreli uygulama geliştirme harness'ında kullanıldı.", "en": "A planner–generator–evaluator arrangement was used in a long-running application-development harness." },
+    "text": { "tr": "Planlayıcı–üretici–değerlendirici düzeni uzun süreli uygulama geliştirme harness'ında kullanıldı.", "en": "A planner–generator–evaluator arrangement was used in a long-running application-development harness." },
     "sourceIds": ["anthropic-harness-design"],
     "subjectIds": ["anthropic-managed-agents"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi deney yazısındaki mimari tanımına dayanıyor.", "en": "Based on the architecture described in the official experiment article." }
+    "confidence": { "tr": "Resmî deney yazısındaki mimari tanımına dayanıyor.", "en": "Based on the architecture described in the official experiment article." }
   },
   {
     "id": "anthropic-stale-assumptions",
@@ -51,43 +51,43 @@
     "sourceIds": ["anthropic-harness-design", "anthropic-managed-agents"],
     "subjectIds": ["anthropic-managed-agents"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "İki resmi Anthropic mühendislik yazısında aynı ilke vurgulanıyor.", "en": "The same principle is emphasized in two official Anthropic engineering articles." }
+    "confidence": { "tr": "İki resmî Anthropic mühendislik yazısında aynı ilke vurgulanıyor.", "en": "The same principle is emphasized in two official Anthropic engineering articles." }
   },
   {
     "id": "anthropic-session-harness-sandbox",
     "kind": "evidence",
-    "text": { "tr": "Managed Agents mimarisi session, harness ve sandbox arayüzlerini birbirinden ayırır.", "en": "The Managed Agents architecture separates session, harness, and sandbox interfaces." },
+    "text": { "tr": "Managed Agents mimarisi oturum, harness ve korumalı alan arayüzlerini birbirinden ayırır.", "en": "The Managed Agents architecture separates session, harness, and sandbox interfaces." },
     "sourceIds": ["anthropic-managed-agents"],
     "subjectIds": ["anthropic-managed-agents"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi mimari anlatımında doğrudan belirtiliyor.", "en": "Directly stated in the official architecture description." }
+    "confidence": { "tr": "Resmî mimari anlatımında doğrudan belirtiliyor.", "en": "Directly stated in the official architecture description." }
   },
   {
     "id": "deepseek-plugin-architecture",
     "kind": "evidence",
-    "text": { "tr": "DeepSeek Harness, Cordis üzerinde 'everything is a plugin' mimarisi kullanır.", "en": "DeepSeek Harness uses an 'everything is a plugin' architecture powered by Cordis." },
+    "text": { "tr": "DeepSeek Harness, Cordis üzerinde 'her şey eklentidir' mimarisi kullanır.", "en": "DeepSeek Harness uses an 'everything is a plugin' architecture powered by Cordis." },
     "sourceIds": ["deepseek-harness-repo"],
     "subjectIds": ["deepseek-harness"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi depo README'sinde tanımlanıyor.", "en": "Defined in the official repository README." }
+    "confidence": { "tr": "Resmî depo README'sinde tanımlanıyor.", "en": "Defined in the official repository README." }
   },
   {
     "id": "deepseek-developer-preview",
     "kind": "evidence",
-    "text": { "tr": "DeepSeek Harness developer preview durumundadır ve breaking change beklenmektedir.", "en": "DeepSeek Harness is in developer preview and compatibility-breaking changes are expected." },
+    "text": { "tr": "DeepSeek Harness geliştirici önizlemesi durumundadır ve uyumsuz değişiklikler beklenmektedir.", "en": "DeepSeek Harness is in developer preview and compatibility-breaking changes are expected." },
     "sourceIds": ["deepseek-harness-repo"],
     "subjectIds": ["deepseek-harness"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi depo açık bir preview uyarısı yayımlıyor.", "en": "The official repository publishes an explicit preview warning." }
+    "confidence": { "tr": "Resmî depo açık bir önizleme uyarısı yayımlıyor.", "en": "The official repository publishes an explicit preview warning." }
   },
   {
     "id": "microsoft-batteries-included",
     "kind": "evidence",
-    "text": { "tr": "Microsoft Agent Framework Harness loop, planning, memory, context management, approvals ve telemetry sağlar.", "en": "Microsoft Agent Framework Harness provides loop, planning, memory, context management, approvals, and telemetry." },
+    "text": { "tr": "Microsoft Agent Framework Harness döngü, planlama, bellek, bağlam yönetimi, onaylar ve telemetri sağlar.", "en": "Microsoft Agent Framework Harness provides loop, planning, memory, context management, approvals, and telemetry." },
     "sourceIds": ["microsoft-agent-framework-harness"],
     "subjectIds": ["microsoft-agent-framework"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi yayın duyurusundaki özellik listesine dayanıyor.", "en": "Based on the feature list in the official release announcement." }
+    "confidence": { "tr": "Resmî yayın duyurusundaki özellik listesine dayanıyor.", "en": "Based on the feature list in the official release announcement." }
   },
   {
     "id": "microsoft-python-dotnet",
@@ -96,102 +96,102 @@
     "sourceIds": ["microsoft-agent-framework-harness"],
     "subjectIds": ["microsoft-agent-framework"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi Microsoft duyurusunda doğrudan belirtiliyor.", "en": "Directly stated in Microsoft's official announcement." }
+    "confidence": { "tr": "Resmî Microsoft duyurusunda doğrudan belirtiliyor.", "en": "Directly stated in Microsoft's official announcement." }
   },
   {
     "id": "langchain-stack-taxonomy",
     "kind": "evidence",
-    "text": { "tr": "LangChain dokümanı framework, runtime ve harness katmanlarını ayrı ürün sınıfları olarak ele alır.", "en": "LangChain documentation treats framework, runtime, and harness as distinct product classes." },
+    "text": { "tr": "LangChain belgesi çatı, çalışma zamanı ve harness katmanlarını ayrı ürün sınıfları olarak ele alır.", "en": "LangChain documentation treats framework, runtime, and harness as distinct product classes." },
     "sourceIds": ["langchain-products"],
     "subjectIds": ["langchain-deep-agents", "langgraph"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi ürün taksonomisi tablosuna dayanıyor.", "en": "Based on the official product taxonomy table." }
+    "confidence": { "tr": "Resmî ürün sınıflandırması tablosuna dayanıyor.", "en": "Based on the official product taxonomy table." }
   },
   {
     "id": "deep-agents-capabilities",
     "kind": "evidence",
-    "text": { "tr": "Deep Agents planning, subagent delegation, filesystem ve context management yeteneklerini LangGraph üzerinde birleştirir.", "en": "Deep Agents combines planning, subagent delegation, filesystem, and context management on LangGraph." },
+    "text": { "tr": "Deep Agents; planlama, alt ajanlara görev devri, dosya sistemi ve bağlam yönetimi yeteneklerini LangGraph üzerinde birleştirir.", "en": "Deep Agents combines planning, subagent delegation, filesystem, and context management on LangGraph." },
     "sourceIds": ["langchain-products"],
     "subjectIds": ["langchain-deep-agents"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi ürün dokümantasyonundaki yetenek listesine dayanıyor.", "en": "Based on the capability list in official product documentation." }
+    "confidence": { "tr": "Resmî ürün belgesindeki yetenek listesine dayanıyor.", "en": "Based on the capability list in official product documentation." }
   },
   {
     "id": "langgraph-durable-runtime",
     "kind": "evidence",
-    "text": { "tr": "LangGraph uzun süre çalışan stateful agentlar için durable execution ve düşük seviyeli orkestrasyon runtime'ı sağlar.", "en": "LangGraph provides durable execution and a low-level orchestration runtime for long-running stateful agents." },
+    "text": { "tr": "LangGraph, uzun süre çalışan durum bilgili ajanlar için kalıcı yürütme ve düşük seviyeli orkestrasyon çalışma zamanı sağlar.", "en": "LangGraph provides durable execution and a low-level orchestration runtime for long-running stateful agents." },
     "sourceIds": ["langchain-products"],
     "subjectIds": ["langgraph"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi LangChain ürün karşılaştırmasında tanımlanıyor.", "en": "Defined in LangChain's official product comparison." }
+    "confidence": { "tr": "Resmî LangChain ürün karşılaştırmasında tanımlanıyor.", "en": "Defined in LangChain's official product comparison." }
   },
   {
     "id": "google-persistent-sandbox",
     "kind": "evidence",
-    "text": { "tr": "Google Agent Runtime aynı sandbox durumunu bir ADK görev oturumu boyunca koruyabilir.", "en": "Google Agent Runtime can preserve one sandbox state across an ADK task session." },
+    "text": { "tr": "Google Agent Runtime aynı korumalı alan durumunu bir ADK görev oturumu boyunca koruyabilir.", "en": "Google Agent Runtime can preserve one sandbox state across an ADK task session." },
     "sourceIds": ["google-agent-runtime"],
     "subjectIds": ["google-adk", "google-agent-runtime"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi ADK code execution dokümanında işleyiş adımı olarak açıklanıyor.", "en": "Explained as part of the execution flow in official ADK documentation." }
+    "confidence": { "tr": "Resmî ADK kod yürütme belgesinde işleyiş adımı olarak açıklanıyor.", "en": "Explained as part of the execution flow in official ADK documentation." }
   },
   {
     "id": "google-restate-durable",
     "kind": "evidence",
-    "text": { "tr": "ADK Restate entegrasyonu durable LLM/tool yürütümü, HITL pause/resume ve kalıcı oturumlar sağlar.", "en": "The ADK Restate integration provides durable LLM/tool execution, HITL pause/resume, and persistent sessions." },
+    "text": { "tr": "ADK Restate bütünleştirmesi kalıcı LLM/araç yürütümü, insan katılımlı duraklatma/sürdürme ve kalıcı oturumlar sağlar.", "en": "The ADK Restate integration provides durable LLM/tool execution, HITL pause/resume, and persistent sessions." },
     "sourceIds": ["google-adk-restate"],
     "subjectIds": ["google-adk"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi entegrasyon dokümanındaki yetenek tablosuna dayanıyor.", "en": "Based on the capability table in official integration documentation." }
+    "confidence": { "tr": "Resmî bütünleştirme belgesindeki yetenek tablosuna dayanıyor.", "en": "Based on the capability table in official integration documentation." }
   },
   {
     "id": "openhands-sdk-capabilities",
     "kind": "evidence",
-    "text": { "tr": "OpenHands SDK yerel/bulut agentları, özel araçlar, Bash, web, MCP ve uzak agent server'ı sunar.", "en": "OpenHands SDK offers local/cloud agents, custom tools, Bash, web, MCP, and a remote agent server." },
+    "text": { "tr": "OpenHands SDK yerel ve bulut ajanları, özel araçlar, Bash, web, MCP ve uzak ajan sunucusu sunar.", "en": "OpenHands SDK offers local/cloud agents, custom tools, Bash, web, MCP, and a remote agent server." },
     "sourceIds": ["openhands-sdk"],
     "subjectIds": ["openhands-sdk"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi SDK giriş sayfasındaki özelliklere dayanıyor.", "en": "Based on features listed on the official SDK introduction page." }
+    "confidence": { "tr": "Resmî SDK giriş sayfasındaki özelliklere dayanıyor.", "en": "Based on features listed on the official SDK introduction page." }
   },
   {
     "id": "mini-linear-minimal",
     "kind": "evidence",
-    "text": { "tr": "mini-SWE-agent yalnız Bash, doğrusal message history ve küçük bir agent sınıfını bilinçli baseline olarak kullanır.", "en": "mini-SWE-agent deliberately uses Bash, linear message history, and a small agent class as a baseline." },
+    "text": { "tr": "mini-SWE-agent yalnız Bash, doğrusal ileti geçmişi ve küçük bir ajan sınıfını bilinçli bir taban olarak kullanır.", "en": "mini-SWE-agent deliberately uses Bash, linear message history, and a small agent class as a baseline." },
     "sourceIds": ["mini-swe-agent-repo"],
     "subjectIds": ["mini-swe-agent"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi depo README'sindeki mimari motivasyona dayanıyor.", "en": "Based on the architectural motivation in the official repository README." }
+    "confidence": { "tr": "Resmî depo README'sindeki mimari gerekçeye dayanıyor.", "en": "Based on the architectural motivation in the official repository README." }
   },
   {
     "id": "pydantic-durable-integrations",
     "kind": "evidence",
-    "text": { "tr": "Pydantic AI, Temporal, DBOS, Prefect ve Restate için resmi durable execution desteği sağlar.", "en": "Pydantic AI officially supports durable execution through Temporal, DBOS, Prefect, and Restate." },
+    "text": { "tr": "Pydantic AI, Temporal, DBOS, Prefect ve Restate için resmî kalıcı yürütme desteği sağlar.", "en": "Pydantic AI officially supports durable execution through Temporal, DBOS, Prefect, and Restate." },
     "sourceIds": ["pydantic-durable-execution"],
     "subjectIds": ["pydantic-ai"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi durable execution dokümantasyonunda listeleniyor.", "en": "Listed in official durable-execution documentation." }
+    "confidence": { "tr": "Resmî kalıcı yürütme belgesinde listeleniyor.", "en": "Listed in official durable-execution documentation." }
   },
   {
     "id": "codex-radar-adopt",
     "kind": "synthesis",
-    "text": { "tr": "Codex, repository-aware harness engineering için güçlü bir ADOPT referansıdır.", "en": "Codex is a strong ADOPT reference for repository-aware harness engineering." },
+    "text": { "tr": "Codex, depo bilgili harness mühendisliği için güçlü bir benimseme referansıdır.", "en": "Codex is a strong ADOPT reference for repository-aware harness engineering." },
     "sourceIds": ["openai-harness-engineering"],
     "subjectIds": ["openai-codex"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; resmi vaka anlatımı ve operasyonel pratiklere dayanıyor.", "en": "HNS interpretation based on the official case narrative and operational practices." }
+    "confidence": { "tr": "HNS yorumu; resmî vaka anlatımı ve operasyonel uygulamalara dayanıyor.", "en": "HNS interpretation based on the official case narrative and operational practices." }
   },
   {
     "id": "symphony-radar-watch",
     "kind": "watch-signal",
-    "text": { "tr": "Symphony, coding-agent fleet orkestrasyonu için izlenmesi gereken yeni bir control-plane yaklaşımıdır.", "en": "Symphony is an emerging control-plane approach to watch for coding-agent fleet orchestration." },
+    "text": { "tr": "Symphony, kodlama ajanı filosu orkestrasyonu için izlenmesi gereken yeni bir denetim düzlemi yaklaşımıdır.", "en": "Symphony is an emerging control-plane approach to watch for coding-agent fleet orchestration." },
     "sourceIds": ["openai-symphony"],
     "subjectIds": ["openai-symphony"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Spesifikasyon yayımlanmış olsa da geniş üretim olgunluğu bu kaynakla doğrulanmıyor.", "en": "The specification is published, but broad production maturity is not established by this source." }
+    "confidence": { "tr": "Belirtim yayımlanmış olsa da geniş üretim olgunluğu bu kaynakla doğrulanmıyor.", "en": "The specification is published, but broad production maturity is not established by this source." }
   },
   {
     "id": "anthropic-radar-watch",
     "kind": "watch-signal",
-    "text": { "tr": "Managed Agents, modelle birlikte evrilen harness arayüzleri için önemli bir WATCH referansıdır.", "en": "Managed Agents is an important WATCH reference for harness interfaces that evolve with models." },
+    "text": { "tr": "Managed Agents, modelle birlikte evrilen harness arayüzleri için önemli bir izleme referansıdır.", "en": "Managed Agents is an important WATCH reference for harness interfaces that evolve with models." },
     "sourceIds": ["anthropic-managed-agents", "anthropic-harness-design"],
     "subjectIds": ["anthropic-managed-agents"],
     "reviewedAt": "2026-09-02",
@@ -200,70 +200,70 @@
   {
     "id": "deepseek-radar-trial",
     "kind": "watch-signal",
-    "text": { "tr": "DeepSeek Harness'ın açık eklenti mimarisi denemeye değer; preview uyarısı üretim temkinini gerektirir.", "en": "DeepSeek Harness's open plugin architecture merits a trial; its preview warning requires production caution." },
+    "text": { "tr": "DeepSeek Harness'ın açık eklenti mimarisi denemeye değer; önizleme uyarısı üretimde temkin gerektirir.", "en": "DeepSeek Harness's open plugin architecture merits a trial; its preview warning requires production caution." },
     "sourceIds": ["deepseek-harness-repo"],
     "subjectIds": ["deepseek-harness"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "TRIAL kararı resmi preview durumuyla sınırlanmıştır.", "en": "The TRIAL decision is bounded by the official preview status." }
+    "confidence": { "tr": "Deneme kararı resmî önizleme durumuyla sınırlanmıştır.", "en": "The TRIAL decision is bounded by the official preview status." }
   },
   {
     "id": "microsoft-radar-trial",
     "kind": "synthesis",
-    "text": { "tr": "Microsoft harness kurumsal yetenek kapsamı nedeniyle TRIAL; yeni sürüm olduğu için olgunluk izlenmelidir.", "en": "Microsoft's harness is TRIAL for its enterprise capability coverage; maturity should be monitored because the release is new." },
+    "text": { "tr": "Microsoft harness, kurumsal yetenek kapsamı nedeniyle deneme konumundadır; yeni sürüm olduğu için olgunluğu izlenmelidir.", "en": "Microsoft's harness is TRIAL for its enterprise capability coverage; maturity should be monitored because the release is new." },
     "sourceIds": ["microsoft-agent-framework-harness"],
     "subjectIds": ["microsoft-agent-framework"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; özellik kapsamı resmi, olgunluk değerlendirmesi editoryaldir.", "en": "HNS interpretation: capability coverage is official; the maturity assessment is editorial." }
+    "confidence": { "tr": "HNS yorumu; özellik kapsamı resmî, olgunluk değerlendirmesi editoryaldir.", "en": "HNS interpretation: capability coverage is official; the maturity assessment is editorial." }
   },
   {
     "id": "deep-agents-radar-adopt",
     "kind": "synthesis",
-    "text": { "tr": "Deep Agents, framework/runtime/harness ayrımını incelemek için ADOPT referans mimarisidir.", "en": "Deep Agents is an ADOPT reference architecture for studying the framework/runtime/harness distinction." },
+    "text": { "tr": "Deep Agents, çatı/çalışma zamanı/harness ayrımını incelemek için benimseme referans mimarisidir.", "en": "Deep Agents is an ADOPT reference architecture for studying the framework/runtime/harness distinction." },
     "sourceIds": ["langchain-products"],
     "subjectIds": ["langchain-deep-agents"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; resmi taksonomi ve özellik setine dayanıyor.", "en": "HNS interpretation based on official taxonomy and capability set." }
+    "confidence": { "tr": "HNS yorumu; resmî sınıflandırma ve özellik kümesine dayanıyor.", "en": "HNS interpretation based on official taxonomy and capability set." }
   },
   {
     "id": "langgraph-radar-adopt",
     "kind": "synthesis",
-    "text": { "tr": "LangGraph, durable stateful agent runtime'larını anlamak için ADOPT referansıdır.", "en": "LangGraph is an ADOPT reference for understanding durable stateful agent runtimes." },
+    "text": { "tr": "LangGraph, kalıcı ve durum bilgili ajan çalışma zamanlarını anlamak için benimseme referansıdır.", "en": "LangGraph is an ADOPT reference for understanding durable stateful agent runtimes." },
     "sourceIds": ["langchain-products"],
     "subjectIds": ["langgraph"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; resmi runtime tanımı ve dayanıklılık özelliklerine dayanıyor.", "en": "HNS interpretation based on the official runtime definition and durability features." }
+    "confidence": { "tr": "HNS yorumu; resmî çalışma zamanı tanımı ve dayanıklılık özelliklerine dayanıyor.", "en": "HNS interpretation based on the official runtime definition and durability features." }
   },
   {
     "id": "google-adk-radar-trial",
     "kind": "synthesis",
-    "text": { "tr": "ADK, durable eklentiler ve execution entegrasyonları nedeniyle TRIAL için uygundur.", "en": "ADK is suitable for TRIAL because of its durable plugins and execution integrations." },
+    "text": { "tr": "ADK, kalıcı yürütme eklentileri ve bütünleştirmeleri nedeniyle deneme için uygundur.", "en": "ADK is suitable for TRIAL because of its durable plugins and execution integrations." },
     "sourceIds": ["google-agent-runtime", "google-adk-restate"],
     "subjectIds": ["google-adk"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; iki resmi entegrasyon dokümanına dayanıyor.", "en": "HNS interpretation based on two official integration documents." }
+    "confidence": { "tr": "HNS yorumu; iki resmî bütünleştirme belgesine dayanıyor.", "en": "HNS interpretation based on two official integration documents." }
   },
   {
     "id": "google-runtime-radar-watch",
     "kind": "watch-signal",
-    "text": { "tr": "Agent Runtime'ın kalıcı sandbox yaklaşımı yürütme katmanı için izlenmelidir.", "en": "Agent Runtime's persistent sandbox approach should be watched at the execution layer." },
+    "text": { "tr": "Agent Runtime'ın kalıcı korumalı alan yaklaşımı yürütme katmanı için izlenmelidir.", "en": "Agent Runtime's persistent sandbox approach should be watched at the execution layer." },
     "sourceIds": ["google-agent-runtime"],
     "subjectIds": ["google-agent-runtime"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Erken sinyal; resmi capability doğrulansa da bağımsız olgunluk verisi yoktur.", "en": "Early signal: the capability is official, but independent maturity evidence is unavailable." }
+    "confidence": { "tr": "Erken sinyal; resmî yetenek doğrulansa da bağımsız olgunluk verisi yoktur.", "en": "Early signal: the capability is official, but independent maturity evidence is unavailable." }
   },
   {
     "id": "openhands-radar-trial",
     "kind": "synthesis",
-    "text": { "tr": "OpenHands SDK, model-agnostic software-agent altyapısı için TRIAL adayıdır.", "en": "OpenHands SDK is a TRIAL candidate for model-agnostic software-agent infrastructure." },
+    "text": { "tr": "OpenHands SDK, modelden bağımsız yazılım ajanı altyapısı için deneme adayıdır.", "en": "OpenHands SDK is a TRIAL candidate for model-agnostic software-agent infrastructure." },
     "sourceIds": ["openhands-sdk"],
     "subjectIds": ["openhands-sdk"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; resmi SDK kapsamına dayanıyor.", "en": "HNS interpretation based on the official SDK scope." }
+    "confidence": { "tr": "HNS yorumu; resmî SDK kapsamına dayanıyor.", "en": "HNS interpretation based on the official SDK scope." }
   },
   {
     "id": "mini-radar-experiment",
     "kind": "synthesis",
-    "text": { "tr": "mini-SWE-agent, harness karmaşıklığının etkisini ayırmak için EXPERIMENT baseline'ıdır.", "en": "mini-SWE-agent is an EXPERIMENT baseline for isolating the effect of harness complexity." },
+    "text": { "tr": "mini-SWE-agent, harness karmaşıklığının etkisini ayırmak için deney tabanıdır.", "en": "mini-SWE-agent is an EXPERIMENT baseline for isolating the effect of harness complexity." },
     "sourceIds": ["mini-swe-agent-repo"],
     "subjectIds": ["mini-swe-agent"],
     "reviewedAt": "2026-09-02",
@@ -272,56 +272,56 @@
   {
     "id": "pydantic-radar-trial",
     "kind": "synthesis",
-    "text": { "tr": "Pydantic AI, birden çok durable backend'i karşılaştırmak için TRIAL referansıdır.", "en": "Pydantic AI is a TRIAL reference for comparing multiple durable backends." },
+    "text": { "tr": "Pydantic AI, birden çok kalıcı yürütme arka ucunu karşılaştırmak için deneme referansıdır.", "en": "Pydantic AI is a TRIAL reference for comparing multiple durable backends." },
     "sourceIds": ["pydantic-durable-execution"],
     "subjectIds": ["pydantic-ai"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; resmi desteklenen entegrasyon listesine dayanıyor.", "en": "HNS interpretation based on the list of officially supported integrations." }
+    "confidence": { "tr": "HNS yorumu; resmî desteklenen bütünleştirme listesine dayanıyor.", "en": "HNS interpretation based on the list of officially supported integrations." }
   },
   {
     "id": "weekly-layer-convergence",
     "kind": "synthesis",
-    "text": { "tr": "Önde gelen ekosistemler framework, runtime, harness ve orchestration katmanlarını daha açık biçimde ayırmaya başlıyor.", "en": "Leading ecosystems are beginning to separate framework, runtime, harness, and orchestration layers more explicitly." },
+    "text": { "tr": "Önde gelen ekosistemler çatı, çalışma zamanı, harness ve orkestrasyon katmanlarını daha açık biçimde ayırmaya başlıyor.", "en": "Leading ecosystems are beginning to separate framework, runtime, harness, and orchestration layers more explicitly." },
     "sourceIds": ["openai-symphony", "microsoft-agent-framework-harness", "langchain-products", "google-agent-runtime"],
     "subjectIds": ["openai-symphony", "microsoft-agent-framework", "langchain-deep-agents", "langgraph", "google-agent-runtime"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Birden çok resmi kaynaktan türetilen HNS sentezidir; bağımsız pazar ölçümü değildir.", "en": "HNS synthesis derived from multiple official sources; it is not an independent market measurement." }
+    "confidence": { "tr": "Birden çok resmî kaynaktan türetilen HNS sentezidir; bağımsız pazar ölçümü değildir.", "en": "HNS synthesis derived from multiple official sources; it is not an independent market measurement." }
   },
   {
     "id": "hermes-learning-loop",
     "kind": "evidence",
-    "text": { "tr": "Hermes Agent tamamlanan görevlerden yeniden kullanılabilir Markdown skill dosyaları üretir ve bunları FTS5 ile geri çağırır.", "en": "Hermes Agent produces reusable Markdown skill files from completed tasks and retrieves them via FTS5." },
+    "text": { "tr": "Hermes Agent tamamlanan görevlerden yeniden kullanılabilir Markdown beceri dosyaları üretir ve bunları FTS5 ile geri çağırır.", "en": "Hermes Agent produces reusable Markdown skill files from completed tasks and retrieves them via FTS5." },
     "sourceIds": ["hermes-agent-repo", "hermes-agent-docs"],
     "subjectIds": ["hermes-agent"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi depo ve dokümanlarda kapalı öğrenme döngüsü olarak tanımlanıyor.", "en": "Described as a closed learning loop in the official repository and documentation." }
+    "confidence": { "tr": "Resmî depo ve belgelerde kapalı öğrenme döngüsü olarak tanımlanıyor.", "en": "Described as a closed learning loop in the official repository and documentation." }
   },
   {
     "id": "hermes-persistent-memory",
     "kind": "evidence",
-    "text": { "tr": "Hermes, MEMORY.md ve USER.md üzerinden session'lar arası kullanıcı ve proje hafızası taşır.", "en": "Hermes carries user and project memory across sessions via MEMORY.md and USER.md." },
+    "text": { "tr": "Hermes, MEMORY.md ve USER.md üzerinden oturumlar arası kullanıcı ve proje belleği taşır.", "en": "Hermes carries user and project memory across sessions via MEMORY.md and USER.md." },
     "sourceIds": ["hermes-agent-docs"],
     "subjectIds": ["hermes-agent"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi özellik sayfasında üç katmanlı belleğin parçası olarak listeleniyor.", "en": "Listed in the official features page as part of the three-layer memory stack." }
+    "confidence": { "tr": "Resmî özellik sayfasında üç katmanlı belleğin parçası olarak listeleniyor.", "en": "Listed in the official features page as part of the three-layer memory stack." }
   },
   {
     "id": "hermes-mcp-toolsets",
     "kind": "evidence",
-    "text": { "tr": "Hermes 80+ yerleşik araç ve toolset sağlar; MCP üzerinden dinamik olarak genişler.", "en": "Hermes ships 80+ built-in tools organized into toolsets and extends dynamically through MCP." },
+    "text": { "tr": "Hermes 80'den fazla yerleşik araç ve araç kümesi sağlar; MCP üzerinden dinamik olarak genişler.", "en": "Hermes ships 80+ built-in tools organized into toolsets and extends dynamically through MCP." },
     "sourceIds": ["hermes-agent-docs"],
     "subjectIds": ["hermes-agent"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi araç referansında 80+ araç ve toolset kategorileri sayılır.", "en": "Official tool reference enumerates 80+ tools and toolset categories." }
+    "confidence": { "tr": "Resmî araç referansında 80'den fazla araç ve araç kümesi kategorileri sayılır.", "en": "Official tool reference enumerates 80+ tools and toolset categories." }
   },
   {
     "id": "hermes-multi-platform-gateway",
     "kind": "evidence",
-    "text": { "tr": "Tek bir Hermes gateway süreci Telegram, Discord, Slack, WhatsApp, Signal ve CLI kanallarını aynı anda yönetir.", "en": "A single Hermes gateway process serves Telegram, Discord, Slack, WhatsApp, Signal, and CLI channels simultaneously." },
+    "text": { "tr": "Tek bir Hermes ağ geçidi süreci Telegram, Discord, Slack, WhatsApp, Signal ve CLI kanallarını aynı anda yönetir.", "en": "A single Hermes gateway process serves Telegram, Discord, Slack, WhatsApp, Signal, and CLI channels simultaneously." },
     "sourceIds": ["hermes-agent-docs"],
     "subjectIds": ["hermes-agent"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi özellik ve kurulum belgelerinde altı kanal tek gateway olarak anlatılıyor.", "en": "Official features and setup documentation describe the six channels as a single gateway." }
+    "confidence": { "tr": "Resmî özellik ve kurulum belgelerinde altı kanal tek ağ geçidi olarak anlatılıyor.", "en": "Official features and setup documentation describe the six channels as a single gateway." }
   },
   {
     "id": "hermes-radar-watch",
@@ -330,43 +330,43 @@
     "sourceIds": ["hermes-agent-repo", "hermes-agent-docs"],
     "subjectIds": ["hermes-agent"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; benzersiz bir bellek/skill mimarisi var, olgunluk sinyali erken.", "en": "HNS interpretation: the memory and skill architecture is unique; maturity evidence is early." }
+    "confidence": { "tr": "HNS yorumu; benzersiz bir bellek/beceri mimarisi var, olgunluk sinyali erken.", "en": "HNS interpretation: the memory and skill architecture is unique; maturity evidence is early." }
   },
   {
     "id": "claude-subagent-isolation",
     "kind": "evidence",
-    "text": { "tr": "Claude Code subagent'ları ayrı context penceresi, izin seti ve opsiyonel worktree izolasyonu ile çalışır.", "en": "Claude Code subagents run with their own context window, permission set, and optional worktree isolation." },
+    "text": { "tr": "Claude Code alt ajanları ayrı bağlam penceresi, izin kümesi ve isteğe bağlı çalışma ağacı yalıtımıyla çalışır.", "en": "Claude Code subagents run with their own context window, permission set, and optional worktree isolation." },
     "sourceIds": ["claude-code-docs"],
     "subjectIds": ["claude-code"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi subagent dokümanında yapı ve alanlar açıkça listelenir.", "en": "The official subagent documentation explicitly lists the structure and fields." }
+    "confidence": { "tr": "Resmî alt ajan belgesinde yapı ve alanlar açıkça listelenir.", "en": "The official subagent documentation explicitly lists the structure and fields." }
   },
   {
     "id": "claude-permission-modes",
     "kind": "evidence",
-    "text": { "tr": "Claude Code izin modları manuel, auto, plan ve bypassPermissions arasında anahtarlanır; yıkıcı komutlar yine de onay ister.", "en": "Claude Code permission modes switch between manual, auto, plan, and bypassPermissions; destructive commands still prompt." },
+    "text": { "tr": "Claude Code izin modları manuel, otomatik, planlama ve izinleri atlama arasında değiştirilir; yıkıcı komutlar yine de onay ister.", "en": "Claude Code permission modes switch between manual, auto, plan, and bypassPermissions; destructive commands still prompt." },
     "sourceIds": ["claude-code-whats-new-w32"],
     "subjectIds": ["claude-code"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi haftalık sürüm notlarında auto mode varsayılanı ve yıkıcı komut guard'ı belirtiliyor.", "en": "Official weekly release notes state auto mode default and the destructive-command guard." }
+    "confidence": { "tr": "Resmî haftalık sürüm notlarında otomatik mod varsayılanı ve yıkıcı komut koruması belirtiliyor.", "en": "Official weekly release notes state auto mode default and the destructive-command guard." }
   },
   {
     "id": "claude-self-hosted-runner",
     "kind": "evidence",
-    "text": { "tr": "Claude Code self-hosted runner, bulut oturumlarını kurumun kendi altyapısında yürütür.", "en": "Claude Code self-hosted runners execute cloud sessions on the organization's own infrastructure." },
+    "text": { "tr": "Claude Code'un kendi altyapısında çalışan yürütücüsü, bulut oturumlarını kurumun altyapısında yürütür.", "en": "Claude Code self-hosted runners execute cloud sessions on the organization's own infrastructure." },
     "sourceIds": ["claude-code-whats-new-w32"],
     "subjectIds": ["claude-code"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi notlarda self-hosted environment özelliği ve `claude self-hosted-runner` komutu duyurulur.", "en": "Official notes announce the self-hosted environment feature and the `claude self-hosted-runner` command." }
+    "confidence": { "tr": "Resmî notlarda kendi altyapısında çalışma özelliği ve `claude self-hosted-runner` komutu duyurulur.", "en": "Official notes announce the self-hosted environment feature and the `claude self-hosted-runner` command." }
   },
   {
     "id": "claude-radar-adopt",
     "kind": "synthesis",
-    "text": { "tr": "Claude Code, subagent izolasyonu ve izin modeli için ADOPT referansı niteliğindedir.", "en": "Claude Code is an ADOPT reference for subagent isolation and its permission model." },
+    "text": { "tr": "Claude Code, alt ajan yalıtımı ve izin modeli için benimseme referansı niteliğindedir.", "en": "Claude Code is an ADOPT reference for subagent isolation and its permission model." },
     "sourceIds": ["claude-code-docs", "claude-code-whats-new-w32"],
     "subjectIds": ["claude-code"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; subagent ve izin modelleri açıkça belgelenmiş olgun ürün özellikleridir.", "en": "HNS interpretation: subagent and permission models are explicitly documented mature product features." }
+    "confidence": { "tr": "HNS yorumu; alt ajan ve izin modelleri açıkça belgelenmiş olgun ürün özellikleridir.", "en": "HNS interpretation: subagent and permission models are explicitly documented mature product features." }
   },
   {
     "id": "opencode-lsp-loop",
@@ -375,7 +375,7 @@
     "sourceIds": ["opencode-repo"],
     "subjectIds": ["opencode"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi belgelerde 20+ dil için LSP entegrasyonu ayrıntılı olarak açıklanıyor.", "en": "Official documentation describes LSP integration for 20+ languages in detail." }
+    "confidence": { "tr": "Resmî belgelerde 20'den fazla dil için LSP bütünleştirmesi ayrıntılı olarak açıklanıyor.", "en": "Official documentation describes LSP integration for 20+ languages in detail." }
   },
   {
     "id": "opencode-provider-agnostic",
@@ -389,16 +389,16 @@
   {
     "id": "opencode-build-plan-agents",
     "kind": "evidence",
-    "text": { "tr": "OpenCode üç yerleşik ajan sunar: Build (tam erişim), Plan (salt okunur) ve genel subagent.", "en": "OpenCode ships three built-in agents: Build (full access), Plan (read-only), and a general subagent." },
+    "text": { "tr": "OpenCode üç yerleşik ajan sunar: Oluşturma (tam erişim), Planlama (salt okunur) ve genel alt ajan.", "en": "OpenCode ships three built-in agents: Build (full access), Plan (read-only), and a general subagent." },
     "sourceIds": ["opencode-repo"],
     "subjectIds": ["opencode"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi dokümanlar /init ve Tab ile mod geçişini ayrıntılı olarak anlatır.", "en": "Official documentation describes `/init` and Tab mode switching in detail." }
+    "confidence": { "tr": "Resmî belgeler /init ve Tab ile mod geçişini ayrıntılı olarak anlatır.", "en": "Official documentation describes `/init` and Tab mode switching in detail." }
   },
   {
     "id": "opencode-radar-adopt",
     "kind": "synthesis",
-    "text": { "tr": "OpenCode, sağlayıcı-agnostik bir coding harness olarak ADOPT referansıdır.", "en": "OpenCode is an ADOPT reference as a provider-agnostic coding harness." },
+    "text": { "tr": "OpenCode, sağlayıcıdan bağımsız bir kodlama harness'ı olarak benimseme referansıdır.", "en": "OpenCode is an ADOPT reference as a provider-agnostic coding harness." },
     "sourceIds": ["opencode-repo"],
     "subjectIds": ["opencode"],
     "reviewedAt": "2026-09-02",
@@ -407,34 +407,34 @@
   {
     "id": "aider-architect-editor",
     "kind": "evidence",
-    "text": { "tr": "Aider'ın architect/editor modu planlama için güçlü bir model, uygulama için hızlı bir editör modeli ayırır.", "en": "Aider's architect/editor mode separates a strong model for planning from a fast editor model for implementation." },
+    "text": { "tr": "Aider'ın mimar/düzenleyici modu planlama için güçlü bir model, uygulama için hızlı bir düzenleyici model ayırır.", "en": "Aider's architect/editor mode separates a strong model for planning from a fast editor model for implementation." },
     "sourceIds": ["aider-repo"],
     "subjectIds": ["aider"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi belgeler `--architect` ve `--editor-model` bayraklarını ayrıntılı olarak açıklar.", "en": "Official documentation describes the `--architect` and `--editor-model` flags in detail." }
+    "confidence": { "tr": "Resmî belgeler `--architect` ve `--editor-model` bayraklarını ayrıntılı olarak açıklar.", "en": "Official documentation describes the `--architect` and `--editor-model` flags in detail." }
   },
   {
     "id": "aider-atomic-commits",
     "kind": "evidence",
-    "text": { "tr": "Aider her değişikliği açıklayıcı mesajlı atomik git commit'i olarak yazar; geri alma standart git komutlarıyla yapılır.", "en": "Aider writes every change as an atomic git commit with a descriptive message; rollback uses standard git." },
+    "text": { "tr": "Aider her değişikliği açıklayıcı mesajlı atomik git işlemesi olarak yazar; geri alma standart git komutlarıyla yapılır.", "en": "Aider writes every change as an atomic git commit with a descriptive message; rollback uses standard git." },
     "sourceIds": ["aider-repo"],
     "subjectIds": ["aider"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "README ve konfigürasyon belgeleri otomatik commit semantiğini tanımlar.", "en": "README and configuration documentation define the auto-commit semantics." }
+    "confidence": { "tr": "README ve yapılandırma belgeleri otomatik işleme anlamını tanımlar.", "en": "README and configuration documentation define the auto-commit semantics." }
   },
   {
     "id": "aider-repo-map",
     "kind": "evidence",
-    "text": { "tr": "Aider'ın repo-map'i tree-sitter ile çok dosyalı kod tabanlarını özetler ve context bütçesini korur.", "en": "Aider's repo-map uses tree-sitter to summarize multi-file codebases and protect the context budget." },
+    "text": { "tr": "Aider'ın depo haritası, tree-sitter ile çok dosyalı kod tabanlarını özetler ve bağlam bütçesini korur.", "en": "Aider's repo-map uses tree-sitter to summarize multi-file codebases and protect the context budget." },
     "sourceIds": ["aider-repo"],
     "subjectIds": ["aider"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi belgeler repo-map'in büyük depolarda nasıl çalıştığını açıklar.", "en": "Official documentation explains how repo-map operates on large repositories." }
+    "confidence": { "tr": "Resmî belgeler depo haritasının büyük depolarda nasıl çalıştığını açıklar.", "en": "Official documentation explains how repo-map operates on large repositories." }
   },
   {
     "id": "aider-radar-trial",
     "kind": "synthesis",
-    "text": { "tr": "Aider, git-native pair programming için TRIAL referansıdır.", "en": "Aider is a TRIAL reference for git-native pair programming." },
+    "text": { "tr": "Aider, git yerel eşli programlama için deneme referansıdır.", "en": "Aider is a TRIAL reference for git-native pair programming." },
     "sourceIds": ["aider-repo"],
     "subjectIds": ["aider"],
     "reviewedAt": "2026-09-02",
@@ -443,25 +443,25 @@
   {
     "id": "cline-plan-act",
     "kind": "evidence",
-    "text": { "tr": "Cline Plan modunda kod değiştirmeden plan üretir; Act modunda her dosya ve komut için onay ister.", "en": "Cline's Plan mode produces a plan without modifying code; Act mode asks for approval before every file change and command." },
+    "text": { "tr": "Cline planlama modunda kodu değiştirmeden plan üretir; uygulama modunda her dosya ve komut için onay ister.", "en": "Cline's Plan mode produces a plan without modifying code; Act mode asks for approval before every file change and command." },
     "sourceIds": ["cline-repo"],
     "subjectIds": ["cline"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi README Plan/Act modlarını ve onaylı yürütümü açıkça anlatır.", "en": "The official README explicitly describes Plan/Act modes and approval-gated execution." }
+    "confidence": { "tr": "Resmî README planlama/uygulama modlarını ve onaylı yürütümü açıkça anlatır.", "en": "The official README explicitly describes Plan/Act modes and approval-gated execution." }
   },
   {
     "id": "cline-mcp-tool-creation",
     "kind": "evidence",
-    "text": { "tr": "Cline kendi MCP sunucularını oluşturabilir ve MCP marketplace'inden ek araçlar yükleyebilir.", "en": "Cline can create its own MCP servers and load additional tools from the MCP marketplace." },
+    "text": { "tr": "Cline kendi MCP sunucularını oluşturabilir ve MCP pazarından ek araçlar yükleyebilir.", "en": "Cline can create its own MCP servers and load additional tools from the MCP marketplace." },
     "sourceIds": ["cline-repo"],
     "subjectIds": ["cline"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi belgelerde MCP marketplace ve runtime tool oluşturma yeteneği listelenir.", "en": "Official documentation lists the MCP marketplace and runtime tool creation." }
+    "confidence": { "tr": "Resmî belgelerde MCP pazarı ve çalışma zamanında araç oluşturma yeteneği listelenir.", "en": "Official documentation lists the MCP marketplace and runtime tool creation." }
   },
   {
     "id": "cline-byok",
     "kind": "evidence",
-    "text": { "tr": "Cline, Anthropic, OpenAI, Google, Bedrock, Vertex, OpenRouter, Groq, Cerebras, DeepSeek ve yerel Ollama dahil BYOK destekler.", "en": "Cline supports BYOK across Anthropic, OpenAI, Google, Bedrock, Vertex, OpenRouter, Groq, Cerebras, DeepSeek, and local Ollama." },
+    "text": { "tr": "Cline; Anthropic, OpenAI, Google, Bedrock, Vertex, OpenRouter, Groq, Cerebras, DeepSeek ve yerel Ollama dahil kendi anahtarını kullanma seçeneğini destekler.", "en": "Cline supports BYOK across Anthropic, OpenAI, Google, Bedrock, Vertex, OpenRouter, Groq, Cerebras, DeepSeek, and local Ollama." },
     "sourceIds": ["cline-repo"],
     "subjectIds": ["cline"],
     "reviewedAt": "2026-09-02",
@@ -470,11 +470,11 @@
   {
     "id": "cline-radar-trial",
     "kind": "synthesis",
-    "text": { "tr": "Cline, IDE-içi approval-gated ajanlar için TRIAL referansıdır.", "en": "Cline is a TRIAL reference for IDE-resident approval-gated agents." },
+    "text": { "tr": "Cline, IDE içinde onay kapısıyla çalışan ajanlar için deneme referansıdır.", "en": "Cline is a TRIAL reference for IDE-resident approval-gated agents." },
     "sourceIds": ["cline-repo"],
     "subjectIds": ["cline"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; onay ve BYOK bileşimi net bir farklılaşmadır.", "en": "HNS interpretation: the combination of approval gating and BYOK is a clear differentiator." }
+    "confidence": { "tr": "HNS yorumu; onay ve kendi anahtarını kullanma seçeneğinin birleşimi net bir farklılaşmadır.", "en": "HNS interpretation: the combination of approval gating and BYOK is a clear differentiator." }
   },
   {
     "id": "goose-aaif-governance",
@@ -483,7 +483,7 @@
     "sourceIds": ["goose-aaif-blog", "aaif-launch"],
     "subjectIds": ["goose"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi blog duyurusu ve Linux Foundation basın bülteni bağışı doğrular.", "en": "The official blog announcement and Linux Foundation press release confirm the donation." }
+    "confidence": { "tr": "Resmî blog duyurusu ve Linux Foundation basın bülteni bağışı doğrular.", "en": "The official blog announcement and Linux Foundation press release confirm the donation." }
   },
   {
     "id": "goose-mcp-extensions",
@@ -497,56 +497,56 @@
   {
     "id": "goose-custom-distro",
     "kind": "evidence",
-    "text": { "tr": "Goose Custom Distro konsepti, kuruluşların önceden yapılandırılmış ajan paketleri oluşturmasına izin verir.", "en": "Goose's Custom Distro concept lets organizations ship pre-configured agent bundles." },
+    "text": { "tr": "Goose Özel Dağıtım kavramı, kuruluşların önceden yapılandırılmış ajan paketleri oluşturmasına izin verir.", "en": "Goose's Custom Distro concept lets organizations ship pre-configured agent bundles." },
     "sourceIds": ["goose-aaif-blog"],
     "subjectIds": ["goose"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi blog yazısında Custom Distro kapsamı listelenir.", "en": "The official blog post lists the Custom Distro scope." }
+    "confidence": { "tr": "Resmî blog yazısında Özel Dağıtım kapsamı listelenir.", "en": "The official blog post lists the Custom Distro scope." }
   },
   {
     "id": "goose-radar-trial",
     "kind": "synthesis",
-    "text": { "tr": "Goose, tarafsız yönetim altındaki MCP referans ajanı olarak TRIAL listesindedir.", "en": "Goose is a TRIAL candidate as the reference agent for MCP under neutral governance." },
+    "text": { "tr": "Goose, tarafsız yönetim altındaki MCP referans ajanı olarak deneme listesindedir.", "en": "Goose is a TRIAL candidate as the reference agent for MCP under neutral governance." },
     "sourceIds": ["goose-aaif-blog", "aaif-launch"],
     "subjectIds": ["goose"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; AAIF governance ve geniş MCP ekosistemi kombinasyonu izlemeye değer.", "en": "HNS interpretation: AAIF governance plus a broad MCP ecosystem is worth tracking." }
+    "confidence": { "tr": "HNS yorumu; AAIF yönetişimi ve geniş MCP ekosisteminin birleşimi izlemeye değer.", "en": "HNS interpretation: AAIF governance plus a broad MCP ecosystem is worth tracking." }
   },
   {
     "id": "codex-cli-kernel-sandbox",
     "kind": "evidence",
-    "text": { "tr": "Codex CLI macOS'ta Seatbelt, Linux'ta bubblewrap + Landlock + seccomp ile çekirdek seviyesinde sandbox uygular.", "en": "Codex CLI applies kernel-level sandboxing via macOS Seatbelt and Linux bubblewrap + Landlock + seccomp." },
+    "text": { "tr": "Codex CLI macOS'ta Seatbelt, Linux'ta bubblewrap + Landlock + seccomp ile çekirdek seviyesinde korumalı alan uygular.", "en": "Codex CLI applies kernel-level sandboxing via macOS Seatbelt and Linux bubblewrap + Landlock + seccomp." },
     "sourceIds": ["codex-cli-repo"],
     "subjectIds": ["openai-codex-cli"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi depo README ve mimari belgeleri sandbox uygulamasını platform bazında açıklar.", "en": "Official repository README and architecture documents describe the platform-by-platform sandbox implementation." }
+    "confidence": { "tr": "Resmî depo README'si ve mimari belgeleri korumalı alan uygulamasını platform bazında açıklar.", "en": "Official repository README and architecture documents describe the platform-by-platform sandbox implementation." }
   },
   {
     "id": "codex-cli-persistent-thread",
     "kind": "evidence",
-    "text": { "tr": "Codex CLI thread'leri SQLite ile kalıcıdır; process yeniden başlatılsa bile resume, fork ve rollback yapılabilir.", "en": "Codex CLI threads persist in SQLite and can be resumed, forked, or rolled back across process restarts." },
+    "text": { "tr": "Codex CLI görevleri SQLite ile kalıcıdır; süreç yeniden başlatılsa bile sürdürme, çatallama ve geri alma yapılabilir.", "en": "Codex CLI threads persist in SQLite and can be resumed, forked, or rolled back across process restarts." },
     "sourceIds": ["codex-cli-repo"],
     "subjectIds": ["openai-codex-cli"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi mimari belgeler SQLite tabanlı thread modelini açıklar.", "en": "Official architecture documentation describes the SQLite-backed thread model." }
+    "confidence": { "tr": "Resmî mimari belgeler SQLite tabanlı görev modelini açıklar.", "en": "Official architecture documentation describes the SQLite-backed thread model." }
   },
   {
     "id": "codex-cli-approval-policy",
     "kind": "evidence",
-    "text": { "tr": "Codex CLI dört sandbox kipini (read-only, workspace-write, full-disk-write-access, danger-full-access) destekler.", "en": "Codex CLI supports four sandbox modes: read-only, workspace-write, full-disk-write-access, and danger-full-access." },
+    "text": { "tr": "Codex CLI dört korumalı alan kipini destekler: salt okunur, çalışma alanına yazma, tüm diske yazma ve sınırsız erişim.", "en": "Codex CLI supports four sandbox modes: read-only, workspace-write, full-disk-write-access, and danger-full-access." },
     "sourceIds": ["codex-cli-repo"],
     "subjectIds": ["openai-codex-cli"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi docs.codex sayfası dört kipi ve `--sandbox` bayrağını ayrıntılı olarak listeler.", "en": "Official docs.codex page lists the four modes and the `--sandbox` flag in detail." }
+    "confidence": { "tr": "Resmî Codex belgesi dört kipi ve `--sandbox` bayrağını ayrıntılı olarak listeler.", "en": "Official docs.codex page lists the four modes and the `--sandbox` flag in detail." }
   },
   {
     "id": "codex-cli-radar-adopt",
     "kind": "synthesis",
-    "text": { "tr": "Codex CLI, çekirdek seviyesinde sandboxing ve kalıcı thread mimarisi için ADOPT referansıdır.", "en": "Codex CLI is an ADOPT reference for kernel-level sandboxing and persistent thread architecture." },
+    "text": { "tr": "Codex CLI, çekirdek seviyesinde korumalı alan ve kalıcı görev mimarisi için benimseme referansıdır.", "en": "Codex CLI is an ADOPT reference for kernel-level sandboxing and persistent thread architecture." },
     "sourceIds": ["codex-cli-repo"],
     "subjectIds": ["openai-codex-cli"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; kernel sandbox + SQLite thread çifti benzersiz bir teknik kombinasyondur.", "en": "HNS interpretation: the kernel sandbox + SQLite thread pair is a unique technical combination." }
+    "confidence": { "tr": "HNS yorumu; çekirdek korumalı alanı ve SQLite görev modelinin birleşimi benzersiz bir teknik yapıdır.", "en": "HNS interpretation: the kernel sandbox + SQLite thread pair is a unique technical combination." }
   },
   {
     "id": "kiro-spec-driven",
@@ -555,16 +555,16 @@
     "sourceIds": ["kiro-docs"],
     "subjectIds": ["aws-kiro"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi kiro.dev sayfası üç aşamalı spec akışını ve onay döngüsünü açıkça anlatır.", "en": "The official kiro.dev page explicitly describes the three-stage spec flow and approval loop." }
+    "confidence": { "tr": "Resmî kiro.dev sayfası üç aşamalı belirtim akışını ve onay döngüsünü açıkça anlatır.", "en": "The official kiro.dev page explicitly describes the three-stage spec flow and approval loop." }
   },
   {
     "id": "kiro-agent-hooks",
     "kind": "evidence",
-    "text": { "tr": "Kiro agent hooks dosya kaydetme, PR açma ve repo olaylarında ajan eylemlerini otomatik tetikler.", "en": "Kiro's agent hooks trigger agent actions on file save, PR open, and other repository events." },
+    "text": { "tr": "Kiro ajan tetikleyicileri dosya kaydetme, PR açma ve depo olaylarında ajan eylemlerini otomatik başlatır.", "en": "Kiro's agent hooks trigger agent actions on file save, PR open, and other repository events." },
     "sourceIds": ["kiro-docs"],
     "subjectIds": ["aws-kiro"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi sayfada event-driven hook'lar özellik olarak listelenir.", "en": "Event-driven hooks are listed as a feature on the official page." }
+    "confidence": { "tr": "Resmî sayfada olay güdümlü tetikleyiciler özellik olarak listelenir.", "en": "Event-driven hooks are listed as a feature on the official page." }
   },
   {
     "id": "kiro-multi-model-bedrock",
@@ -578,73 +578,73 @@
   {
     "id": "kiro-radar-watch",
     "kind": "watch-signal",
-    "text": { "tr": "Kiro'nun spec-driven yaklaşımı harness tasarımı için izlenmesi gereken yeni bir orkestrasyon sinyali.", "en": "Kiro's spec-driven approach is a watch-worthy new orchestration signal for harness design." },
+    "text": { "tr": "Kiro'nun belirtim odaklı yaklaşımı harness tasarımı için izlenmesi gereken yeni bir orkestrasyon sinyalidir.", "en": "Kiro's spec-driven approach is a watch-worthy new orchestration signal for harness design." },
     "sourceIds": ["kiro-docs"],
     "subjectIds": ["aws-kiro"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; spec-as-source-of-truth yaklaşımı yeni ve henüz geniş bağımsız doğrulama yok.", "en": "HNS interpretation: the spec-as-source-of-truth model is new and lacks broad independent validation." }
+    "confidence": { "tr": "HNS yorumu; belirtimi tek doğruluk kaynağı sayan yaklaşım yeni ve henüz geniş bağımsız doğrulama yok.", "en": "HNS interpretation: the spec-as-source-of-truth model is new and lacks broad independent validation." }
   },
   {
     "id": "manus-cloud-sandbox",
     "kind": "evidence",
-    "text": { "tr": "Manus her oturum için izole bir Linux sandbox açar; Python, Node ve shell erişimi vardır.", "en": "Manus opens an isolated Linux sandbox per session with Python, Node, and shell access." },
+    "text": { "tr": "Manus her görev için ağ, dosya sistemi, tarayıcı ve yazılım araçları bulunan yalıtılmış bir bulut sanal makinesi ayırır.", "en": "Manus allocates an isolated cloud virtual machine for each task with networking, a filesystem, a browser, and software tools." },
     "sourceIds": ["manus-features"],
     "subjectIds": ["manus-ai"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi Manus dokümanı sandbox kapsamını açıkça listeler.", "en": "Official Manus documentation lists the sandbox scope explicitly." }
+    "reviewedAt": "2026-09-04",
+    "confidence": { "tr": "Resmî Manus yazısı korumalı alanın kapsamını ve yalıtımını açıkça listeler.", "en": "The official Manus article explicitly lists the sandbox scope and isolation model." }
   },
   {
     "id": "manus-wide-research",
     "kind": "evidence",
     "text": { "tr": "Manus Wide Research tek bir araştırma görevini paralel yüzlerce alt ajana yayar.", "en": "Manus Wide Research fans a single research task out across hundreds of parallel subagents." },
-    "sourceIds": ["manus-features"],
+    "sourceIds": ["manus-wide-research-source"],
     "subjectIds": ["manus-ai"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi Manus özellik sayfası Wide Research mimarisini tanımlar.", "en": "The official Manus features page defines the Wide Research architecture." }
+    "reviewedAt": "2026-09-04",
+    "confidence": { "tr": "Resmî Manus yazısı Wide Research mimarisini tanımlar.", "en": "The official Manus article defines the Wide Research architecture." }
   },
   {
     "id": "manus-browser-operator",
     "kind": "evidence",
-    "text": { "tr": "Manus Browser Operator kullanıcının oturum açmış tarayıcısında CAPTCHA dostu, otantik IP üzerinden çalışır.", "en": "Manus Browser Operator runs over the user's authenticated browser with an authentic local IP for CAPTCHA-friendly work." },
-    "sourceIds": ["manus-features"],
+    "text": { "tr": "Manus Browser Operator, kullanıcının yetkilendirdiği yerel tarayıcı oturumunda mevcut girişleri ve güvenilen yerel bağlantıyı kullanır.", "en": "Manus Browser Operator uses existing logins and the trusted local connection in a user-authorized local browser session." },
+    "sourceIds": ["manus-browser-operator-source"],
     "subjectIds": ["manus-ai"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmi özellik sayfası Browser Operator'ı ayrıntılı olarak belgeler.", "en": "The official features page documents Browser Operator in detail." }
+    "reviewedAt": "2026-09-04",
+    "confidence": { "tr": "Resmî Manus yazısı Browser Operator'ı ve kullanıcı denetimlerini ayrıntılı olarak belgeler.", "en": "The official Manus article documents Browser Operator and its user controls in detail." }
   },
   {
     "id": "manus-radar-watch",
     "kind": "watch-signal",
-    "text": { "tr": "Manus'un bulut sandbox + paralel araştırma mimarisi managed-harness sınıfı için izlenmesi gereken yeni bir sinyaldir.", "en": "Manus's cloud-sandbox + parallel-research architecture is a watch-worthy signal for the managed-harness class." },
-    "sourceIds": ["manus-features"],
+    "text": { "tr": "Manus'un bulut korumalı alanı ve paralel araştırma mimarisi, yönetilen harness sınıfı için izlenmesi gereken yeni bir sinyaldir.", "en": "Manus's cloud-sandbox and parallel-research architecture is a watch-worthy signal for the managed-harness class." },
+    "sourceIds": ["manus-features", "manus-wide-research-source", "manus-browser-operator-source"],
     "subjectIds": ["manus-ai"],
-    "reviewedAt": "2026-09-02",
+    "reviewedAt": "2026-09-04",
     "confidence": { "tr": "HNS yorumu; hizmet olarak sunuluyor ve geniş bağımsız olgunluk verisi henüz mevcut değil.", "en": "HNS interpretation: the service is delivered as a managed product and broad independent maturity data is not yet available." }
   },
   {
     "id": "weekly-canonicalization",
     "kind": "synthesis",
-    "text": { "tr": "Coding ajan ekosistemi GitHub yıldız sayısı, lisans ve dil seçimine göre farklılaşan üç kanonik referans etrafında kristalize oluyor: Claude Code (proprietary, vendor-modelleri), OpenAI Codex CLI (Rust, kernel sandbox) ve OpenCode (MIT, sağlayıcı-agnostik).", "en": "The coding-agent ecosystem is crystallizing around three canonical references differentiated by stars, license, and language: Claude Code (proprietary, vendor models), OpenAI Codex CLI (Rust, kernel sandbox), and OpenCode (MIT, provider-agnostic)." },
+    "text": { "tr": "Kodlama ajanı ekosistemi; GitHub yıldız sayısı, lisans ve dil seçimine göre farklılaşan üç kanonik referans etrafında kristalleşiyor: Claude Code (kapalı kaynak, sağlayıcı modelleri), OpenAI Codex CLI (Rust, çekirdek korumalı alanı) ve OpenCode (MIT, sağlayıcıdan bağımsız).", "en": "The coding-agent ecosystem is crystallizing around three canonical references differentiated by stars, license, and language: Claude Code (proprietary, vendor models), OpenAI Codex CLI (Rust, kernel sandbox), and OpenCode (MIT, provider-agnostic)." },
     "sourceIds": ["claude-code-whats-new-w32", "codex-cli-repo", "opencode-repo"],
     "subjectIds": ["claude-code", "openai-codex-cli", "opencode"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS sentezi; bağımsız pazar ölçümü değildir, ancak üç çözümün belirgin teknik farkları resmi kaynaklarla desteklenir.", "en": "HNS synthesis: not an independent market measurement, but the three solutions' distinct technical choices are supported by official sources." }
+    "confidence": { "tr": "HNS sentezi; bağımsız pazar ölçümü değildir, ancak üç çözümün belirgin teknik farkları resmî kaynaklarla desteklenir.", "en": "HNS synthesis: not an independent market measurement, but the three solutions' distinct technical choices are supported by official sources." }
   },
   {
     "id": "weekly-permission-divergence",
     "kind": "synthesis",
-    "text": { "tr": "Coding ajanları permission ve sandbox stratejilerinde belirgin biçimde ayrışıyor: kernel seviyesinde sandbox (Codex CLI), uygulama seviyesinde izin modları (Claude Code) ve action bazında onay (Cline, Aider).", "en": "Coding agents are visibly diverging on permission and sandbox strategy: kernel-level sandbox (Codex CLI), application-level permission modes (Claude Code), and per-action approval (Cline, Aider)." },
+    "text": { "tr": "Kodlama ajanları izin ve korumalı alan stratejilerinde belirgin biçimde ayrışıyor: çekirdek seviyesinde korumalı alan (Codex CLI), uygulama seviyesinde izin modları (Claude Code) ve eylem bazında onay (Cline, Aider).", "en": "Coding agents are visibly diverging on permission and sandbox strategy: kernel-level sandbox (Codex CLI), application-level permission modes (Claude Code), and per-action approval (Cline, Aider)." },
     "sourceIds": ["codex-cli-repo", "claude-code-whats-new-w32", "cline-repo", "aider-repo"],
     "subjectIds": ["openai-codex-cli", "claude-code", "cline", "aider"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS sentezi; dört çözümün resmi belgelerinde farklı güvenlik modelleri açıkça anlatılır.", "en": "HNS synthesis: the four solutions' official documentation explicitly describes different security models." }
+    "confidence": { "tr": "HNS sentezi; dört çözümün resmî belgelerinde farklı güvenlik modelleri açıkça anlatılır.", "en": "HNS synthesis: the four solutions' official documentation explicitly describes different security models." }
   },
   {
     "id": "weekly-open-governance",
     "kind": "synthesis",
-    "text": { "tr": "Goose, MCP ve AGENTS.md'nin AAIF/Linux Foundation çatısı altında toplanması agentic açık yönetişim için yeni bir dönüm noktasıdır.", "en": "The gathering of Goose, MCP, and AGENTS.md under AAIF/Linux Foundation marks a new turning point for open agentic governance." },
+    "text": { "tr": "Goose, MCP ve AGENTS.md'nin AAIF/Linux Foundation çatısı altında toplanması, açık ajan yönetişimi için yeni bir dönüm noktasıdır.", "en": "The gathering of Goose, MCP, and AGENTS.md under AAIF/Linux Foundation marks a new turning point for open agentic governance." },
     "sourceIds": ["aaif-launch", "goose-aaif-blog"],
     "subjectIds": ["goose"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS sentezi; resmi Linux Foundation duyurusu ve Goose blog yazısına dayanır.", "en": "HNS synthesis based on the official Linux Foundation announcement and the Goose blog post." }
+    "confidence": { "tr": "HNS sentezi; resmî Linux Foundation duyurusu ve Goose blog yazısına dayanır.", "en": "HNS synthesis based on the official Linux Foundation announcement and the Goose blog post." }
   }
 ]
