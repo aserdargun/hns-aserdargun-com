@@ -586,5 +586,33 @@
     "lastReviewedAt": "2026-09-04",
     "sourceIds": ["manus-features", "manus-wide-research-source", "manus-browser-operator-source"],
     "claimIds": ["manus-cloud-sandbox", "manus-wide-research", "manus-browser-operator", "manus-radar-watch"]
+  },
+  {
+    "id": "lmstudio-bionic",
+    "name": "LM Studio Bionic",
+    "organization": "LM Studio",
+    "canonicalUrl": "https://lmstudio.ai/",
+    "class": "general-harness",
+    "lifecycle": "production",
+    "openSource": "no",
+    "languages": ["Desktop application"],
+    "summary": { "tr": "Açık modelleri yerel, LM Link üzerinden uzak veya sıfır veri saklamalı bulutta çalıştıran; kod, araştırma ve belge işlerine yönelik genel amaçlı ajan harness'ı.", "en": "A general-purpose agentic harness for coding, research, and document work that runs open models locally, remotely through LM Link, or in a Zero-Data-Retention cloud." },
+    "layers": {
+      "execution": { "state": "supported", "claimIds": ["bionic-agentic-harness", "bionic-hybrid-model-execution"] },
+      "tools": { "state": "supported", "claimIds": ["bionic-code-workflow"] },
+      "context": { "state": "supported", "claimIds": ["bionic-project-session-lifecycle"] },
+      "lifecycle": { "state": "supported", "claimIds": ["bionic-project-session-lifecycle"] },
+      "observability": { "state": "partial", "claimIds": ["bionic-code-workflow", "bionic-project-session-lifecycle"] },
+      "verification": { "state": "partial", "claimIds": ["bionic-code-workflow"] },
+      "governance": { "state": "supported", "claimIds": ["bionic-hybrid-model-execution", "bionic-auto-review-governance"] }
+    },
+    "maturity": "growing",
+    "radar": "trial",
+    "radarRationale": { "tr": "Yerel ve bulut açık modellerini denetimli bir üretkenlik harness'ında birleştirdiği için deneme adayı; bağımsız olgunluk verisi henüz sınırlı.", "en": "A TRIAL candidate for combining local and cloud open models in a governed productivity harness; independent maturity evidence is still limited." },
+    "radarEffectiveAt": "2026-09-06",
+    "lastRelease": "2026-08-31",
+    "lastReviewedAt": "2026-09-06",
+    "sourceIds": ["lmstudio-bionic-docs", "lmstudio-bionic-coding", "lmstudio-bionic-projects", "lmstudio-bionic-launch", "lmstudio-bionic-auto-review", "lmstudio-bionic-changelog-1-1-1"],
+    "claimIds": ["bionic-agentic-harness", "bionic-hybrid-model-execution", "bionic-code-workflow", "bionic-project-session-lifecycle", "bionic-auto-review-governance", "bionic-radar-trial"]
   }
 ]

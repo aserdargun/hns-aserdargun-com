@@ -376,5 +376,89 @@
       "tr": "Browser Operator'ın kullanıcının yetkilendirdiği yerel tarayıcı oturumunda nasıl çalıştığını ve denetim sınırlarını açıklar.",
       "en": "Explains how Browser Operator works in a user-authorized local browser session and documents its control boundaries."
     }
+  },
+  {
+    "id": "lmstudio-bionic-docs",
+    "title": "Welcome to LM Studio Bionic",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/docs/bionic",
+    "publishedAt": null,
+    "checkedAt": "2026-09-06",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Bionic'i açık modellerle kod, araştırma, belge ve dosya işleri yapan; yerel, güvenli bulut veya LM Link üzerinden uzak model çalıştırabilen bir ajan harness'ı olarak tanımlar.",
+      "en": "Defines Bionic as an agentic harness for coding, research, document, and file work with local, secure-cloud, or remote models through LM Link."
+    }
+  },
+  {
+    "id": "lmstudio-bionic-coding",
+    "title": "LM Studio Bionic — Coding",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/docs/bionic/agent/code-project",
+    "publishedAt": null,
+    "checkedAt": "2026-09-06",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Yerel bir kod tabanını tarama, düzenleme, kabuk komutu çalıştırma, test ekleme ve çalıştırma ile farkları inceleme akışını belgeler.",
+      "en": "Documents indexing, searching, and editing a local codebase, running shell commands and tests, and reviewing inline and Git diffs."
+    }
+  },
+  {
+    "id": "lmstudio-bionic-projects",
+    "title": "LM Studio Bionic — Projects and Sessions",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/docs/bionic/projects-and-sessions",
+    "publishedAt": null,
+    "checkedAt": "2026-09-06",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Ortak dosya bağlamlı projeler, ayrı görev oturumları, arka planda çalışma, yan yana oturumlar ve çatallama modelini açıklar.",
+      "en": "Explains projects with shared file context, separate task sessions, background execution, side-by-side sessions, and forking."
+    }
+  },
+  {
+    "id": "lmstudio-bionic-launch",
+    "title": "Introducing LM Studio Bionic: the AI agent for open models",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+    "publishedAt": "2026-07-16",
+    "checkedAt": "2026-09-06",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Bionic'in kod, araştırma ve ofis belgeleri için yerel, LM Link veya bulut modeli çalıştırmasını; yalıtılmış belge ortamını ve otomatik geri yükleme noktalarını duyurur.",
+      "en": "Introduces Bionic's local, LM Link, or cloud model execution for coding, research, and office documents, plus sandboxed document work and automatic checkpoints."
+    }
+  },
+  {
+    "id": "lmstudio-bionic-auto-review",
+    "title": "How Auto Review works in Bionic",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/blog/how-auto-review-works",
+    "publishedAt": "2026-08-27",
+    "checkedAt": "2026-09-06",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Kabuk komutlarını sözdizim ağacı, yetenek çıkarımı ve güvenli kurallarla inceleyen; gerektiğinde ayrı bir inceleyici ajana aktaran Auto Review mimarisini açıklar.",
+      "en": "Explains Auto Review's shell AST parsing, capability extraction, safe rules, and fallback to a separate reviewer agent."
+    }
+  },
+  {
+    "id": "lmstudio-bionic-changelog-1-1-1",
+    "title": "LM Studio Bionic 1.1.1",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/changelog/bionic-v1.1.1",
+    "publishedAt": "2026-08-31",
+    "checkedAt": "2026-09-06",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Oturum durumları, çatallanmış oturum taşıma düzeltmesi ve daha güvenilir beceri kullanımı içeren 1.1.1 sürüm notlarıdır.",
+      "en": "Release notes for version 1.1.1, including session status, a forked-session move fix, and more reliable skill use."
+    }
   }
 ]

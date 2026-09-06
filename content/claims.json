@@ -646,5 +646,59 @@
     "subjectIds": ["goose"],
     "reviewedAt": "2026-09-02",
     "confidence": { "tr": "HNS sentezi; resmî Linux Foundation duyurusu ve Goose blog yazısına dayanır.", "en": "HNS synthesis based on the official Linux Foundation announcement and the Goose blog post." }
+  },
+  {
+    "id": "bionic-agentic-harness",
+    "kind": "evidence",
+    "text": { "tr": "LM Studio, Bionic'i özellikle kodlama ve belge işleri için tasarlanmış bir ajan harness'ı ve LM Studio'dan ayrı bir uygulama olarak tanımlar.", "en": "LM Studio describes Bionic as an agentic harness especially for coding and document work, delivered as a separate app from LM Studio." },
+    "sourceIds": ["lmstudio-bionic-docs"],
+    "subjectIds": ["lmstudio-bionic"],
+    "reviewedAt": "2026-09-06",
+    "confidence": { "tr": "Ürün sınıfı ve uygulama sınırı resmî Bionic giriş belgesinde doğrudan belirtilir.", "en": "The product class and separate-app boundary are stated directly in the official Bionic introduction." }
+  },
+  {
+    "id": "bionic-hybrid-model-execution",
+    "kind": "evidence",
+    "text": { "tr": "Bir Bionic oturumu modeli kullanıcının bilgisayarında, LM Link üzerinden başka bir cihazda veya sıfır veri saklamalı LM Studio Secure Cloud'da çalıştırabilir.", "en": "A Bionic session can run its model locally, remotely on another device through LM Link, or in LM Studio Secure Cloud with Zero Data Retention." },
+    "sourceIds": ["lmstudio-bionic-docs", "lmstudio-bionic-launch"],
+    "subjectIds": ["lmstudio-bionic"],
+    "reviewedAt": "2026-09-06",
+    "confidence": { "tr": "Üç çalıştırma seçeneği resmî ürün belgesi ve duyuruda aynı şekilde listelenir.", "en": "All three execution options are listed consistently in the official product documentation and launch announcement." }
+  },
+  {
+    "id": "bionic-code-workflow",
+    "kind": "evidence",
+    "text": { "tr": "Bionic yerel kod tabanını dizinler; dosya arayabilir ve düzenleyebilir, kabuk komutları ile testleri çalıştırabilir ve değişiklikleri satır içi ya da Git farkı olarak gösterebilir.", "en": "Bionic indexes a local codebase, searches and edits files, runs shell commands and tests, and exposes changes through inline and Git diffs." },
+    "sourceIds": ["lmstudio-bionic-coding", "lmstudio-bionic-launch"],
+    "subjectIds": ["lmstudio-bionic"],
+    "reviewedAt": "2026-09-06",
+    "confidence": { "tr": "Yetenekler ve önerilen incele-değiştir-test et akışı resmî kodlama belgesinde açıklanır.", "en": "The capabilities and inspect-change-test workflow are documented in the official coding guide." }
+  },
+  {
+    "id": "bionic-project-session-lifecycle",
+    "kind": "evidence",
+    "text": { "tr": "Bionic projeleri ortak dosya bağlamını paylaşan ayrı görev oturumları içerir; oturumlar arka planda çalışabilir, yan yana açılabilir ve çatallanabilir.", "en": "Bionic projects contain separate task sessions that share file context; sessions can run in the background, open side by side, and be forked." },
+    "sourceIds": ["lmstudio-bionic-projects"],
+    "subjectIds": ["lmstudio-bionic"],
+    "reviewedAt": "2026-09-06",
+    "confidence": { "tr": "Proje ve oturum davranışları resmî yaşam döngüsü belgesinde doğrudan listelenir.", "en": "Project and session behaviors are listed directly in the official lifecycle documentation." }
+  },
+  {
+    "id": "bionic-auto-review-governance",
+    "kind": "evidence",
+    "text": { "tr": "Bionic Auto Review önce kabuk komutunu belirlenimci Shell Judge ile çözümler; güvenli olduğu kanıtlanamayan komutları bağlamı gören ayrı bir inceleyici ajana aktarır ve gerektiğinde kullanıcıya bırakır.", "en": "Bionic Auto Review first analyzes a shell command with the deterministic Shell Judge, then sends commands not proven safe to a context-aware reviewer agent and falls back to the user when required." },
+    "sourceIds": ["lmstudio-bionic-auto-review"],
+    "subjectIds": ["lmstudio-bionic"],
+    "reviewedAt": "2026-09-06",
+    "confidence": { "tr": "İki aşamalı karar hattı ve kullanıcıya geri dönme koşulları resmî mühendislik yazısında ayrıntılıdır.", "en": "The two-stage decision pipeline and human fallback conditions are detailed in the official engineering article." }
+  },
+  {
+    "id": "bionic-radar-trial",
+    "kind": "synthesis",
+    "text": { "tr": "LM Studio Bionic; yerel, uzak ve sıfır veri saklamalı bulut modellerini aynı üretkenlik harness'ında birleştiren yeni bir deneme adayıdır.", "en": "LM Studio Bionic is a new TRIAL candidate for unifying local, remote, and Zero-Data-Retention cloud models in one productivity harness." },
+    "sourceIds": ["lmstudio-bionic-docs", "lmstudio-bionic-coding", "lmstudio-bionic-auto-review", "lmstudio-bionic-changelog-1-1-1"],
+    "subjectIds": ["lmstudio-bionic"],
+    "reviewedAt": "2026-09-06",
+    "confidence": { "tr": "HNS yorumu; resmî belgeler yetenekleri doğruluyor, ancak Temmuz 2026 çıkışlı ürün için geniş bağımsız olgunluk verisi henüz sınırlı.", "en": "HNS interpretation: official documentation verifies the capabilities, while broad independent maturity evidence remains limited for a product launched in July 2026." }
   }
 ]

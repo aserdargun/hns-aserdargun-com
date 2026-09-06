@@ -42,7 +42,18 @@ describe('Solutions Radar', () => {
     window.history.replaceState({}, '', '/tr')
     render(<App />)
 
-    expect(screen.getByRole('link', { name: '21 çözümün tümünü incele →' })).toBeVisible()
+    expect(screen.getByRole('link', { name: '22 çözümün tümünü incele →' })).toBeVisible()
+  })
+
+  it('exposes LM Studio Bionic as a source-backed harness solution', async () => {
+    const user = userEvent.setup()
+    renderRadar()
+
+    await user.type(screen.getByPlaceholderText('Search solutions…'), 'Bionic')
+
+    expect(screen.getAllByText('LM Studio Bionic').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('LM Studio').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('Trial').length).toBeGreaterThan(0)
   })
 
   it('localizes Turkish filter and solution values', () => {

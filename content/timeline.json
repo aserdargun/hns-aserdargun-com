@@ -103,5 +103,12 @@
     "title": { "tr": "HNS W36 radar genişlemesi: 9 yeni çözüm", "en": "HNS W36 radar expansion: nine new solutions" },
     "summary": { "tr": "Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, Codex CLI, AWS Kiro ve Manus AI çözümlerine eklendi.", "en": "Hermes Agent, Claude Code, OpenCode, Aider, Cline, Goose, Codex CLI, AWS Kiro, and Manus AI were added." },
     "sourceIds": ["hermes-agent-repo", "claude-code-docs", "opencode-repo", "aider-repo", "cline-repo", "goose-aaif-blog", "codex-cli-repo", "kiro-docs", "manus-features", "manus-wide-research-source", "manus-browser-operator-source"]
+  },
+  {
+    "id": "lmstudio-bionic-launch-2026",
+    "date": "2026-07-16",
+    "title": { "tr": "LM Studio Bionic'i açık modeller için yayımladı", "en": "LM Studio launched Bionic for open models" },
+    "summary": { "tr": "Kod, araştırma ve belge işleri için yerel, LM Link veya bulut modelini seçebilen ayrı Bionic uygulaması duyuruldu.", "en": "The separate Bionic app launched with local, LM Link, or cloud model choice for coding, research, and document work." },
+    "sourceIds": ["lmstudio-bionic-launch"]
   }
 ]

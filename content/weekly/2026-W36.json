@@ -21,7 +21,7 @@
     },
     "claimIds": ["weekly-layer-convergence"]
   },
-  "solutionsToWatch": ["deepseek-harness", "microsoft-agent-framework", "google-adk", "google-agent-runtime"],
+  "solutionsToWatch": ["deepseek-harness", "microsoft-agent-framework", "google-adk", "google-agent-runtime", "lmstudio-bionic"],
   "patternOfWeek": "harness-model-coevolution",
   "researchOfWeek": {
     "title": {
@@ -52,6 +52,10 @@
     {
       "tr": "W36 düzeltmesi (2026-09-04): Türkçe terimler ve durum etiketleri tutarlı hâle getirildi; artık çalışmayan Manus özellik bağlantısı, doğrulanan üç resmî ürün yazısıyla değiştirildi.",
       "en": "W36 correction (2026-09-04): Turkish terminology and status labels were made consistent; the unavailable Manus features link was replaced with three verified official product articles."
+    },
+    {
+      "tr": "W36 düzeltmesi (2026-09-06): LM Studio Bionic genel amaçlı harness sınıfında deneme adayı olarak eklendi. Radar artık 22 çözüm, 33 resmî kaynak ve 78 iddia içeriyor; Bionic'in yerel, LM Link ve sıfır veri saklamalı bulut çalıştırması ile Auto Review denetimi ayrı kanıtlarla izleniyor.",
+      "en": "W36 correction (2026-09-06): LM Studio Bionic was added as a TRIAL candidate in the general-harness class. The radar now contains 22 solutions, 33 official sources, and 78 claims; Bionic's local, LM Link, and Zero-Data-Retention cloud execution plus Auto Review governance are tracked with separate evidence."
     }
   ]
 }
