@@ -51,7 +51,7 @@ describe('Solutions Radar', () => {
 
     await user.type(screen.getByPlaceholderText('Search solutions…'), 'Bionic')
 
-    expect(screen.getAllByText('LM Studio Bionic').length).toBeGreaterThan(0)
+    expect(screen.getAllByRole('link', { name: /LM Studio Bionic/ }).length).toBeGreaterThan(0)
     expect(screen.getAllByText('LM Studio').length).toBeGreaterThan(0)
     expect(screen.getAllByText('Trial').length).toBeGreaterThan(0)
   })

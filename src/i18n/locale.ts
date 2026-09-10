@@ -8,12 +8,20 @@ export function isLocale(value: unknown): value is Locale {
 
 export function readStoredLocale(): Locale {
   if (typeof window === 'undefined') return 'en'
-  const stored = window.localStorage.getItem(localeKey)
-  return isLocale(stored) ? stored : 'en'
+  try {
+    const stored = window.localStorage.getItem(localeKey)
+    return isLocale(stored) ? stored : 'en'
+  } catch {
+    return 'en'
+  }
 }
 
 export function rememberLocale(locale: Locale) {
-  window.localStorage.setItem(localeKey, locale)
+  try {
+    window.localStorage.setItem(localeKey, locale)
+  } catch {
+    // The route still carries the language when browser storage is unavailable.
+  }
 }
 
 export function localizedPath(path: string, targetLocale: Locale): string {

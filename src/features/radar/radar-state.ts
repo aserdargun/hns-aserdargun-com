@@ -36,7 +36,7 @@ export function parseRadarSearch(search: string): RadarFilters {
     organizations: list(params, 'organization', (value) => validOrganizations.has(value)),
     openSource: list(params, 'open', (value) => validOpen.has(value)),
     freshness: list(params, 'freshness', (value) => validFreshness.has(value)),
-    query: (params.get('query') ?? '').trim(),
+    query: params.get('query') ?? '',
     sort: sort && validSort.has(sort as RadarSort) ? sort as RadarSort : 'radar',
   }
 }
@@ -62,16 +62,20 @@ export function evidenceKinds(solution: Solution): EvidenceKind[] {
   return [...new Set(kinds)]
 }
 
-export function filterSolutions(solutions: Solution[], filters: RadarFilters): Solution[] {
-  const query = filters.query.toLocaleLowerCase('en')
+export function filterSolutions(solutions: Solution[], filters: RadarFilters, now = new Date()): Solution[] {
+  const normalize = (value: string) => value.toLocaleLowerCase('tr').normalize('NFD').replace(/\p{M}/gu, '').replace(/ı/g, 'i')
+  const query = normalize(filters.query.trim())
+  const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate())
   const matches = solutions.filter((solution) => {
     const kinds = evidenceKinds(solution)
+    const age = (today - Date.parse(`${solution.lastReviewedAt}T00:00:00Z`)) / 86_400_000
     return (!filters.classes.length || filters.classes.includes(solution.class))
       && (!filters.radar.length || filters.radar.includes(solution.radar))
       && (!filters.evidence.length || filters.evidence.some((kind) => kinds.includes(kind as EvidenceKind)))
       && (!filters.organizations.length || filters.organizations.includes(solution.organization))
       && (!filters.openSource.length || filters.openSource.includes(solution.openSource))
-      && (!query || `${solution.name} ${solution.organization} ${solution.summary.en} ${solution.summary.tr}`.toLocaleLowerCase('en').includes(query))
+      && (!filters.freshness.length || filters.freshness.some((value) => value === 'stale' ? age > 90 : age >= 0 && age <= Number(value)))
+      && (!query || normalize(`${solution.id} ${solution.name} ${solution.organization} ${solution.summary.en} ${solution.summary.tr}`).includes(query))
   })
 
   return matches.map((solution, index) => ({ solution, index })).sort((a, b) => {

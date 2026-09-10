@@ -18,7 +18,8 @@
     "preview:start": "node scripts/preview-control.mjs start",
     "preview:status": "node scripts/preview-control.mjs status",
     "preview:stop": "node scripts/preview-control.mjs stop",
-    "check": "npm run content:check && npm run typecheck && npm run lint && npm run test:run && npm run build"
+    "check": "npm run content:check && npm run typecheck && npm run lint && npm run test:run && npm run build",
+    "validate:codex": "npm run check && npm run test:e2e"
   },
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^5.3.0",

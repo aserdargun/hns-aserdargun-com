@@ -53,7 +53,8 @@
   .weekly-lead { padding: 18px 0 24px; }
   .weekly-lead-grid { grid-template-columns: 1fr; gap: 0; }
   .weekly-lead h1 { margin-top: 28px; font-size: clamp(2.65rem, 13vw, 4rem); line-height: 0.98; }
-  .weekly-lead p, .signal-loop { display: none; }
+  .signal-loop { display: none; }
+  .weekly-lead p { margin-top: 16px; }
   .weekly-corrections { margin-inline: 0; }
   .weekly-index { display: block; border-left: 0; border-top: 1px solid var(--rule-strong); }
   .weekly-index-mobile-title { display: block; margin: 0; padding: 18px 0 10px; font-size: 1.15rem; }
@@ -63,8 +64,10 @@
   .weekly-module button .disclosure-chevron.is-open { transform: rotate(90deg); }
   .weekly-module-body { padding: 4px 0 22px; }
   .weekly-module-body.is-collapsed { display: none; }
-  .intelligence-rail { display: none; }
+  .intelligence-rail { display: block; border-inline: 0; }
   .rail-item { border-right: 0; padding-inline: 0; }
   .intelligence-rail > h2 { padding-inline: 0; }
   .radar-entry { grid-template-columns: 1fr; padding-inline: 0; border-inline: 0; }
 }
+
+.weekly-module .weekly-module-label { min-height: 50px; margin: 0; padding: 16px; color: var(--accent); font-family: var(--font-ui); font-size: 0.78rem; font-weight: 700; }

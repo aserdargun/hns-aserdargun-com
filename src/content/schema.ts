@@ -9,8 +9,14 @@ export const LocaleTextSchema = z.object({
 })
 export type LocaleText = z.infer<typeof LocaleTextSchema>
 
-const DateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/)
-const WeekSchema = z.string().regex(/^\d{4}-W\d{2}$/)
+const DateSchema = z.iso.date()
+const WebUrlSchema = z.string().url().refine((value) => new URL(value).protocol === 'https:', 'Source URLs must use HTTPS')
+const WeekSchema = z.string().regex(/^\d{4}-W(0[1-9]|[1-4]\d|5[0-3])$/).refine((value) => {
+  if (!value.endsWith('W53')) return true
+  const year = Number(value.slice(0, 4))
+  const day = new Date(`${year}-01-01T00:00:00Z`).getUTCDay()
+  return day === 4 || (day === 3 && new Date(`${year}-02-29T00:00:00Z`).getUTCMonth() === 1)
+}, 'Invalid ISO week')
 
 export const HarnessLayerSchema = z.enum([
   'execution',
@@ -52,7 +58,7 @@ const SourceSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   title: z.string().trim().min(1),
   publisher: z.string().trim().min(1),
-  url: z.string().url(),
+  url: WebUrlSchema,
   publishedAt: DateSchema.nullable(),
   checkedAt: DateSchema,
   kind: z.enum(['official-engineering', 'official-docs', 'official-repository']),
@@ -81,7 +87,7 @@ const SolutionSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string().trim().min(1),
   organization: z.string().trim().min(1),
-  canonicalUrl: z.string().url(),
+  canonicalUrl: WebUrlSchema,
   class: SolutionClassSchema,
   lifecycle: z.enum(['experimental', 'developer-preview', 'emerging', 'production']),
   openSource: z.enum(['yes', 'no', 'partial']),
@@ -183,6 +189,7 @@ const RawCatalogSchema = z
     const claimIds = uniqueIds('claim', value.claims.map((item) => item.id))
     const patternIds = uniqueIds('pattern', value.patterns.map((item) => item.id))
     uniqueIds('weekly', value.weekly.map((item) => item.id))
+    uniqueIds('week', value.weekly.map((item) => item.week))
     uniqueIds('knowledge', value.knowledge.map((item) => item.id))
     uniqueIds('timeline', value.timeline.map((item) => item.id))
 
@@ -199,12 +206,20 @@ const RawCatalogSchema = z
       requireIds(`Claim ${claim.id}`, claim.subjectIds, solutionIds)
     }
 
+    const claimsById = new Map(value.claims.map((claim) => [claim.id, claim]))
     for (const solution of value.solutions) {
+      for (const id of solution.claimIds) {
+        const claim = claimsById.get(id)
+        if (claim && !claim.subjectIds.includes(solution.id)) {
+          context.addIssue({ code: 'custom', message: `Solution ${solution.id} claim ${id} must reference its subject` })
+        }
+      }
       requireIds(`Solution ${solution.id}`, solution.sourceIds, sourceIds)
       requireIds(`Solution ${solution.id}`, solution.claimIds, claimIds)
       for (const layer of harnessLayers) {
         const coverage = solution.layers[layer]
         requireIds(`Solution ${solution.id} layer ${layer}`, coverage.claimIds, claimIds)
+        requireIds(`Solution ${solution.id} layer ${layer} claim`, coverage.claimIds, new Set(solution.claimIds))
         if (coverage.state !== 'unknown' && coverage.claimIds.length === 0) {
           context.addIssue({ code: 'custom', message: `Solution ${solution.id} layer ${layer} needs evidence` })
         }

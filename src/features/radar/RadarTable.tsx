@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { ClaimEvidence, LayerEvidence } from '../../components/ClaimEvidence'
 import { SourceLink } from '../../components/SourceLink'
 import { StatusMark } from '../../components/StatusMark'
 import { catalog } from '../../content/catalog'
@@ -16,7 +18,8 @@ export function EvidenceCell({ solution, locale }: { solution: Solution; locale:
 }
 
 export function EvidenceDisclosure({ solution, locale }: { solution: Solution; locale: Locale }) {
-  return <details className="radar-disclosure"><summary>{locale === 'tr' ? 'Kanıtı aç' : 'Open evidence'}</summary><p>{getLocalizedText(solution.radarRationale, locale)}</p><div>{solution.sourceIds.map((id) => { const source = catalog.sourcesById.get(id); return source ? <SourceLink key={id} source={source} locale={locale} /> : null })}</div></details>
+  const [open, setOpen] = useState(false)
+  return <details className="radar-disclosure" onToggle={(event) => setOpen(event.currentTarget.open)}><summary>{locale === 'tr' ? 'Kanıtı aç' : 'Open evidence'}</summary><p>{getLocalizedText(solution.radarRationale, locale)}</p><details className="claim-disclosure"><summary>{locale === 'tr' ? 'İddialar ve güven sınırları' : 'Claims and confidence limits'} ({solution.claimIds.length})</summary>{open && <ClaimEvidence claimIds={solution.claimIds} locale={locale} />}</details><div>{solution.sourceIds.map((id) => { const source = catalog.sourcesById.get(id); return source ? <SourceLink key={id} source={source} locale={locale} /> : null })}</div></details>
 }
 
 type Props = { locale: Locale; solutions: Solution[]; selected: Set<string>; onToggle: (id: string) => void }
@@ -25,4 +28,17 @@ export function RadarTable({ locale, solutions, selected, onToggle }: Props) {
     <td><input type="checkbox" aria-label={`${solution.name} — ${locale === 'tr' ? 'karşılaştırma için seç' : 'select for comparison'}`} checked={selected.has(solution.id)} disabled={!selected.has(solution.id) && selected.size >= 3} onChange={() => onToggle(solution.id)} /></td>
     <th scope="row"><a href={solution.canonicalUrl} target="_blank" rel="noreferrer">{solution.name} ↗</a><small>{solution.organization}</small></th><td>{labelFor(solutionClassLabels, solution.class, locale)}</td><td><LayerCoverage solution={solution} locale={locale} /></td><td>{labelFor(maturityLabels, solution.maturity, locale)}</td><td><StatusMark status={solution.radar}>{labelFor(radarStateLabels, solution.radar, locale)}</StatusMark></td><td>{solution.lastReviewedAt}</td><td><EvidenceCell solution={solution} locale={locale} /><EvidenceDisclosure solution={solution} locale={locale} /></td>
   </tr>)}</tbody></table></div>
+}
+
+export function LayerBreakdown({ solution, locale }: { solution: Solution; locale: Locale }) {
+  const [open, setOpen] = useState(false)
+  return <details className="layer-breakdown" onToggle={(event) => setOpen(event.currentTarget.open)}>
+    <summary>{locale === 'tr' ? 'Yedi katmanı incele' : 'Inspect seven layers'}</summary>
+    {open && <dl>{harnessLayers.map((layer) => <div key={layer}>
+      <dt>{layerNames[layer][locale]}</dt>
+      <dd><StatusMark status={solution.layers[layer].state}>{layerStateLabels[solution.layers[layer].state][locale]}</StatusMark>
+        {solution.layers[layer].claimIds.length > 0 && <LayerEvidence claimIds={solution.layers[layer].claimIds} locale={locale} />}
+      </dd>
+    </div>)}</dl>}
+  </details>
 }

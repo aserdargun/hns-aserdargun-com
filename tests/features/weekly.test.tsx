@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { App } from '../../src/app/App'
 
 function renderWeekly(path = '/en') {
@@ -27,11 +27,13 @@ describe('Weekly Intelligence', () => {
   })
 
   it('discloses module content with an accessible mobile-compatible control', async () => {
+    vi.spyOn(window, 'matchMedia').mockImplementation((query) => ({ matches: true, media: query, addEventListener: vi.fn(), removeEventListener: vi.fn() }) as unknown as MediaQueryList)
     const user = userEvent.setup()
     renderWeekly('/tr')
     const control = screen.getByRole('button', { name: /En önemli gelişme/ })
     await user.click(control)
     expect(screen.getByText('Harness katmanları ayrı ürün sınıflarına dönüşüyor')).toBeVisible()
+    vi.restoreAllMocks()
   })
 
   it('shows published correction notes instead of silently rewriting a week', () => {

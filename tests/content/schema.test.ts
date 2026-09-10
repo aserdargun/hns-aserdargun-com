@@ -23,3 +23,35 @@ describe('HNS content contract', () => {
     expect(() => parseCatalog(broken)).toThrow(/tr/)
   })
 })
+
+describe('evidence validation regressions', () => {
+  it.each(['2026-02-30', '2026-13-01'])('rejects impossible date %s', (date) => {
+    const broken = structuredClone(rawCatalog)
+    broken.sources[0].checkedAt = date
+    expect(() => parseCatalog(broken)).toThrow()
+  })
+  it.each(['javascript:alert(1)', 'data:text/html,hello', 'http://example.com'])('rejects unsafe source URL %s', (url) => {
+    const broken = structuredClone(rawCatalog)
+    broken.sources[0].url = url
+    expect(() => parseCatalog(broken)).toThrow(/HTTPS/)
+  })
+  it.each(['2026-W00', '2026-W54', '2025-W53'])('rejects invalid ISO week %s', (week) => {
+    const broken = structuredClone(rawCatalog)
+    broken.weekly[0].week = week
+    expect(() => parseCatalog(broken)).toThrow()
+  })
+  it('rejects two snapshots for the same week', () => {
+    const broken = structuredClone(rawCatalog)
+    broken.weekly.push({ ...broken.weekly[0], id: 'duplicate-week' })
+    expect(() => parseCatalog(broken)).toThrow(/Duplicate week/)
+  })
+  it('rejects layer evidence assigned to a different solution', () => {
+    const broken = structuredClone(rawCatalog)
+    const solution = broken.solutions[0]
+    const unrelated = broken.claims.find((claim) => !claim.subjectIds.includes(solution.id))!
+    solution.layers.execution.claimIds = [unrelated.id]
+    expect(() => parseCatalog(broken)).toThrow(/layer execution claim/)
+    solution.claimIds.push(unrelated.id)
+    expect(() => parseCatalog(broken)).toThrow(/must reference its subject/)
+  })
+})

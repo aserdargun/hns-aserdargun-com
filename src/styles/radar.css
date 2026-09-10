@@ -1,27 +1,27 @@
 .radar-page { padding: 38px 38px 64px; }
 .radar-page.is-embedded { padding: 28px 0 0; }
 .radar-header { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 36px; margin-bottom: 24px; }
-.radar-header h1 { margin: 0; font-family: var(--font-editorial); font-size: clamp(2.5rem, 5vw, 4.6rem); font-weight: 500; line-height: 1; }
+.radar-header :is(h1, h2) { margin: 0; font-family: var(--font-editorial); font-size: clamp(2.5rem, 5vw, 4.6rem); font-weight: 500; line-height: 1; }
 .radar-page.is-embedded .radar-header { display: block; padding-inline: 16px; }
-.radar-page.is-embedded .radar-header h1 { font-family: var(--font-ui); font-size: 1.6rem; font-weight: 600; }
+.radar-page.is-embedded .radar-header :is(h1, h2) { font-family: var(--font-ui); font-size: 1.6rem; font-weight: 600; }
 .radar-header > p { margin: 0; color: var(--muted); font-size: 1.05rem; }
 .radar-actions { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 16px; padding: 14px 16px; border: 1px solid var(--rule); }
 .radar-toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
 .radar-filter-grid { display: flex; flex-wrap: wrap; gap: 8px; }
 .radar-filter-grid label { display: grid; gap: 3px; color: var(--muted); font-size: 0.68rem; }
-.radar-filter-grid select, .radar-search input { min-height: 40px; border: 1px solid var(--rule-strong); border-radius: 4px; background: white; }
+.radar-filter-grid select, .radar-search input { min-height: 44px; border: 1px solid var(--rule-strong); border-radius: 4px; background: white; }
 .radar-filter-grid select { min-width: 116px; padding: 0 30px 0 10px; }
 .radar-search { display: flex; align-items: center; min-width: min(100%, 240px); }
 .radar-search input { width: 100%; padding: 0 44px 0 12px; }
 .radar-search > span:last-child { width: 34px; margin-left: -40px; color: var(--muted); font-size: 0.75rem; text-align: center; }
 .comparison-action { display: flex; align-items: center; gap: 14px; white-space: nowrap; }
 .comparison-action > span { color: var(--accent); font-size: 0.78rem; font-weight: 600; }
-.compare-link { display: flex; min-height: 42px; align-items: center; gap: 24px; padding: 0 18px; border-radius: 4px; background: var(--accent); color: white; font-weight: 600; text-decoration: none; }
+.compare-link { display: flex; min-height: 44px; align-items: center; gap: 24px; padding: 0 18px; border-radius: 4px; background: var(--accent); color: white; font-weight: 600; text-decoration: none; }
 .compare-link:hover { background: var(--accent-dark); color: white; }
 .compare-link.is-disabled { pointer-events: none; opacity: 0.45; }
 .layer-legend { display: flex; flex-wrap: wrap; gap: 16px; padding: 9px 14px; border-inline: 1px solid var(--rule); color: var(--muted); font-size: 0.68rem; }
 .layer-legend span::before { content: ''; display: inline-block; width: 6px; height: 6px; margin-right: 5px; border-radius: 50%; background: var(--accent); }
-.radar-table-wrap { overflow: visible; }
+.radar-table-wrap { overflow-x: auto; }
 .radar-table { width: 100%; border-collapse: collapse; border: 1px solid var(--rule); font-size: 0.78rem; }
 .radar-table th, .radar-table td { padding: 11px 12px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-align: left; vertical-align: middle; }
 .radar-table thead th { color: var(--muted); font-weight: 500; }
@@ -53,8 +53,7 @@
   .radar-page.is-embedded { padding-inline: 0; }
   .radar-header { grid-template-columns: 1fr; gap: 12px; }
   .radar-actions { padding-inline: 0; border-inline: 0; }
-  .radar-filter-grid { display: grid; grid-template-columns: repeat(2, 1fr); width: 100%; }
-  .radar-filter-grid label:nth-child(n+4) { display: none; }
+  .radar-filter-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
   .radar-filter-grid select { width: 100%; min-width: 0; }
   .radar-search { width: 100%; max-width: none; }
   .comparison-action { justify-content: space-between; }
@@ -100,3 +99,33 @@
   .comparison-matrix td { padding: 10px 0; border: 0; }
   .mobile-solution-name { display: block; margin-bottom: 3px; color: var(--muted); font-size: 0.68rem; }
 }
+
+.radar-filter-grid label { min-width: 0; }
+.radar-filter-grid select { max-width: 100%; }
+.selected-solutions { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 0; }
+.selected-solutions button, .reset-filters { min-height: 44px; padding: 8px 12px; border: 1px solid var(--rule-strong); border-radius: 4px; background: var(--selected); color: var(--accent); cursor: pointer; }
+.selected-solutions button { display: flex; align-items: center; gap: 12px; font-size: 0.82rem; }
+.selected-solutions button:hover, .reset-filters:hover { border-color: var(--accent); }
+.edit-comparison { display: inline-flex; align-items: center; min-height: 44px; margin-bottom: 16px; }
+.claim-evidence article { padding: 12px 0; border-top: 1px solid var(--rule); }
+.claim-evidence p { max-width: none; margin: 8px 0; }
+.claim-evidence .source-link { margin: 8px 0; }
+.claim-disclosure, .layer-evidence { margin-block: 12px; }
+.layer-evidence summary { color: var(--accent); cursor: pointer; }
+.comparison-matrix { overflow-wrap: anywhere; }
+@media (max-width: 780px) {
+  .comparison-action { flex-wrap: wrap; white-space: normal; }
+  .comparison-matrix tbody th { width: 100%; }
+  .mobile-radar-heading { grid-template-columns: 44px minmax(0, 1fr) auto; }
+  .selection-checkbox { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; cursor: pointer; }
+  .mobile-radar-row input[type='checkbox'] { width: 20px; height: 20px; margin: 0; }
+  .mobile-radar-heading h3 a { display: inline-block; min-height: 44px; color: var(--ink); text-decoration: none; overflow-wrap: anywhere; }
+  .mobile-radar-row summary, .layer-evidence summary { display: list-item; min-height: 44px; padding-block: 12px; }
+  .mobile-radar-meta { flex-wrap: wrap; }
+}
+
+.layer-breakdown summary { color: var(--accent); cursor: pointer; font-size: 0.8rem; }
+.layer-breakdown dl { margin: 0; }
+.layer-breakdown dl > div { padding: 12px 0; border-top: 1px solid var(--rule); }
+.layer-breakdown dt { margin-bottom: 6px; font-weight: 600; }
+.layer-breakdown dd { margin: 0; font-size: 0.82rem; }

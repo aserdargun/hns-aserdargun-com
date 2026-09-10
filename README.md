@@ -33,9 +33,12 @@ The managed preview uses `http://127.0.0.1:4173` by default and records only pro
 ## Validate
 
 ```bash
-npm run check
-npm run test:e2e
+npm run validate:codex
 ```
+
+This runs `npm run check` followed by `npm run test:e2e`.
+
+Browser acceptance starts its own production preview on port 4188 and refuses to reuse an unrelated server. Set `PLAYWRIGHT_BASE_URL` only when intentionally testing an existing HNS instance.
 
 `npm run check` validates the content registry, TypeScript, lint, component tests, and the production build. Content validation fails closed when references, bilingual text, or source links are invalid.
 
@@ -56,6 +59,8 @@ The stop command refuses to signal a PID unless its recorded and live working di
 - `content/knowledge.json`, `patterns.json`, `timeline.json`: supporting research library.
 
 To publish a new week, add the official sources and claims first, update affected solutions, create the bilingual weekly snapshot, then run `npm run check`. Published weeks are not silently rewritten.
+
+Radar filters and up to three selected solutions are preserved in the URL across reloads and language changes. Review freshness uses UTC calendar days (30 days, 90 days, or older than 90 days). Layer evidence exposes the exact claims, confidence limits, and cited sources; mobile and desktop provide the same filters.
 
 HNS does not calculate a universal “best harness” score. Coverage, evidence confidence, freshness, maturity, and radar interpretation remain separate dimensions. Unknown evidence stays unknown.
 

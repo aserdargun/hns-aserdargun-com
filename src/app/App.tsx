@@ -8,7 +8,7 @@ import '../styles/library.css'
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter useTransitions={false}>
       <AppRoutes />
     </BrowserRouter>
   )
