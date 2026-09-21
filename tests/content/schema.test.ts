@@ -25,6 +25,27 @@ describe('HNS content contract', () => {
 })
 
 describe('evidence validation regressions', () => {
+  it('rejects a cutoff outside the snapshot ISO week', () => {
+    const broken = structuredClone(rawCatalog)
+    broken.weekly[0].cutoffDate = '2026-01-01'
+    expect(() => parseCatalog(broken)).toThrow(/cutoff/)
+  })
+  it('rejects evidence published after a weekly research cutoff', () => {
+    const broken = structuredClone(rawCatalog)
+    const snapshot = broken.weekly.find((item) => item.week === '2026-W36')!
+    snapshot.researchOfWeek.sourceIds = ['lmstudio-bionic-changelog-1-1-5']
+    expect(() => parseCatalog(broken)).toThrow(/exceeds its research cutoff/)
+  })
+  it('rejects a claim reviewed after the archived cutoff', () => {
+    const broken = structuredClone(rawCatalog)
+    broken.weekly.find((item) => item.week === '2026-W36')!.mostImportant.claimIds = ['bionic-september-release']
+    expect(() => parseCatalog(broken)).toThrow(/exceeds its research cutoff/)
+  })
+  it('rejects missing weekly signal evidence', () => {
+    const broken = structuredClone(rawCatalog)
+    broken.weekly[0].signalClaimIds = ['missing-signal']
+    expect(() => parseCatalog(broken)).toThrow(/missing-signal/)
+  })
   it.each(['2026-02-30', '2026-13-01'])('rejects impossible date %s', (date) => {
     const broken = structuredClone(rawCatalog)
     broken.sources[0].checkedAt = date

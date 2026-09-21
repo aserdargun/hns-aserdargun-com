@@ -4,14 +4,17 @@ import patterns from '../../content/patterns.json'
 import solutions from '../../content/solutions.json'
 import sources from '../../content/sources.json'
 import timeline from '../../content/timeline.json'
-import weekly2026W36 from '../../content/weekly/2026-W36.json'
+import ecosystem from '../../content/ecosystem.json'
 import { parseCatalog } from './schema'
+
+const weeklyModules = import.meta.glob('../../content/weekly/*.json', { eager: true, import: 'default' })
 
 export const rawCatalog = {
   sources,
   solutions,
   claims,
-  weekly: [weekly2026W36],
+  weekly: Object.values(weeklyModules) as import('./schema').WeeklySnapshot[],
+  ecosystem,
   knowledge,
   patterns,
   timeline,

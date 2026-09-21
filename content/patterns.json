@@ -11,9 +11,9 @@
   {
     "id": "durable-execution",
     "title": { "tr": "Kalıcı yürütme", "en": "Durable Execution" },
-    "summary": { "tr": "Ajan adımları hata ve yeniden başlatma sonrasında kaybolmadan devam eder.", "en": "Agent steps continue across failures and restarts without losing progress." },
+    "summary": { "tr": "Kaydedilmiş ajan adımları hata ve yeniden başlatma sonrasında sürdürülebilir; dış etkilerin yinelenmemesi ayrıca tasarlanır.", "en": "Recorded agent steps can resume after failure or restart; preventing duplicate external effects requires separate design." },
     "mechanism": { "tr": "LLM çağrıları, araçlar ve durum bir günlüğe ya da denetim noktasına yazılır; yeniden deneme belirlenmiş sınırdan devam eder.", "en": "LLM calls, tools, and state are journaled or checkpointed so retries resume at a deterministic boundary." },
-    "tradeoffs": { "tr": "Dayanıklılık, yinelenebilirlik ve sürümleme disiplinini zorunlu kılar.", "en": "Durability requires disciplined idempotency and versioning." },
+    "tradeoffs": { "tr": "Kalıcı durum tek başına tam bir kez etki garantisi vermez; araçlar yinelenebilirlik anahtarları ve sürümleme gerektirir.", "en": "Durable state alone does not guarantee exactly-once effects; tools need idempotency keys and versioning." },
     "experiment": { "tr": "Araç yürütülürken süreci sonlandır ve aynı sonucu ikinci kez üretmeden devam ettiğini doğrula.", "en": "Terminate the process during a tool execution and verify it resumes without duplicating the outcome." },
     "sourceIds": ["google-adk-restate", "pydantic-durable-execution", "langchain-products"]
   },

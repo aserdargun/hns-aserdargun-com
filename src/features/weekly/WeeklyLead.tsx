@@ -10,7 +10,7 @@ export function WeeklyLead({ locale, snapshot }: { locale: Locale; snapshot: Wee
     <header className="weekly-lead">
       <div className="weekly-meta">
         <a href={`/${locale}/weekly/${snapshot.week}`}>{snapshot.week} <span aria-hidden="true">⌄</span></a>
-        <span>{locale === 'tr' ? 'İncelendi' : 'Reviewed'} {reviewed}</span>
+        <span>{locale === 'tr' ? 'Araştırma kesimi' : 'Research cutoff'} {reviewed}</span>
       </div>
       <div className="weekly-lead-grid">
         <div>

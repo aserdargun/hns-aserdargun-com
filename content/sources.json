@@ -5,7 +5,7 @@
     "publisher": "OpenAI",
     "url": "https://openai.com/index/harness-engineering/",
     "publishedAt": "2026-02-11",
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -19,7 +19,7 @@
     "publisher": "OpenAI",
     "url": "https://openai.com/index/open-source-codex-orchestration-symphony/",
     "publishedAt": "2026-04-27",
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -33,7 +33,7 @@
     "publisher": "Anthropic",
     "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
     "publishedAt": "2025-11-26",
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -47,7 +47,7 @@
     "publisher": "Anthropic",
     "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
     "publishedAt": "2026-03-24",
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -61,7 +61,7 @@
     "publisher": "Anthropic",
     "url": "https://www.anthropic.com/engineering/managed-agents",
     "publishedAt": "2026-04-08",
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -75,7 +75,7 @@
     "publisher": "DeepSeek AI",
     "url": "https://github.com/deepseek-ai/deepseek-harness",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -89,7 +89,7 @@
     "publisher": "Microsoft",
     "url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
     "publishedAt": "2026-07-22",
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -103,7 +103,7 @@
     "publisher": "LangChain",
     "url": "https://docs.langchain.com/oss/python/concepts/products",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -115,9 +115,9 @@
     "id": "google-agent-runtime",
     "title": "Agent Runtime Code Execution tool for ADK",
     "publisher": "Google",
-    "url": "https://google.github.io/adk-docs/tools/google-cloud/code-exec-agent-engine/",
+    "url": "https://adk.dev/integrations/code-exec-agent-runtime/",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -129,9 +129,9 @@
     "id": "google-adk-restate",
     "title": "Restate plugin for ADK",
     "publisher": "Google",
-    "url": "https://google.github.io/adk-docs/integrations/restate/",
+    "url": "https://adk.dev/integrations/restate/",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -145,7 +145,7 @@
     "publisher": "OpenHands",
     "url": "https://docs.openhands.dev/sdk/index",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -159,7 +159,7 @@
     "publisher": "SWE-agent",
     "url": "https://github.com/SWE-agent/mini-swe-agent",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -173,7 +173,7 @@
     "publisher": "Pydantic",
     "url": "https://pydantic.dev/docs/ai/capabilities/durable_execution/overview/",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -186,8 +186,8 @@
     "title": "Hermes Agent — The self-improving AI agent",
     "publisher": "Nous Research",
     "url": "https://github.com/NousResearch/hermes-agent",
-    "publishedAt": "2026-02-25",
-    "checkedAt": "2026-09-02",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -201,7 +201,7 @@
     "publisher": "Nous Research",
     "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/overview",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -215,7 +215,7 @@
     "publisher": "Anthropic",
     "url": "https://code.claude.com/docs/en/sub-agents",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -229,7 +229,7 @@
     "publisher": "Anthropic",
     "url": "https://code.claude.com/docs/en/whats-new/2026-w32",
     "publishedAt": "2026-08-07",
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -242,13 +242,13 @@
     "title": "OpenCode — The open source coding agent",
     "publisher": "Anomaly",
     "url": "https://github.com/anomalyco/opencode",
-    "publishedAt": "2026-03-20",
-    "checkedAt": "2026-09-02",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
     "kind": "official-repository",
     "access": "available",
     "summary": {
-      "tr": "Go tabanlı metin arayüzü, 75'ten fazla sağlayıcı, LSP ve oluşturma/planlama ajan modları sunan MIT lisanslı terminal ajanı.",
-      "en": "MIT-licensed terminal agent with a Go TUI, 75+ providers, LSP, and Build/Plan agent modes."
+      "tr": "Sağlayıcı seçimi, LSP ve birincil/alt ajan ayrımı sunan MIT lisanslı kodlama ajanı.",
+      "en": "MIT-licensed coding agent with provider choice, LSP, and primary/subagent roles."
     }
   },
   {
@@ -257,7 +257,7 @@
     "publisher": "Aider-AI",
     "url": "https://github.com/Aider-AI/aider",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -271,7 +271,7 @@
     "publisher": "Cline",
     "url": "https://github.com/cline/cline",
     "publishedAt": null,
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -285,7 +285,7 @@
     "publisher": "AAIF / Linux Foundation",
     "url": "https://goose-docs.ai/blog/2026/04/07/goose-moves-to-aaif/",
     "publishedAt": "2026-04-07",
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -299,7 +299,7 @@
     "publisher": "Linux Foundation",
     "url": "https://www.prnewswire.com/news-releases/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation-aaif-anchored-by-new-project-contributions-including-model-context-protocol-mcp-goose-and-agentsmd-302636897.html",
     "publishedAt": "2025-12-09",
-    "checkedAt": "2026-09-02",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -312,8 +312,8 @@
     "title": "OpenAI Codex CLI (codex-rs)",
     "publisher": "OpenAI",
     "url": "https://github.com/openai/codex",
-    "publishedAt": "2025-04-01",
-    "checkedAt": "2026-09-02",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -326,8 +326,8 @@
     "title": "Kiro — Spec-driven development",
     "publisher": "Amazon Web Services",
     "url": "https://kiro.dev/",
-    "publishedAt": "2026-05-07",
-    "checkedAt": "2026-09-02",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -341,7 +341,7 @@
     "publisher": "Butterfly Effect (Manus)",
     "url": "https://manus.im/blog/manus-sandbox",
     "publishedAt": null,
-    "checkedAt": "2026-09-04",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -355,7 +355,7 @@
     "publisher": "Butterfly Effect (Manus)",
     "url": "https://manus.im/blog/introducing-wide-research",
     "publishedAt": null,
-    "checkedAt": "2026-09-04",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -369,7 +369,7 @@
     "publisher": "Butterfly Effect (Manus)",
     "url": "https://manus.im/en/blog/manus-browser-operator",
     "publishedAt": null,
-    "checkedAt": "2026-09-04",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -383,7 +383,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/docs/bionic",
     "publishedAt": null,
-    "checkedAt": "2026-09-06",
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -397,7 +397,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/docs/bionic/agent/code-project",
     "publishedAt": null,
-    "checkedAt": "2026-09-06",
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -411,7 +411,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/docs/bionic/projects-and-sessions",
     "publishedAt": null,
-    "checkedAt": "2026-09-06",
+    "checkedAt": "2026-09-21",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -425,7 +425,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
     "publishedAt": "2026-07-16",
-    "checkedAt": "2026-09-06",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -439,7 +439,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/blog/how-auto-review-works",
     "publishedAt": "2026-08-27",
-    "checkedAt": "2026-09-06",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -453,12 +453,194 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/changelog/bionic-v1.1.1",
     "publishedAt": "2026-08-31",
-    "checkedAt": "2026-09-06",
+    "checkedAt": "2026-09-21",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
       "tr": "Oturum durumları, çatallanmış oturum taşıma düzeltmesi ve daha güvenilir beceri kullanımı içeren 1.1.1 sürüm notlarıdır.",
       "en": "Release notes for version 1.1.1, including session status, a forked-session move fix, and more reliable skill use."
+    }
+  },
+  {
+    "id": "claude-permissions",
+    "title": "Claude Code — Configure permissions",
+    "publisher": "Anthropic",
+    "url": "https://code.claude.com/docs/en/permissions",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "İzin kuralları, otomatik inceleme ve izinleri atlama kiplerinin sınırları.",
+      "en": "Permission rules, automatic review, and the limits of bypass mode."
+    }
+  },
+  {
+    "id": "cline-auto-approve",
+    "title": "Cline — Auto Approve & YOLO Mode",
+    "publisher": "Cline",
+    "url": "https://docs.cline.bot/features/auto-approve",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Onayların yapılandırılabildiğini ve YOLO kipinde atlandığını belgeler.",
+      "en": "Documents configurable approvals and their bypass in YOLO mode."
+    }
+  },
+  {
+    "id": "opencode-agents",
+    "title": "OpenCode — Agents",
+    "publisher": "Anomaly",
+    "url": "https://opencode.ai/docs/agents/",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Birincil ajanlar, alt ajanlar ve yapılandırılabilir araç izinleri.",
+      "en": "Primary agents, subagents, and configurable tool permissions."
+    }
+  },
+  {
+    "id": "kiro-specs",
+    "title": "Kiro — Specs",
+    "publisher": "Amazon Web Services",
+    "url": "https://kiro.dev/docs/specs/",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Gereksinim, tasarım ve görev adımlarından oluşan belirtim akışı.",
+      "en": "Specification workflow covering requirements, design, and tasks."
+    }
+  },
+  {
+    "id": "kiro-hooks",
+    "title": "Kiro — Hooks",
+    "publisher": "Amazon Web Services",
+    "url": "https://kiro.dev/docs/hooks/",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Dosya, araç ve görev olayları için yüzeye göre değişen tetikleyiciler.",
+      "en": "Surface-dependent hooks for file, tool, and task events."
+    }
+  },
+  {
+    "id": "kiro-models",
+    "title": "Kiro — Models",
+    "publisher": "Amazon Web Services",
+    "url": "https://kiro.dev/docs/models/",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Model seçimi ve otomatik yönlendirme seçenekleri.",
+      "en": "Model selection and automatic routing options."
+    }
+  },
+  {
+    "id": "kiro-general-availability",
+    "title": "Kiro is generally available",
+    "publisher": "Amazon Web Services",
+    "url": "https://kiro.dev/blog/general-availability/",
+    "publishedAt": "2025-11-17",
+    "checkedAt": "2026-09-21",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "IDE ve terminal için genel erişim duyurusu.",
+      "en": "General availability announcement for the IDE and terminal."
+    }
+  },
+  {
+    "id": "goose-custom-distributions",
+    "title": "goose — Custom Distributions",
+    "publisher": "goose",
+    "url": "https://goose-docs.ai/docs/guides/custom-distributions/",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
+    "kind": "official-docs",
+    "access": "available",
+    "summary": {
+      "tr": "Sağlayıcılar, uzantılar ve iş akışlarıyla özel dağıtım oluşturma.",
+      "en": "Creating distributions with configured providers, extensions, and workflows."
+    }
+  },
+  {
+    "id": "codex-sandbox-presets",
+    "title": "Codex — Sandbox presets",
+    "publisher": "OpenAI",
+    "url": "https://github.com/openai/codex/blob/main/sdk/python/src/openai_codex/_sandbox.py",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
+    "kind": "official-repository",
+    "access": "available",
+    "summary": {
+      "tr": "Salt okunur, çalışma alanına yazma ve sınırsız erişim önayarlarının resmî eşlemesi.",
+      "en": "Official mapping of read-only, workspace-write, and full-access presets."
+    }
+  },
+  {
+    "id": "lmstudio-bionic-changelog-1-1-4",
+    "title": "LM Studio Bionic 1.1.4",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/changelog/bionic-v1.1.4",
+    "publishedAt": "2026-09-17",
+    "checkedAt": "2026-09-21",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Bionic 1.1.4 için tarihli resmî sürüm notları.",
+      "en": "Dated official release notes for Bionic 1.1.4."
+    }
+  },
+  {
+    "id": "lmstudio-bionic-changelog-1-1-5",
+    "title": "LM Studio Bionic 1.1.5",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/changelog/bionic-v1.1.5",
+    "publishedAt": "2026-09-19",
+    "checkedAt": "2026-09-21",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Bionic 1.1.5 için tarihli resmî sürüm notları.",
+      "en": "Dated official release notes for Bionic 1.1.5."
+    }
+  },
+  {
+    "id": "codex-state-store",
+    "title": "Codex — State metadata store",
+    "publisher": "OpenAI",
+    "url": "https://github.com/openai/codex/blob/main/codex-rs/state/src/lib.rs",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
+    "kind": "official-repository",
+    "access": "available",
+    "summary": {
+      "tr": "JSONL yürütme kayıtlarından SQLite üstveri deposuna yansıtma sınırı.",
+      "en": "Boundary between JSONL rollout records and mirrored SQLite metadata."
+    }
+  },
+  {
+    "id": "codex-linux-sandbox",
+    "title": "Codex — Linux sandbox",
+    "publisher": "OpenAI",
+    "url": "https://github.com/openai/codex/blob/main/codex-rs/linux-sandbox/src/lib.rs",
+    "publishedAt": null,
+    "checkedAt": "2026-09-21",
+    "kind": "official-repository",
+    "access": "available",
+    "summary": {
+      "tr": "Linux üzerinde süreç kısıtları ve dosya sistemi yalıtımı.",
+      "en": "Process restrictions and filesystem isolation on Linux."
     }
   }
 ]

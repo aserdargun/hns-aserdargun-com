@@ -14,7 +14,7 @@ test('mobile weekly to comparison workflow has no horizontal overflow', async ({
   const disclosureBox = await weeklyDisclosure.boundingBox()
   expect(disclosureBox?.height).toBeGreaterThanOrEqual(44)
   await weeklyDisclosure.click()
-  await expect(page.getByText('Harness layers are becoming explicit product classes')).toBeVisible()
+  await expect(page.getByText('Approval, isolation, and verification are separate layers')).toBeVisible()
 
   await menu.click()
   await page.getByRole('link', { name: 'Radar', exact: true }).click()

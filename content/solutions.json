@@ -40,18 +40,18 @@
     "layers": {
       "execution": { "state": "partial", "claimIds": ["symphony-control-plane"] },
       "tools": { "state": "partial", "claimIds": ["symphony-control-plane"] },
-      "context": { "state": "partial", "claimIds": ["symphony-control-plane"] },
+      "context": { "state": "unknown", "claimIds": [] },
       "lifecycle": { "state": "supported", "claimIds": ["symphony-control-plane"] },
       "observability": { "state": "partial", "claimIds": ["symphony-control-plane"] },
-      "verification": { "state": "partial", "claimIds": ["symphony-control-plane"] },
-      "governance": { "state": "partial", "claimIds": ["symphony-control-plane"] }
+      "verification": { "state": "unknown", "claimIds": [] },
+      "governance": { "state": "unknown", "claimIds": [] }
     },
     "maturity": "growing",
     "radar": "watch",
     "radarRationale": { "tr": "Ajan filosu denetim düzlemi yaklaşımı değerli; geniş üretim olgunluğu izlenmeli.", "en": "The agent-fleet control-plane approach is valuable; broader production maturity should be monitored." },
     "radarEffectiveAt": "2026-09-02",
-    "lastRelease": "2026-04-27",
-    "lastReviewedAt": "2026-09-02",
+    "lastRelease": null,
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["openai-symphony"],
     "claimIds": ["symphony-control-plane", "symphony-radar-watch"]
   },
@@ -68,17 +68,17 @@
     "layers": {
       "execution": { "state": "supported", "claimIds": ["anthropic-session-harness-sandbox"] },
       "tools": { "state": "supported", "claimIds": ["anthropic-session-harness-sandbox"] },
-      "context": { "state": "supported", "claimIds": ["anthropic-long-running-artifacts"] },
-      "lifecycle": { "state": "supported", "claimIds": ["anthropic-planner-evaluator"] },
+      "context": { "state": "partial", "claimIds": ["anthropic-session-harness-sandbox"] },
+      "lifecycle": { "state": "supported", "claimIds": ["anthropic-session-harness-sandbox"] },
       "observability": { "state": "partial", "claimIds": ["anthropic-session-harness-sandbox"] },
-      "verification": { "state": "partial", "claimIds": ["anthropic-planner-evaluator"] },
+      "verification": { "state": "unknown", "claimIds": [] },
       "governance": { "state": "partial", "claimIds": ["anthropic-session-harness-sandbox"] }
     },
     "maturity": "growing",
     "radar": "watch",
     "radarRationale": { "tr": "Harness–model birlikte evrimi için önemli bir araştırma ve ürün referansı.", "en": "An important research and product reference for harness–model coevolution." },
     "radarEffectiveAt": "2026-09-02",
-    "lastRelease": "2026-04-08",
+    "lastRelease": null,
     "lastReviewedAt": "2026-09-02",
     "sourceIds": ["anthropic-effective-harnesses", "anthropic-harness-design", "anthropic-managed-agents"],
     "claimIds": ["anthropic-long-running-artifacts", "anthropic-planner-evaluator", "anthropic-stale-assumptions", "anthropic-session-harness-sandbox", "anthropic-radar-watch"]
@@ -94,20 +94,20 @@
     "languages": ["TypeScript", "Python"],
     "summary": { "tr": "Cordis tabanlı, eklenti öncelikli açık kaynak ajan harness'ı.", "en": "A Cordis-powered, plugin-first open-source agent harness." },
     "layers": {
-      "execution": { "state": "supported", "claimIds": ["deepseek-plugin-architecture"] },
+      "execution": { "state": "unknown", "claimIds": [] },
       "tools": { "state": "supported", "claimIds": ["deepseek-plugin-architecture"] },
-      "context": { "state": "partial", "claimIds": ["deepseek-plugin-architecture"] },
+      "context": { "state": "unknown", "claimIds": [] },
       "lifecycle": { "state": "partial", "claimIds": ["deepseek-plugin-architecture"] },
       "observability": { "state": "unknown", "claimIds": [] },
       "verification": { "state": "unknown", "claimIds": [] },
-      "governance": { "state": "partial", "claimIds": ["deepseek-developer-preview"] }
+      "governance": { "state": "unknown", "claimIds": [] }
     },
     "maturity": "preview",
     "radar": "trial",
     "radarRationale": { "tr": "Açık eklenti mimarisi denenmeli; geliştirici önizlemesi riski gözetilmeli.", "en": "Its open plugin architecture merits a trial while preserving developer-preview caution." },
     "radarEffectiveAt": "2026-09-02",
     "lastRelease": null,
-    "lastReviewedAt": "2026-09-02",
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["deepseek-harness-repo"],
     "claimIds": ["deepseek-plugin-architecture", "deepseek-developer-preview", "deepseek-radar-trial"]
   },
@@ -127,15 +127,15 @@
       "context": { "state": "supported", "claimIds": ["microsoft-batteries-included"] },
       "lifecycle": { "state": "supported", "claimIds": ["microsoft-batteries-included"] },
       "observability": { "state": "supported", "claimIds": ["microsoft-batteries-included"] },
-      "verification": { "state": "partial", "claimIds": ["microsoft-batteries-included"] },
+      "verification": { "state": "unknown", "claimIds": [] },
       "governance": { "state": "supported", "claimIds": ["microsoft-batteries-included"] }
     },
     "maturity": "growing",
     "radar": "trial",
     "radarRationale": { "tr": "Kurumsal yetenek kapsamı güçlü; yeni sürümün olgunluğu izlenmeli.", "en": "Enterprise capability coverage is strong; the new release's maturity should be monitored." },
     "radarEffectiveAt": "2026-09-02",
-    "lastRelease": "2026-07-22",
-    "lastReviewedAt": "2026-09-02",
+    "lastRelease": null,
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["microsoft-agent-framework-harness"],
     "claimIds": ["microsoft-batteries-included", "microsoft-python-dotnet", "microsoft-radar-trial"]
   },
@@ -156,14 +156,14 @@
       "lifecycle": { "state": "supported", "claimIds": ["deep-agents-capabilities"] },
       "observability": { "state": "unknown", "claimIds": [] },
       "verification": { "state": "unknown", "claimIds": [] },
-      "governance": { "state": "partial", "claimIds": ["deep-agents-capabilities"] }
+      "governance": { "state": "unknown", "claimIds": [] }
     },
     "maturity": "established",
     "radar": "adopt",
     "radarRationale": { "tr": "Çatı/çalışma zamanı/harness sınırlarını incelemek için güçlü bir referans.", "en": "A strong reference for studying framework/runtime/harness boundaries." },
     "radarEffectiveAt": "2026-09-02",
     "lastRelease": null,
-    "lastReviewedAt": "2026-09-02",
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["langchain-products"],
     "claimIds": ["langchain-stack-taxonomy", "deep-agents-capabilities", "deep-agents-radar-adopt"]
   },
@@ -182,16 +182,16 @@
       "tools": { "state": "partial", "claimIds": ["langgraph-durable-runtime"] },
       "context": { "state": "supported", "claimIds": ["langgraph-durable-runtime"] },
       "lifecycle": { "state": "supported", "claimIds": ["langgraph-durable-runtime"] },
-      "observability": { "state": "partial", "claimIds": ["langgraph-durable-runtime"] },
+      "observability": { "state": "unknown", "claimIds": [] },
       "verification": { "state": "unknown", "claimIds": [] },
-      "governance": { "state": "partial", "claimIds": ["langgraph-durable-runtime"] }
+      "governance": { "state": "unknown", "claimIds": [] }
     },
     "maturity": "established",
     "radar": "adopt",
     "radarRationale": { "tr": "Kalıcı, durum bilgili ajan çalışma zamanları için referans.", "en": "A reference for durable stateful agent runtimes." },
     "radarEffectiveAt": "2026-09-02",
     "lastRelease": null,
-    "lastReviewedAt": "2026-09-02",
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["langchain-products"],
     "claimIds": ["langchain-stack-taxonomy", "langgraph-durable-runtime", "langgraph-radar-adopt"]
   },
@@ -199,7 +199,7 @@
     "id": "google-adk",
     "name": "Google Agent Development Kit",
     "organization": "Google",
-    "canonicalUrl": "https://google.github.io/adk-docs/",
+    "canonicalUrl": "https://adk.dev/",
     "class": "agent-framework",
     "lifecycle": "production",
     "openSource": "yes",
@@ -227,7 +227,7 @@
     "id": "google-agent-runtime",
     "name": "Google Agent Runtime",
     "organization": "Google",
-    "canonicalUrl": "https://google.github.io/adk-docs/tools/google-cloud/code-exec-agent-engine/",
+    "canonicalUrl": "https://adk.dev/integrations/code-exec-agent-runtime/",
     "class": "execution-runtime",
     "lifecycle": "emerging",
     "openSource": "no",
@@ -238,7 +238,7 @@
       "tools": { "state": "supported", "claimIds": ["google-persistent-sandbox"] },
       "context": { "state": "partial", "claimIds": ["google-persistent-sandbox"] },
       "lifecycle": { "state": "supported", "claimIds": ["google-persistent-sandbox"] },
-      "observability": { "state": "partial", "claimIds": ["google-persistent-sandbox"] },
+      "observability": { "state": "unknown", "claimIds": [] },
       "verification": { "state": "unknown", "claimIds": [] },
       "governance": { "state": "supported", "claimIds": ["google-persistent-sandbox"] }
     },
@@ -247,7 +247,7 @@
     "radarRationale": { "tr": "Kalıcı korumalı alan yürütümü önemli; yönetilen hizmetin olgunluğu izlenmeli.", "en": "Persistent sandbox execution is important; managed-service maturity should be monitored." },
     "radarEffectiveAt": "2026-09-02",
     "lastRelease": null,
-    "lastReviewedAt": "2026-09-02",
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["google-agent-runtime"],
     "claimIds": ["google-persistent-sandbox", "google-runtime-radar-watch"]
   },
@@ -267,15 +267,15 @@
       "context": { "state": "partial", "claimIds": ["openhands-sdk-capabilities"] },
       "lifecycle": { "state": "supported", "claimIds": ["openhands-sdk-capabilities"] },
       "observability": { "state": "unknown", "claimIds": [] },
-      "verification": { "state": "partial", "claimIds": ["openhands-sdk-capabilities"] },
-      "governance": { "state": "partial", "claimIds": ["openhands-sdk-capabilities"] }
+      "verification": { "state": "unknown", "claimIds": [] },
+      "governance": { "state": "unknown", "claimIds": [] }
     },
     "maturity": "established",
     "radar": "trial",
     "radarRationale": { "tr": "Modelden bağımsız yazılım ajanı altyapısı olarak denenmeli.", "en": "Worth trialing as model-agnostic software-agent infrastructure." },
     "radarEffectiveAt": "2026-09-02",
     "lastRelease": null,
-    "lastReviewedAt": "2026-09-02",
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["openhands-sdk"],
     "claimIds": ["openhands-sdk-capabilities", "openhands-radar-trial"]
   },
@@ -295,15 +295,15 @@
       "context": { "state": "partial", "claimIds": ["mini-linear-minimal"] },
       "lifecycle": { "state": "partial", "claimIds": ["mini-linear-minimal"] },
       "observability": { "state": "partial", "claimIds": ["mini-linear-minimal"] },
-      "verification": { "state": "partial", "claimIds": ["mini-linear-minimal"] },
-      "governance": { "state": "partial", "claimIds": ["mini-linear-minimal"] }
+      "verification": { "state": "unknown", "claimIds": [] },
+      "governance": { "state": "unknown", "claimIds": [] }
     },
     "maturity": "established",
     "radar": "experiment",
     "radarRationale": { "tr": "Harness karmaşıklığının etkisini ayırmak için deneysel taban.", "en": "An experimental baseline for isolating the effect of harness complexity." },
     "radarEffectiveAt": "2026-09-02",
     "lastRelease": null,
-    "lastReviewedAt": "2026-09-02",
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["mini-swe-agent-repo"],
     "claimIds": ["mini-linear-minimal", "mini-radar-experiment"]
   },
@@ -323,7 +323,7 @@
       "context": { "state": "partial", "claimIds": ["pydantic-durable-integrations"] },
       "lifecycle": { "state": "supported", "claimIds": ["pydantic-durable-integrations"] },
       "observability": { "state": "unknown", "claimIds": [] },
-      "verification": { "state": "partial", "claimIds": ["pydantic-durable-integrations"] },
+      "verification": { "state": "unknown", "claimIds": [] },
       "governance": { "state": "partial", "claimIds": ["pydantic-durable-integrations"] }
     },
     "maturity": "growing",
@@ -331,7 +331,7 @@
     "radarRationale": { "tr": "Kalıcı yürütme arka uçlarını karşılaştırmak için üretim odaklı bir deneme referansı.", "en": "A production-oriented TRIAL reference for comparing durable backends." },
     "radarEffectiveAt": "2026-09-02",
     "lastRelease": null,
-    "lastReviewedAt": "2026-09-02",
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["pydantic-durable-execution"],
     "claimIds": ["pydantic-durable-integrations", "pydantic-radar-trial"]
   },
@@ -350,16 +350,16 @@
       "tools": { "state": "supported", "claimIds": ["hermes-mcp-toolsets"] },
       "context": { "state": "supported", "claimIds": ["hermes-persistent-memory", "hermes-learning-loop"] },
       "lifecycle": { "state": "supported", "claimIds": ["hermes-multi-platform-gateway", "hermes-learning-loop"] },
-      "observability": { "state": "partial", "claimIds": ["hermes-mcp-toolsets"] },
+      "observability": { "state": "unknown", "claimIds": [] },
       "verification": { "state": "unknown", "claimIds": [] },
-      "governance": { "state": "partial", "claimIds": ["hermes-multi-platform-gateway"] }
+      "governance": { "state": "unknown", "claimIds": [] }
     },
     "maturity": "growing",
     "radar": "watch",
     "radarRationale": { "tr": "Bellek ve beceri mimarisi benzersiz; olgunluk sinyali hâlâ erken.", "en": "The memory and skill architecture is unique; maturity signals are still early." },
     "radarEffectiveAt": "2026-09-02",
-    "lastRelease": "2026-08-31",
-    "lastReviewedAt": "2026-09-02",
+    "lastRelease": null,
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["hermes-agent-repo", "hermes-agent-docs"],
     "claimIds": ["hermes-learning-loop", "hermes-persistent-memory", "hermes-mcp-toolsets", "hermes-multi-platform-gateway", "hermes-radar-watch"]
   },
@@ -378,17 +378,17 @@
       "tools": { "state": "supported", "claimIds": ["claude-subagent-isolation"] },
       "context": { "state": "supported", "claimIds": ["claude-subagent-isolation"] },
       "lifecycle": { "state": "supported", "claimIds": ["claude-subagent-isolation"] },
-      "observability": { "state": "supported", "claimIds": ["claude-permission-modes"] },
-      "verification": { "state": "partial", "claimIds": ["claude-permission-modes"] },
+      "observability": { "state": "unknown", "claimIds": [] },
+      "verification": { "state": "unknown", "claimIds": [] },
       "governance": { "state": "supported", "claimIds": ["claude-permission-modes", "claude-self-hosted-runner"] }
     },
     "maturity": "established",
     "radar": "adopt",
     "radarRationale": { "tr": "Alt ajan yalıtımı ve izin modları için benimseme referansı.", "en": "An ADOPT reference for subagent isolation and permission modes." },
     "radarEffectiveAt": "2026-09-02",
-    "lastRelease": "2026-08-07",
-    "lastReviewedAt": "2026-09-02",
-    "sourceIds": ["claude-code-docs", "claude-code-whats-new-w32"],
+    "lastRelease": null,
+    "lastReviewedAt": "2026-09-21",
+    "sourceIds": ["claude-code-docs", "claude-code-whats-new-w32", "claude-permissions", "codex-sandbox-presets", "opencode-agents", "cline-auto-approve"],
     "claimIds": ["claude-subagent-isolation", "claude-permission-modes", "claude-self-hosted-runner", "claude-radar-adopt", "weekly-canonicalization", "weekly-permission-divergence"]
   },
   {
@@ -399,24 +399,24 @@
     "class": "coding-harness",
     "lifecycle": "production",
     "openSource": "yes",
-    "languages": ["Go", "TypeScript"],
-    "summary": { "tr": "75'ten fazla sağlayıcıyı destekleyen, LSP tanılarını ajan döngüsüne geri besleyen MIT lisanslı terminal kodlama ajanı.", "en": "An MIT-licensed TUI coding agent that supports 75+ providers and feeds LSP diagnostics back into the agent loop." },
+    "languages": ["TypeScript"],
+    "summary": { "tr": "Sağlayıcı seçimi, LSP geri bildirimi ve izinlerle yapılandırılan ajan rolleri sunan MIT lisanslı kodlama ajanı.", "en": "MIT-licensed coding agent with provider choice, LSP feedback, and permission-configured agent roles." },
     "layers": {
       "execution": { "state": "supported", "claimIds": ["opencode-build-plan-agents"] },
       "tools": { "state": "supported", "claimIds": ["opencode-lsp-loop", "opencode-provider-agnostic"] },
       "context": { "state": "supported", "claimIds": ["opencode-lsp-loop"] },
       "lifecycle": { "state": "supported", "claimIds": ["opencode-build-plan-agents"] },
-      "observability": { "state": "partial", "claimIds": ["opencode-provider-agnostic"] },
+      "observability": { "state": "unknown", "claimIds": [] },
       "verification": { "state": "partial", "claimIds": ["opencode-lsp-loop"] },
-      "governance": { "state": "partial", "claimIds": ["opencode-provider-agnostic"] }
+      "governance": { "state": "partial", "claimIds": ["opencode-build-plan-agents"] }
     },
     "maturity": "established",
     "radar": "adopt",
     "radarRationale": { "tr": "Sağlayıcıdan bağımsız, LSP destekli terminal kodlama ajanı için benimseme referansı.", "en": "An ADOPT reference for provider-agnostic, LSP-aware terminal coding agents." },
     "radarEffectiveAt": "2026-09-02",
-    "lastRelease": "2026-09-01",
-    "lastReviewedAt": "2026-09-02",
-    "sourceIds": ["opencode-repo"],
+    "lastRelease": null,
+    "lastReviewedAt": "2026-09-21",
+    "sourceIds": ["opencode-repo", "opencode-agents", "claude-permissions", "codex-sandbox-presets"],
     "claimIds": ["opencode-lsp-loop", "opencode-provider-agnostic", "opencode-build-plan-agents", "opencode-radar-adopt", "weekly-canonicalization"]
   },
   {
@@ -435,7 +435,7 @@
       "context": { "state": "supported", "claimIds": ["aider-repo-map"] },
       "lifecycle": { "state": "supported", "claimIds": ["aider-architect-editor", "aider-atomic-commits"] },
       "observability": { "state": "partial", "claimIds": ["aider-atomic-commits"] },
-      "verification": { "state": "partial", "claimIds": ["aider-repo-map"] },
+      "verification": { "state": "unknown", "claimIds": [] },
       "governance": { "state": "partial", "claimIds": ["aider-atomic-commits"] }
     },
     "maturity": "established",
@@ -443,9 +443,9 @@
     "radarRationale": { "tr": "Git yerel eşli programlama için deneme referansı; hâlâ 0.x sürümünde.", "en": "A TRIAL reference for git-native pair programming; still on 0.x." },
     "radarEffectiveAt": "2026-09-02",
     "lastRelease": null,
-    "lastReviewedAt": "2026-09-02",
-    "sourceIds": ["aider-repo"],
-    "claimIds": ["aider-architect-editor", "aider-atomic-commits", "aider-repo-map", "aider-radar-trial", "weekly-permission-divergence"]
+    "lastReviewedAt": "2026-09-21",
+    "sourceIds": ["aider-repo", "codex-sandbox-presets", "claude-permissions", "cline-auto-approve"],
+    "claimIds": ["aider-architect-editor", "aider-atomic-commits", "aider-repo-map", "aider-radar-trial"]
   },
   {
     "id": "cline",
@@ -458,21 +458,21 @@
     "languages": ["TypeScript"],
     "summary": { "tr": "Planlama/Uygulama modları, MCP pazarı ve kendi anahtarını kullanma seçeneğiyle VS Code, JetBrains, CLI ve SDK yüzeylerinde çalışan açık kaynak ajan.", "en": "An open-source agent that runs across VS Code, JetBrains, CLI, and SDK with Plan/Act modes, MCP marketplace, and BYOK." },
     "layers": {
-      "execution": { "state": "supported", "claimIds": ["cline-byok"] },
+      "execution": { "state": "unknown", "claimIds": [] },
       "tools": { "state": "supported", "claimIds": ["cline-mcp-tool-creation", "cline-byok"] },
-      "context": { "state": "supported", "claimIds": ["cline-plan-act"] },
+      "context": { "state": "unknown", "claimIds": [] },
       "lifecycle": { "state": "supported", "claimIds": ["cline-plan-act"] },
-      "observability": { "state": "partial", "claimIds": ["cline-plan-act"] },
-      "verification": { "state": "partial", "claimIds": ["cline-plan-act"] },
-      "governance": { "state": "supported", "claimIds": ["cline-plan-act", "cline-byok"] }
+      "observability": { "state": "unknown", "claimIds": [] },
+      "verification": { "state": "unknown", "claimIds": [] },
+      "governance": { "state": "supported", "claimIds": ["cline-plan-act"] }
     },
     "maturity": "established",
     "radar": "trial",
     "radarRationale": { "tr": "IDE içinde onay kapısıyla çalışan ajanlar için deneme referansı.", "en": "A TRIAL reference for IDE-resident approval-gated agents." },
     "radarEffectiveAt": "2026-09-02",
-    "lastRelease": "2026-09-02",
-    "lastReviewedAt": "2026-09-02",
-    "sourceIds": ["cline-repo"],
+    "lastRelease": null,
+    "lastReviewedAt": "2026-09-21",
+    "sourceIds": ["cline-repo", "cline-auto-approve", "codex-sandbox-presets", "claude-permissions"],
     "claimIds": ["cline-plan-act", "cline-mcp-tool-creation", "cline-byok", "cline-radar-trial", "weekly-permission-divergence"]
   },
   {
@@ -484,23 +484,23 @@
     "lifecycle": "production",
     "openSource": "yes",
     "languages": ["Rust"],
-    "summary": { "tr": "MCP tabanlı, 70+ uzantıya erişen, Linux Foundation/AAIF çatısı altında yönetilen açık kaynak ajan.", "en": "An MCP-based open-source agent that accesses 70+ extensions and is stewarded under the Linux Foundation's AAIF." },
+    "summary": { "tr": "MCP uzantıları ve özel dağıtımlar sunan, Linux Foundation/AAIF çatısı altındaki açık kaynak ajan.", "en": "Open-source agent under Linux Foundation/AAIF with MCP extensions and custom distributions." },
     "layers": {
-      "execution": { "state": "supported", "claimIds": ["goose-mcp-extensions"] },
+      "execution": { "state": "unknown", "claimIds": [] },
       "tools": { "state": "supported", "claimIds": ["goose-mcp-extensions"] },
-      "context": { "state": "partial", "claimIds": ["goose-mcp-extensions"] },
-      "lifecycle": { "state": "supported", "claimIds": ["goose-aaif-governance", "goose-custom-distro"] },
-      "observability": { "state": "partial", "claimIds": ["goose-mcp-extensions"] },
+      "context": { "state": "unknown", "claimIds": [] },
+      "lifecycle": { "state": "unknown", "claimIds": [] },
+      "observability": { "state": "unknown", "claimIds": [] },
       "verification": { "state": "unknown", "claimIds": [] },
-      "governance": { "state": "supported", "claimIds": ["goose-aaif-governance", "goose-custom-distro"] }
+      "governance": { "state": "unknown", "claimIds": [] }
     },
     "maturity": "established",
     "radar": "trial",
     "radarRationale": { "tr": "Tarafsız yönetim altındaki MCP referans ajanı olarak deneme listesinde.", "en": "A TRIAL candidate as the reference agent for MCP under neutral governance." },
     "radarEffectiveAt": "2026-09-02",
-    "lastRelease": "2026-06-03",
-    "lastReviewedAt": "2026-09-02",
-    "sourceIds": ["goose-aaif-blog", "aaif-launch"],
+    "lastRelease": null,
+    "lastReviewedAt": "2026-09-21",
+    "sourceIds": ["goose-aaif-blog", "aaif-launch", "goose-custom-distributions"],
     "claimIds": ["goose-aaif-governance", "goose-mcp-extensions", "goose-custom-distro", "goose-radar-trial", "weekly-open-governance"]
   },
   {
@@ -512,23 +512,23 @@
     "lifecycle": "production",
     "openSource": "yes",
     "languages": ["Rust"],
-    "summary": { "tr": "Rust ile yazılmış, çekirdek seviyesinde korumalı alana ve SQLite tabanlı kalıcı görev mimarisine sahip terminal kodlama ajanı.", "en": "A terminal coding agent written in Rust with kernel-level sandboxing and a SQLite-backed persistent thread model." },
+    "summary": { "tr": "İşletim sistemi yalıtımı, yapılandırılabilir izinler ve kalıcı oturum kayıtları sunan Rust tabanlı terminal kodlama ajanı.", "en": "Rust-based terminal coding agent with OS isolation, configurable permissions, and persistent session records." },
     "layers": {
       "execution": { "state": "supported", "claimIds": ["codex-cli-kernel-sandbox", "codex-cli-approval-policy"] },
-      "tools": { "state": "supported", "claimIds": ["codex-cli-approval-policy"] },
+      "tools": { "state": "unknown", "claimIds": [] },
       "context": { "state": "supported", "claimIds": ["codex-cli-persistent-thread"] },
       "lifecycle": { "state": "supported", "claimIds": ["codex-cli-persistent-thread"] },
       "observability": { "state": "partial", "claimIds": ["codex-cli-persistent-thread"] },
-      "verification": { "state": "partial", "claimIds": ["codex-cli-approval-policy"] },
+      "verification": { "state": "unknown", "claimIds": [] },
       "governance": { "state": "supported", "claimIds": ["codex-cli-kernel-sandbox", "codex-cli-approval-policy"] }
     },
     "maturity": "established",
     "radar": "adopt",
     "radarRationale": { "tr": "Çekirdek seviyesinde korumalı alan ve kalıcı görevler için benimseme referansı.", "en": "An ADOPT reference for kernel-level sandboxing plus persistent threads." },
     "radarEffectiveAt": "2026-09-02",
-    "lastRelease": "2026-03-31",
-    "lastReviewedAt": "2026-09-02",
-    "sourceIds": ["codex-cli-repo"],
+    "lastRelease": null,
+    "lastReviewedAt": "2026-09-21",
+    "sourceIds": ["codex-cli-repo", "codex-sandbox-presets", "claude-permissions", "opencode-agents", "cline-auto-approve", "codex-state-store", "codex-linux-sandbox"],
     "claimIds": ["codex-cli-kernel-sandbox", "codex-cli-persistent-thread", "codex-cli-approval-policy", "codex-cli-radar-adopt", "weekly-canonicalization", "weekly-permission-divergence"]
   },
   {
@@ -540,23 +540,23 @@
     "lifecycle": "production",
     "openSource": "no",
     "languages": ["TypeScript"],
-    "summary": { "tr": "Belirtim odaklı geliştirme, ajan tetikleyicileri ve Bedrock üzerinde çoklu model yönlendirmesi sunan ajan IDE'si.", "en": "An agentic IDE that combines spec-driven development, agent hooks, and multi-model routing on Bedrock." },
+    "summary": { "tr": "Belirtimler, olay tetikleyicileri ve model seçimini IDE ve terminal iş akışlarında birleştirir.", "en": "Combines specifications, event hooks, and model selection in IDE and terminal workflows." },
     "layers": {
-      "execution": { "state": "supported", "claimIds": ["kiro-multi-model-bedrock"] },
+      "execution": { "state": "unknown", "claimIds": [] },
       "tools": { "state": "supported", "claimIds": ["kiro-agent-hooks", "kiro-multi-model-bedrock"] },
       "context": { "state": "supported", "claimIds": ["kiro-spec-driven"] },
       "lifecycle": { "state": "supported", "claimIds": ["kiro-spec-driven", "kiro-agent-hooks"] },
-      "observability": { "state": "partial", "claimIds": ["kiro-agent-hooks"] },
-      "verification": { "state": "supported", "claimIds": ["kiro-spec-driven"] },
-      "governance": { "state": "supported", "claimIds": ["kiro-spec-driven", "kiro-multi-model-bedrock"] }
+      "observability": { "state": "unknown", "claimIds": [] },
+      "verification": { "state": "unknown", "claimIds": [] },
+      "governance": { "state": "unknown", "claimIds": [] }
     },
     "maturity": "growing",
     "radar": "watch",
     "radarRationale": { "tr": "Belirtim odaklı yaklaşım yeni bir orkestrasyon sinyali; bağımsız olgunluk verisi sınırlı.", "en": "The spec-driven approach is a new orchestration signal; independent maturity data is limited." },
     "radarEffectiveAt": "2026-09-02",
-    "lastRelease": "2026-05-07",
-    "lastReviewedAt": "2026-09-02",
-    "sourceIds": ["kiro-docs"],
+    "lastRelease": null,
+    "lastReviewedAt": "2026-09-21",
+    "sourceIds": ["kiro-docs", "kiro-specs", "kiro-hooks", "kiro-models"],
     "claimIds": ["kiro-spec-driven", "kiro-agent-hooks", "kiro-multi-model-bedrock", "kiro-radar-watch"]
   },
   {
@@ -574,8 +574,8 @@
       "tools": { "state": "supported", "claimIds": ["manus-cloud-sandbox", "manus-browser-operator"] },
       "context": { "state": "partial", "claimIds": ["manus-wide-research"] },
       "lifecycle": { "state": "supported", "claimIds": ["manus-wide-research", "manus-cloud-sandbox"] },
-      "observability": { "state": "partial", "claimIds": ["manus-cloud-sandbox"] },
-      "verification": { "state": "partial", "claimIds": ["manus-wide-research"] },
+      "observability": { "state": "unknown", "claimIds": [] },
+      "verification": { "state": "unknown", "claimIds": [] },
       "governance": { "state": "partial", "claimIds": ["manus-cloud-sandbox", "manus-browser-operator"] }
     },
     "maturity": "growing",
@@ -583,7 +583,7 @@
     "radarRationale": { "tr": "Yönetilen harness sınıfı için izlenmesi gereken yeni bir bulut korumalı alan sinyali.", "en": "A watch-worthy cloud-sandbox signal for the managed-harness class." },
     "radarEffectiveAt": "2026-09-02",
     "lastRelease": null,
-    "lastReviewedAt": "2026-09-04",
+    "lastReviewedAt": "2026-09-21",
     "sourceIds": ["manus-features", "manus-wide-research-source", "manus-browser-operator-source"],
     "claimIds": ["manus-cloud-sandbox", "manus-wide-research", "manus-browser-operator", "manus-radar-watch"]
   },
@@ -601,7 +601,7 @@
       "execution": { "state": "supported", "claimIds": ["bionic-agentic-harness", "bionic-hybrid-model-execution"] },
       "tools": { "state": "supported", "claimIds": ["bionic-code-workflow"] },
       "context": { "state": "supported", "claimIds": ["bionic-project-session-lifecycle"] },
-      "lifecycle": { "state": "supported", "claimIds": ["bionic-project-session-lifecycle"] },
+      "lifecycle": { "state": "supported", "claimIds": ["bionic-project-session-lifecycle", "bionic-september-release"] },
       "observability": { "state": "partial", "claimIds": ["bionic-code-workflow", "bionic-project-session-lifecycle"] },
       "verification": { "state": "partial", "claimIds": ["bionic-code-workflow"] },
       "governance": { "state": "supported", "claimIds": ["bionic-hybrid-model-execution", "bionic-auto-review-governance"] }
@@ -610,9 +610,9 @@
     "radar": "trial",
     "radarRationale": { "tr": "Yerel ve bulut açık modellerini denetimli bir üretkenlik harness'ında birleştirdiği için deneme adayı; bağımsız olgunluk verisi henüz sınırlı.", "en": "A TRIAL candidate for combining local and cloud open models in a governed productivity harness; independent maturity evidence is still limited." },
     "radarEffectiveAt": "2026-09-06",
-    "lastRelease": "2026-08-31",
-    "lastReviewedAt": "2026-09-06",
-    "sourceIds": ["lmstudio-bionic-docs", "lmstudio-bionic-coding", "lmstudio-bionic-projects", "lmstudio-bionic-launch", "lmstudio-bionic-auto-review", "lmstudio-bionic-changelog-1-1-1"],
-    "claimIds": ["bionic-agentic-harness", "bionic-hybrid-model-execution", "bionic-code-workflow", "bionic-project-session-lifecycle", "bionic-auto-review-governance", "bionic-radar-trial"]
+    "lastRelease": "2026-09-19",
+    "lastReviewedAt": "2026-09-21",
+    "sourceIds": ["lmstudio-bionic-docs", "lmstudio-bionic-coding", "lmstudio-bionic-projects", "lmstudio-bionic-launch", "lmstudio-bionic-auto-review", "lmstudio-bionic-changelog-1-1-1", "lmstudio-bionic-changelog-1-1-4", "lmstudio-bionic-changelog-1-1-5"],
+    "claimIds": ["bionic-agentic-harness", "bionic-hybrid-model-execution", "bionic-code-workflow", "bionic-project-session-lifecycle", "bionic-auto-review-governance", "bionic-radar-trial", "bionic-september-release"]
   }
 ]

@@ -1,0 +1,63 @@
+{
+  "id": "weekly-2026-w39",
+  "week": "2026-W39",
+  "cutoffDate": "2026-09-21",
+  "headline": {
+    "tr": "Yetenek kadar, denetimin sınırı da önemli.",
+    "en": "Control boundaries matter as much as capability."
+  },
+  "summary": {
+    "tr": "Bu inceleme izin kiplerini, ajan rollerini ve sürüm kanıtlarını ayırıyor. Karşılaştırma belgelenen davranışlara dayanır; ortak çalışma testi veya ürün sıralaması değildir.",
+    "en": "This review separates permission modes, agent roles, and release evidence. Comparison concerns documented behavior, not a shared runtime test or product ranking."
+  },
+  "mostImportant": {
+    "title": {
+      "tr": "Onay, yalıtım ve doğrulama ayrı katmanlardır",
+      "en": "Approval, isolation, and verification are separate layers"
+    },
+    "body": {
+      "tr": "Claude Code ve Cline belgeleri onay davranışının yapılandırmaya bağlı olduğunu gösteriyor. Bir izin seçeneğinin varlığı güvenli sonuç kanıtı değildir; radar yalnız doğrudan belgelenen katmanı işaretler.",
+      "en": "Claude Code and Cline documentation shows that approval behavior depends on configuration. The existence of a permission option is not evidence of safe outcomes; radar coverage requires direct evidence for the layer."
+    },
+    "claimIds": [
+      "weekly-permission-divergence"
+    ]
+  },
+  "solutionsToWatch": [
+    "claude-code",
+    "cline",
+    "opencode",
+    "lmstudio-bionic"
+  ],
+  "patternOfWeek": "approval-gate",
+  "researchOfWeek": {
+    "title": {
+      "tr": "Bionic: oturum geçmişi ve geri yükleme sınırları",
+      "en": "Bionic: session history and checkpoint boundaries"
+    },
+    "body": {
+      "tr": "17 Eylül tarihli 1.1.4 notları oturum geçmişine başvuru ve geri yükleme sınırını aşan dosya işlemleri için onay istemlerini belgeliyor. 19 Eylül tarihli 1.1.5 notları da incelendi; duyurulan hız kazanımları burada ölçülmedi.",
+      "en": "The 17 September 1.1.4 notes document session-history references and approval prompts beyond file checkpoint limits. The 19 September 1.1.5 notes were also reviewed; announced speed gains were not measured here."
+    },
+    "sourceIds": [
+      "lmstudio-bionic-changelog-1-1-4",
+      "lmstudio-bionic-changelog-1-1-5"
+    ]
+  },
+  "experimentCandidate": {
+    "title": {
+      "tr": "Aynı görevi üç denetim koşulunda incele",
+      "en": "Inspect one task under three control configurations"
+    },
+    "body": {
+      "tr": "Önerilen deney: aynı sentetik depo görevini manuel onay, otomatik inceleme ve yalıtılmış ortam koşullarında karşılaştır. Engellenen eylemleri, müdahaleleri ve test sonucunu ayrı kaydet. Bu deney yürütülmedi.",
+      "en": "Proposed experiment: compare one synthetic repository task under manual approval, automatic review, and an isolated environment. Record blocked actions, interventions, and test outcomes separately. This experiment has not been run."
+    }
+  },
+  "signalClaimIds": [
+    "bionic-september-release",
+    "weekly-permission-divergence",
+    "kiro-radar-watch"
+  ],
+  "correctionNotes": []
+}

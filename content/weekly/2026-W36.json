@@ -56,6 +56,10 @@
     {
       "tr": "W36 düzeltmesi (2026-09-06): LM Studio Bionic genel amaçlı harness sınıfında deneme adayı olarak eklendi. Radar artık 22 çözüm, 33 resmî kaynak ve 78 iddia içeriyor; Bionic'in yerel, LM Link ve sıfır veri saklamalı bulut çalıştırması ile Auto Review denetimi ayrı kanıtlarla izleniyor.",
       "en": "W36 correction (2026-09-06): LM Studio Bionic was added as a TRIAL candidate in the general-harness class. The radar now contains 22 solutions, 33 official sources, and 78 claims; Bionic's local, LM Link, and Zero-Data-Retention cloud execution plus Auto Review governance are tracked with separate evidence."
+    },
+    {
+      "tr": "W36 düzeltmesi (2026-09-21): Canlı katalogdaki izin iddiaları, Hermes beceri/oturum araması ayrımı, OpenCode ajan rolleri ve Kiro genel erişim tarihi yeniden incelendi. Kaynağı sürüm düzeyinde doğrulanmayan son sürüm tarihleri kaldırıldı; doğrudan katman kanıtı olmayan hücreler bilinmiyor olarak işaretlendi. OpenCode popülerlik, Codex Rust geçişi ve Hermes çıkışı için kaynaksız tarihli olaylar zaman çizgisinden çıkarıldı. Bu sayfanın kesim tarihi ve ana metni korunur; aşağıdaki radar güncel katalogdur.",
+      "en": "W36 correction (2026-09-21): Live-catalog permission claims, Hermes skill/session-search distinction, OpenCode agent roles, and Kiro general availability date were reviewed. Release dates without version-specific evidence were cleared; cells without direct layer evidence were marked unknown. Unsupported dated milestones for OpenCode popularity, the Codex Rust transition, and the Hermes launch were removed from the timeline. This page retains its cutoff and main text; the radar below is the current catalog."
     }
   ]
 }

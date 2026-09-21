@@ -71,3 +71,7 @@
 }
 
 .weekly-module .weekly-module-label { min-height: 50px; margin: 0; padding: 16px; color: var(--accent); font-family: var(--font-ui); font-size: 0.78rem; font-weight: 700; }
+.weekly-archive { display: flex; flex-wrap: wrap; gap: 1rem; padding: 0.5rem 0; }
+.weekly-archive a { display: inline-flex; align-items: center; min-height: 44px; }
+.weekly-archive [aria-current] { font-weight: 700; text-decoration: underline; }
+.catalog-context { padding: 1rem 0; }

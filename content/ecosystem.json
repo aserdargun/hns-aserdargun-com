@@ -1,0 +1,110 @@
+[
+  {
+    "code": "llm",
+    "title": {
+      "tr": "LLM Çalışma Zamanı ve Sunum Atlası",
+      "en": "LLM Runtime & Serving Atlas"
+    },
+    "description": {
+      "tr": "Model davranışından ajan sistemine geçişin araştırma bağlamı.",
+      "en": "Research context for moving from model behavior to agent systems."
+    },
+    "url": "https://llm.aserdargun.com/"
+  },
+  {
+    "code": "ctx",
+    "title": {
+      "tr": "Bağlam ve Bilgi Mühendisliği",
+      "en": "Context & Knowledge Engineering"
+    },
+    "description": {
+      "tr": "Kaynak, geri getirme, bağlam birleştirme ve kanıt izi.",
+      "en": "Sources, retrieval, context assembly, and provenance."
+    },
+    "url": "https://ctx.aserdargun.com/"
+  },
+  {
+    "code": "sec",
+    "title": {
+      "tr": "Yapay Zekâ Sistemleri Güvenlik Gözlemevi",
+      "en": "AI Systems Security Observatory"
+    },
+    "description": {
+      "tr": "Yetki, araç sınırları, denetim ve kurtarma araştırması.",
+      "en": "Research on authority, tool boundaries, audit, and recovery."
+    },
+    "url": "https://sec.aserdargun.com/"
+  },
+  {
+    "code": "evl",
+    "title": {
+      "tr": "Yapay Zekâ Değerlendirme ve Güvenilirlik Laboratuvarı",
+      "en": "AI Evaluation & Reliability Lab"
+    },
+    "description": {
+      "tr": "Değerlendirme sözleşmeleri ve ayrı kanıt boyutları.",
+      "en": "Evaluation contracts and separate evidence dimensions."
+    },
+    "url": "https://evl.aserdargun.com/"
+  },
+  {
+    "code": "arl",
+    "title": {
+      "tr": "Ajan Çalışma Zamanı Laboratuvarı",
+      "en": "Agent Runtime Laboratory"
+    },
+    "description": {
+      "tr": "Niyetten eyleme geçişi gösteren deterministik eğitim simülasyonu.",
+      "en": "Deterministic educational simulation of the path from intent to action."
+    },
+    "url": "https://arl.aserdargun.com/"
+  },
+  {
+    "code": "dpl",
+    "title": {
+      "tr": "Karar Düzlemi Laboratuvarı",
+      "en": "Decision Plane Laboratory"
+    },
+    "description": {
+      "tr": "Açıklama, kanıt, onay ve kaçınma kararlarını inceleyen deterministik simülasyon.",
+      "en": "Deterministic simulation of clarification, evidence, approval, and abstention decisions."
+    },
+    "url": "https://dpl.aserdargun.com/"
+  },
+  {
+    "code": "cul",
+    "title": {
+      "tr": "Bilgisayar Kullanımı Laboratuvarı",
+      "en": "Computer Use Laboratory"
+    },
+    "description": {
+      "tr": "Sentetik arayüzde gözlem, eylem ve doğrulama; gerçek masaüstünü kontrol etmez.",
+      "en": "Observation, action, and verification in a synthetic interface; no real desktop control."
+    },
+    "url": "https://cul.aserdargun.com/"
+  },
+  {
+    "code": "aos",
+    "title": {
+      "tr": "Ajan İşletim Sistemi",
+      "en": "Agent Operating System"
+    },
+    "description": {
+      "tr": "Hedef mimariyi anlatan kamusal site; çalışan ajan sistemi yayını değildir.",
+      "en": "Public site explaining a target architecture; not a working agent-system release."
+    },
+    "url": "https://aos.aserdargun.com/"
+  },
+  {
+    "code": "mem",
+    "title": {
+      "tr": "Ajan Belleği Laboratuvarı",
+      "en": "Agent Memory Laboratory"
+    },
+    "description": {
+      "tr": "CTX altında sentetik senaryolarla bellek yaşam döngüsünü inceleyen bağımsız laboratuvar.",
+      "en": "Independent laboratory under CTX exploring memory lifecycle with synthetic scenarios."
+    },
+    "url": "https://mem.aserdargun.com/"
+  }
+]

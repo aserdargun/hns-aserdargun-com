@@ -4,7 +4,7 @@ test.use({ viewport: { width: 1536, height: 1024 } })
 
 test('desktop research workflow is navigable and shareable', async ({ page }) => {
   await page.goto('/en')
-  await expect(page.getByRole('heading', { name: 'The harness is becoming the system.' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Control boundaries matter as much as capability.' })).toBeVisible()
   await expect(page.getByText('Evidence').first()).toBeVisible()
   await expect(page.getByText('Synthesis').first()).toBeVisible()
   await expect(page.getByText('Watch signal').first()).toBeVisible()
@@ -36,7 +36,7 @@ for (const viewport of [
   test(`${viewport.label} viewport remains operable without horizontal overflow`, async ({ page }) => {
     await page.setViewportSize({ width: viewport.width, height: viewport.height })
     await page.goto('/en')
-    await expect(page.getByRole('heading', { name: 'The harness is becoming the system.' })).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Control boundaries matter as much as capability.' })).toBeVisible()
     expect(await page.evaluate(() => document.documentElement.scrollWidth === document.documentElement.clientWidth)).toBe(true)
   })
 }

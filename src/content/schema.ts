@@ -1,5 +1,8 @@
 import { z } from 'zod'
 
+// v2: editorial ecosystem links, weekly signals and enforced research cutoffs.
+export const contentSchemaVersion = 2
+
 export const LocaleSchema = z.enum(['tr', 'en'])
 export type Locale = z.infer<typeof LocaleSchema>
 
@@ -130,6 +133,7 @@ const WeeklySnapshotSchema = z.object({
     body: LocaleTextSchema,
   }),
   correctionNotes: z.array(LocaleTextSchema),
+  signalClaimIds: z.array(z.string()).optional(),
 })
 export type WeeklySnapshot = z.infer<typeof WeeklySnapshotSchema>
 
@@ -171,6 +175,12 @@ const RawCatalogSchema = z
     knowledge: z.array(KnowledgeEntrySchema).min(1),
     patterns: z.array(PatternSchema).min(1),
     timeline: z.array(TimelineEntrySchema).min(1),
+    ecosystem: z.array(z.object({
+      code: z.string().regex(/^[a-z]{3}$/),
+      title: LocaleTextSchema,
+      description: LocaleTextSchema,
+      url: WebUrlSchema,
+    })).min(1),
   })
   .superRefine((value, context) => {
     const uniqueIds = (kind: string, ids: string[]) => {
@@ -192,6 +202,14 @@ const RawCatalogSchema = z
     uniqueIds('week', value.weekly.map((item) => item.week))
     uniqueIds('knowledge', value.knowledge.map((item) => item.id))
     uniqueIds('timeline', value.timeline.map((item) => item.id))
+    uniqueIds('ecosystem', value.ecosystem.map((item) => item.code))
+    const today = new Date().toISOString().slice(0, 10)
+    const sourcesById = new Map(value.sources.map((source) => [source.id, source]))
+    for (const source of value.sources) {
+      if (source.checkedAt > today || (source.publishedAt && source.publishedAt > source.checkedAt)) {
+        context.addIssue({ code: 'custom', message: `Source ${source.id} has an invalid review chronology` })
+      }
+    }
 
     const requireIds = (owner: string, ids: string[], known: Set<string>) => {
       for (const id of ids) {
@@ -231,6 +249,22 @@ const RawCatalogSchema = z
       requireIds(`Weekly ${snapshot.id}`, snapshot.mostImportant.claimIds, claimIds)
       requireIds(`Weekly ${snapshot.id}`, snapshot.researchOfWeek.sourceIds, sourceIds)
       requireIds(`Weekly ${snapshot.id}`, [snapshot.patternOfWeek], patternIds)
+      requireIds(`Weekly ${snapshot.id} signals`, snapshot.signalClaimIds ?? [], claimIds)
+      const cutoff = new Date(`${snapshot.cutoffDate}T00:00:00Z`)
+      cutoff.setUTCDate(cutoff.getUTCDate() + 4 - (cutoff.getUTCDay() || 7))
+      const year = cutoff.getUTCFullYear()
+      const week = Math.ceil(((cutoff.getTime() - Date.UTC(year, 0, 1)) / 86400000 + 1) / 7)
+      if (snapshot.cutoffDate > today || snapshot.week !== `${year}-W${String(week).padStart(2, '0')}`) {
+        context.addIssue({ code: 'custom', message: `Weekly ${snapshot.id} cutoff must be within its ISO week and not in the future` })
+      }
+      const referencedClaims = [...snapshot.mostImportant.claimIds, ...(snapshot.signalClaimIds ?? [])]
+        .map((id) => claimsById.get(id)).filter((claim) => claim !== undefined)
+      const pattern = value.patterns.find((item) => item.id === snapshot.patternOfWeek)
+      const referencedSources = [...snapshot.researchOfWeek.sourceIds, ...(pattern?.sourceIds ?? []), ...referencedClaims.flatMap((claim) => claim.sourceIds)]
+      if (referencedClaims.some((claim) => claim.reviewedAt > snapshot.cutoffDate)
+        || referencedSources.some((id) => (sourcesById.get(id)?.publishedAt ?? '') > snapshot.cutoffDate)) {
+        context.addIssue({ code: 'custom', message: `Weekly ${snapshot.id} evidence exceeds its research cutoff` })
+      }
     }
 
     for (const entry of value.knowledge) requireIds(`Knowledge ${entry.id}`, entry.sourceIds, sourceIds)

@@ -14,7 +14,7 @@ describe('localized routes', () => {
   it('redirects root to English and renders the product identity', async () => {
     renderAt('/')
     expect(await screen.findByRole('link', { name: 'HNS — Harness Engineering Observatory' })).toBeVisible()
-    expect(screen.getByRole('heading', { name: 'The harness is becoming the system.' })).toBeVisible()
+    expect(screen.getByRole('heading', { name: 'Control boundaries matter as much as capability.' })).toBeVisible()
     expect(window.location.pathname).toBe('/en')
   })
 

@@ -4,7 +4,7 @@ import { getLatestWeekly, getLocalizedText, getSolutionEvidence } from '../../sr
 
 describe('content selectors', () => {
   it('selects the latest weekly snapshot by ISO week', () => {
-    expect(getLatestWeekly(catalog).week).toBe('2026-W36')
+    expect(getLatestWeekly(catalog).week).toBe('2026-W39')
   })
 
   it('projects bilingual text without fallback drift', () => {

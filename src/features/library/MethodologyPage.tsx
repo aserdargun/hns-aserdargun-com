@@ -14,6 +14,10 @@ const sections = {
     title: { tr: 'Güncellik', en: 'Freshness' },
     body: { tr: 'Radar konumu ve iddialar tarihli inceleme anlarına bağlıdır. Yeni bir sürüm, önceki kanıtı otomatik olarak geçersiz kılmaz; yeniden inceleme gerektirir.', en: 'Radar positions and claims are tied to dated review moments. A new release does not automatically invalidate prior evidence; it triggers re-review.' },
   },
+  boundaries: {
+    title: { tr: 'Araştırma kesimi ve çalışma kanıtı', en: 'Research cutoff and runtime evidence' },
+    body: { tr: 'Haftalık metin yalnız kendi araştırma kesimine kadar olan kanıtı kullanır. Kaynağın erişim kontrolü, iddianın yeniden incelenmesi ve ürün sürümü ayrı tarihlerdir. Belge incelemesi bağımsız çalışma testi değildir; deney adayları uygulanmış sonuç olarak sunulmaz.', en: 'Weekly text uses evidence only through its research cutoff. Source access checks, claim reviews, and product releases have separate dates. Documentation review is not an independent runtime test; experiment candidates are not presented as executed results.' },
+  },
   corrections: {
     title: { tr: 'Düzeltmeler ve arşiv', en: 'Corrections and archive' },
     body: { tr: 'Yayınlanmış haftalık anlık görüntü sessizce yeniden yazılmaz. Hata bulunduğunda tarihli bir düzeltme notu eklenir ve önceki bağlam korunur.', en: 'A published weekly snapshot is never silently rewritten. When an error is found, a dated correction note is added while preserving prior context.' },

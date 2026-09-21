@@ -57,8 +57,11 @@ The stop command refuses to signal a PID unless its recorded and live working di
 - `content/solutions.json`: solution taxonomy, seven-layer coverage, maturity, and dated radar interpretation.
 - `content/weekly/`: immutable ISO-week snapshots; corrections are appended as visible notes.
 - `content/knowledge.json`, `patterns.json`, `timeline.json`: supporting research library.
+- `content/ecosystem.json`: bilingual conceptual links to aserdargun.com research and educational applications, with simulation and target-architecture boundaries.
 
 To publish a new week, add the official sources and claims first, update affected solutions, create the bilingual weekly snapshot, then run `npm run check`. Published weeks are not silently rewritten.
+
+Weekly JSON files are discovered automatically by the renderer and validator. The archive preserves W36 and the latest local edition is W39, with a research cutoff of 2026-09-21. Source access dates, semantic claim review dates, and documented release dates have separate meanings. A source access check never certifies every product claim. Catalog schema v2 rejects weekly evidence after its cutoff and cutoffs outside the declared ISO week; links beneath archived editions explicitly lead to the current catalog. See [the content review](docs/content-review-2026-09-21.md) for corrections and verification scope.
 
 Radar filters and up to three selected solutions are preserved in the URL across reloads and language changes. Review freshness uses UTC calendar days (30 days, 90 days, or older than 90 days). Layer evidence exposes the exact claims, confidence limits, and cited sources; mobile and desktop provide the same filters.
 

@@ -41,3 +41,10 @@
 
 .language-switch { min-height: 44px; padding-inline: 0; gap: 0; }
 .language-switch a { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+.global-footer { flex-wrap: wrap; }
+.ecosystem-links { flex-basis: 100%; width: 100%; }
+.ecosystem-links h2 { font-size: 1.2rem; }
+.ecosystem-links > p { max-width: 80ch; }
+.ecosystem-links ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1rem 2rem; list-style: none; padding: 0; }
+.ecosystem-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.ecosystem-links li p { margin: 0; }

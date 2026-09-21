@@ -13,7 +13,7 @@ describe('Weekly Intelligence', () => {
 
   it('shows the latest synthesis and all five intelligence modules', () => {
     renderWeekly()
-    expect(screen.getByRole('heading', { name: 'The harness is becoming the system.' })).toBeVisible()
+    expect(screen.getByRole('heading', { name: 'Control boundaries matter as much as capability.' })).toBeVisible()
     for (const name of ['Most important development', 'Solutions to watch', 'Pattern of the week', 'Research of the week', 'Experiment candidate']) {
       expect(screen.getByText(name)).toBeVisible()
     }
@@ -32,13 +32,15 @@ describe('Weekly Intelligence', () => {
     renderWeekly('/tr')
     const control = screen.getByRole('button', { name: /En önemli gelişme/ })
     await user.click(control)
-    expect(screen.getByText('Harness katmanları ayrı ürün sınıflarına dönüşüyor')).toBeVisible()
+    expect(screen.getByText('Onay, yalıtım ve doğrulama ayrı katmanlardır')).toBeVisible()
     vi.restoreAllMocks()
   })
 
   it('shows published correction notes instead of silently rewriting a week', () => {
-    renderWeekly()
+    renderWeekly('/en/weekly/2026-W36')
 
     expect(screen.getByRole('note', { name: 'Corrections' })).toHaveTextContent('W36 correction (2026-09-02)')
+    expect(screen.getByRole('heading', { name: 'The harness is becoming the system.' })).toBeVisible()
+    expect(screen.getByText(/does not represent product state at the archived week/)).toBeVisible()
   })
 })

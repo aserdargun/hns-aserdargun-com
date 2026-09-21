@@ -40,5 +40,43 @@
       { "title": { "tr": "Harness", "en": "Harness" }, "body": { "tr": "Modele görev, araç, bağlam, döngü, denetim ve doğrulama sunan belirgin tercihlere sahip çalışma sistemidir.", "en": "An opinionated working system that gives a model tasks, tools, context, loops, control, and verification." } }
     ],
     "sourceIds": ["langchain-products", "microsoft-agent-framework-harness"]
+  },
+  {
+    "id": "evidence-boundaries",
+    "title": {
+      "tr": "Belge, yapılandırma ve çalışma kanıtı",
+      "en": "Documentation, configuration, and runtime evidence"
+    },
+    "summary": {
+      "tr": "Bir özelliğin belgelenmesi, her yapılandırmada etkin olduğu veya doğru sonuç ürettiği anlamına gelmez.",
+      "en": "Documenting a feature does not prove it is enabled in every configuration or produces correct outcomes."
+    },
+    "sections": [
+      {
+        "title": {
+          "tr": "İzin ve yalıtım",
+          "en": "Permission and isolation"
+        },
+        "body": {
+          "tr": "İzin kipi hangi eylemin onay istediğini belirler; yalıtım erişilebilir kaynakları sınırlar. İki denetimi ayrı kaydet ve etkin yapılandırmayı belirt.",
+          "en": "Permission mode determines which actions prompt; isolation bounds accessible resources. Record the controls separately and state the active configuration."
+        }
+      },
+      {
+        "title": {
+          "tr": "Deney önerisi ve ölçüm",
+          "en": "Experiment proposal and measurement"
+        },
+        "body": {
+          "tr": "HNS kaynakları yorumlar. Desenlerdeki deneyler öneridir; çalıştırılmış sonuç, ölçülmüş üstünlük veya başka portföy uygulamalarıyla servis bütünleşmesi göstermez.",
+          "en": "HNS interprets sources. Pattern experiments are proposals, not executed results, measured superiority, or service integration with other portfolio applications."
+        }
+      }
+    ],
+    "sourceIds": [
+      "claude-permissions",
+      "cline-auto-approve",
+      "codex-sandbox-presets"
+    ]
   }
 ]

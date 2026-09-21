@@ -4,10 +4,10 @@ import { expect, test } from '@playwright/test'
 test('weekly watch links open matching radar records and expose all cited sources', async ({ page }) => {
   await page.goto('/en')
   await expect(page.locator('h1')).toHaveCount(1)
-  await page.getByText('Evidence sources (4)', { exact: true }).click()
-  await expect(page.locator('.module-sources').first().locator('a')).toHaveCount(4)
-  await page.locator('.watch-list').getByRole('link', { name: 'Microsoft Agent Framework Harness' }).click()
-  await expect(page.getByRole('checkbox', { name: /Microsoft Agent Framework/ })).toBeVisible()
+  await page.getByText('Evidence sources (3)', { exact: true }).click()
+  await expect(page.locator('.module-sources').first().locator('a')).toHaveCount(3)
+  await page.locator('.watch-list').getByRole('link', { name: 'Claude Code' }).click()
+  await expect(page.getByRole('checkbox', { name: /Claude Code/ })).toBeVisible()
 })
 
 test('multiword search, selection, reload, language change and edit selection stay consistent', async ({ page }) => {
@@ -34,7 +34,7 @@ test('multiword search, selection, reload, language change and edit selection st
 
 test('mobile filters, evidence confidence and keyboard menu work', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
-  await page.clock.setFixedTime(new Date('2026-09-10T12:00:00Z'))
+  await page.clock.setFixedTime(new Date('2026-09-21T12:00:00Z'))
   await page.goto('/en/radar')
   await page.getByRole('combobox', { name: /^Organization/ }).selectOption('LM Studio')
   await page.getByRole('combobox', { name: /^Review freshness/ }).selectOption('90')
@@ -44,7 +44,7 @@ test('mobile filters, evidence confidence and keyboard menu work', async ({ page
   await page.locator('.layer-breakdown .layer-evidence summary').first().click()
   await expect(page.locator('.layer-breakdown').getByText('Confidence and limits:', { exact: true }).first()).toBeVisible()
   await page.locator('.mobile-radar-list').getByText('Open evidence', { exact: true }).click()
-  await page.locator('.mobile-radar-list').getByText('Claims and confidence limits (6)', { exact: true }).click()
+  await page.locator('.mobile-radar-list').getByText('Claims and confidence limits (7)', { exact: true }).click()
   await expect(page.getByText('Confidence and limits:', { exact: true }).first()).toBeVisible()
   const menu = page.getByRole('button', { name: 'Menu', exact: true })
   await menu.click()

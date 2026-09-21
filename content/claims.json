@@ -290,11 +290,11 @@
   {
     "id": "hermes-learning-loop",
     "kind": "evidence",
-    "text": { "tr": "Hermes Agent tamamlanan görevlerden yeniden kullanılabilir Markdown beceri dosyaları üretir ve bunları FTS5 ile geri çağırır.", "en": "Hermes Agent produces reusable Markdown skill files from completed tasks and retrieves them via FTS5." },
+    "text": { "tr": "Hermes deneyimden yeniden kullanılabilir beceriler oluşturur; FTS5 araması ise geçmiş oturumları geri çağırmak için kullanılır.", "en": "Hermes creates reusable skills from experience; FTS5 search is used to recall past sessions." },
     "sourceIds": ["hermes-agent-repo", "hermes-agent-docs"],
     "subjectIds": ["hermes-agent"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî depo ve belgelerde kapalı öğrenme döngüsü olarak tanımlanıyor.", "en": "Described as a closed learning loop in the official repository and documentation." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "hermes-persistent-memory",
@@ -308,20 +308,20 @@
   {
     "id": "hermes-mcp-toolsets",
     "kind": "evidence",
-    "text": { "tr": "Hermes 80'den fazla yerleşik araç ve araç kümesi sağlar; MCP üzerinden dinamik olarak genişler.", "en": "Hermes ships 80+ built-in tools organized into toolsets and extends dynamically through MCP." },
+    "text": { "tr": "Hermes araçları kümeler halinde düzenler ve MCP sunucularıyla genişletir; araç sayısı kurulum ve sürüme bağlıdır.", "en": "Hermes organizes tools into toolsets and extends them with MCP servers; tool counts depend on installation and version." },
     "sourceIds": ["hermes-agent-docs"],
     "subjectIds": ["hermes-agent"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî araç referansında 80'den fazla araç ve araç kümesi kategorileri sayılır.", "en": "Official tool reference enumerates 80+ tools and toolset categories." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "hermes-multi-platform-gateway",
     "kind": "evidence",
-    "text": { "tr": "Tek bir Hermes ağ geçidi süreci Telegram, Discord, Slack, WhatsApp, Signal ve CLI kanallarını aynı anda yönetir.", "en": "A single Hermes gateway process serves Telegram, Discord, Slack, WhatsApp, Signal, and CLI channels simultaneously." },
-    "sourceIds": ["hermes-agent-docs"],
+    "text": { "tr": "Hermes ağ geçidi Telegram, Discord, Slack, WhatsApp, Signal ve CLI kanallarını bir süreçten yönetebilir.", "en": "The Hermes gateway can serve Telegram, Discord, Slack, WhatsApp, Signal, and CLI channels from one process." },
+    "sourceIds": ["hermes-agent-repo"],
     "subjectIds": ["hermes-agent"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî özellik ve kurulum belgelerinde altı kanal tek ağ geçidi olarak anlatılıyor.", "en": "Official features and setup documentation describe the six channels as a single gateway." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "hermes-radar-watch",
@@ -344,11 +344,11 @@
   {
     "id": "claude-permission-modes",
     "kind": "evidence",
-    "text": { "tr": "Claude Code izin modları manuel, otomatik, planlama ve izinleri atlama arasında değiştirilir; yıkıcı komutlar yine de onay ister.", "en": "Claude Code permission modes switch between manual, auto, plan, and bypassPermissions; destructive commands still prompt." },
-    "sourceIds": ["claude-code-whats-new-w32"],
+    "text": { "tr": "Claude Code onay davranışı izin kipine ve kurallara bağlıdır; otomatik inceleme ile izinleri atlama farklıdır ve yıkıcı komutların her kipte onay isteyeceği varsayılamaz.", "en": "Claude Code approval behavior depends on mode and rules; automatic review differs from bypass, and destructive commands cannot be assumed to prompt in every mode." },
+    "sourceIds": ["claude-permissions"],
     "subjectIds": ["claude-code"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî haftalık sürüm notlarında otomatik mod varsayılanı ve yıkıcı komut koruması belirtiliyor.", "en": "Official weekly release notes state auto mode default and the destructive-command guard." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "claude-self-hosted-runner",
@@ -389,11 +389,11 @@
   {
     "id": "opencode-build-plan-agents",
     "kind": "evidence",
-    "text": { "tr": "OpenCode üç yerleşik ajan sunar: Oluşturma (tam erişim), Planlama (salt okunur) ve genel alt ajan.", "en": "OpenCode ships three built-in agents: Build (full access), Plan (read-only), and a general subagent." },
-    "sourceIds": ["opencode-repo"],
+    "text": { "tr": "OpenCode, Build ve Plan birincil ajanlarını General, Explore ve Scout alt ajanlarından ayırır. Plan kipinin araç erişimi izinlerle yapılandırılır.", "en": "OpenCode distinguishes Build and Plan primary agents from General, Explore, and Scout subagents. Plan tool access is configured through permissions." },
+    "sourceIds": ["opencode-agents"],
     "subjectIds": ["opencode"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî belgeler /init ve Tab ile mod geçişini ayrıntılı olarak anlatır.", "en": "Official documentation describes `/init` and Tab mode switching in detail." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "opencode-radar-adopt",
@@ -443,11 +443,11 @@
   {
     "id": "cline-plan-act",
     "kind": "evidence",
-    "text": { "tr": "Cline planlama modunda kodu değiştirmeden plan üretir; uygulama modunda her dosya ve komut için onay ister.", "en": "Cline's Plan mode produces a plan without modifying code; Act mode asks for approval before every file change and command." },
-    "sourceIds": ["cline-repo"],
+    "text": { "tr": "Cline planlama ve uygulama kiplerini ayırır; eylem onayları yapılandırılabilir. Otomatik onay ve YOLO seçenekleri nedeniyle her dosya değişikliği veya komut için insan onayı garanti edilmez.", "en": "Cline separates planning and execution; action approvals are configurable. Auto Approve and YOLO mean human approval is not guaranteed for every file change or command." },
+    "sourceIds": ["cline-repo", "cline-auto-approve"],
     "subjectIds": ["cline"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî README planlama/uygulama modlarını ve onaylı yürütümü açıkça anlatır.", "en": "The official README explicitly describes Plan/Act modes and approval-gated execution." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "cline-mcp-tool-creation",
@@ -488,19 +488,19 @@
   {
     "id": "goose-mcp-extensions",
     "kind": "evidence",
-    "text": { "tr": "Goose MCP üzerinden 70+ belgelenmiş uzantı ve MCP kayıt defterindeki 3000+ sunucuyla çalışır.", "en": "Goose operates over 70 documented MCP extensions and 3000+ servers in the MCP registry." },
-    "sourceIds": ["goose-aaif-blog", "aaif-launch"],
+    "text": { "tr": "Goose, MCP tabanlı uzantılarla araçlara bağlanır; uzantı sayısı birlikte çalışabilirlik veya güvenlik garantisi değildir.", "en": "Goose connects to tools through MCP-based extensions; extension counts do not guarantee interoperability or safety." },
+    "sourceIds": ["goose-custom-distributions"],
     "subjectIds": ["goose"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Linux Foundation duyurusu ve Goose belgeleri uzantı sayılarını açıklar.", "en": "Linux Foundation announcement and Goose documentation state the extension counts." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "goose-custom-distro",
     "kind": "evidence",
     "text": { "tr": "Goose Özel Dağıtım kavramı, kuruluşların önceden yapılandırılmış ajan paketleri oluşturmasına izin verir.", "en": "Goose's Custom Distro concept lets organizations ship pre-configured agent bundles." },
-    "sourceIds": ["goose-aaif-blog"],
+    "sourceIds": ["goose-custom-distributions"],
     "subjectIds": ["goose"],
-    "reviewedAt": "2026-09-02",
+    "reviewedAt": "2026-09-21",
     "confidence": { "tr": "Resmî blog yazısında Özel Dağıtım kapsamı listelenir.", "en": "The official blog post lists the Custom Distro scope." }
   },
   {
@@ -515,29 +515,29 @@
   {
     "id": "codex-cli-kernel-sandbox",
     "kind": "evidence",
-    "text": { "tr": "Codex CLI macOS'ta Seatbelt, Linux'ta bubblewrap + Landlock + seccomp ile çekirdek seviyesinde korumalı alan uygular.", "en": "Codex CLI applies kernel-level sandboxing via macOS Seatbelt and Linux bubblewrap + Landlock + seccomp." },
-    "sourceIds": ["codex-cli-repo"],
+    "text": { "tr": "Codex Linux korumalı alan yardımcısı süreç kısıtları için no_new_privs ve seccomp, dosya sistemi yalıtımı için bubblewrap kullanır. Etkin koruma seçilen erişim politikasına bağlıdır.", "en": "The Codex Linux sandbox helper uses no_new_privs and seccomp for process restrictions and bubblewrap for filesystem isolation. Effective protection depends on the selected access policy." },
+    "sourceIds": ["codex-linux-sandbox"],
     "subjectIds": ["openai-codex-cli"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî depo README'si ve mimari belgeleri korumalı alan uygulamasını platform bazında açıklar.", "en": "Official repository README and architecture documents describe the platform-by-platform sandbox implementation." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "Resmî kaynak kodundaki kapsam açıklamasına dayanır; bağımsız güvenlik testi değildir.", "en": "Based on scope documented in official source code; not an independent security test." }
   },
   {
     "id": "codex-cli-persistent-thread",
     "kind": "evidence",
-    "text": { "tr": "Codex CLI görevleri SQLite ile kalıcıdır; süreç yeniden başlatılsa bile sürdürme, çatallama ve geri alma yapılabilir.", "en": "Codex CLI threads persist in SQLite and can be resumed, forked, or rolled back across process restarts." },
-    "sourceIds": ["codex-cli-repo"],
+    "text": { "tr": "Codex oturum yürütme kayıtlarını JSONL biçiminde tutar; durum katmanı bu kayıtlardan üstveriyi yerel SQLite veritabanına yansıtır. SQLite tek başına tüm oturumun kaynağı değildir.", "en": "Codex keeps rollout records in JSONL; its state layer mirrors metadata from those records into local SQLite. SQLite alone is not the complete session record." },
+    "sourceIds": ["codex-state-store"],
     "subjectIds": ["openai-codex-cli"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî mimari belgeler SQLite tabanlı görev modelini açıklar.", "en": "Official architecture documentation describes the SQLite-backed thread model." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "Resmî kaynak kodundaki kapsam açıklamasına dayanır; bağımsız güvenlik testi değildir.", "en": "Based on scope documented in official source code; not an independent security test." }
   },
   {
     "id": "codex-cli-approval-policy",
     "kind": "evidence",
-    "text": { "tr": "Codex CLI dört korumalı alan kipini destekler: salt okunur, çalışma alanına yazma, tüm diske yazma ve sınırsız erişim.", "en": "Codex CLI supports four sandbox modes: read-only, workspace-write, full-disk-write-access, and danger-full-access." },
-    "sourceIds": ["codex-cli-repo"],
+    "text": { "tr": "Codex salt okunur, çalışma alanına yazma ve sınırsız erişim önayarlarını ayırır. Korumalı alan kapsamı, insan onayı politikasıyla aynı şey değildir.", "en": "Codex distinguishes read-only, workspace-write, and full-access presets. Sandbox scope is separate from human approval policy." },
+    "sourceIds": ["codex-sandbox-presets"],
     "subjectIds": ["openai-codex-cli"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî Codex belgesi dört kipi ve `--sandbox` bayrağını ayrıntılı olarak listeler.", "en": "Official docs.codex page lists the four modes and the `--sandbox` flag in detail." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "codex-cli-radar-adopt",
@@ -546,34 +546,34 @@
     "sourceIds": ["codex-cli-repo"],
     "subjectIds": ["openai-codex-cli"],
     "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS yorumu; çekirdek korumalı alanı ve SQLite görev modelinin birleşimi benzersiz bir teknik yapıdır.", "en": "HNS interpretation: the kernel sandbox + SQLite thread pair is a unique technical combination." }
+    "confidence": { "tr": "HNS yorumu; benzersizlik veya diğer çözümlerden üstünlük iddiası değildir.", "en": "HNS interpretation; no claim of uniqueness or superiority over other solutions." }
   },
   {
     "id": "kiro-spec-driven",
     "kind": "evidence",
-    "text": { "tr": "Kiro her özellik için EARS notasyonuyla requirements.md, design.md ve tasks.md üretir; kod yalnızca onay sonrası yazılır.", "en": "Kiro produces requirements.md, design.md, and tasks.md in EARS notation before any code is written." },
-    "sourceIds": ["kiro-docs"],
+    "text": { "tr": "Kiro belirtim akışı gereksinimleri, tasarımı ve görevleri ayrı kayıtlarla yapılandırır; EARS gereksinim yazımı için kullanılır.", "en": "Kiro structures specification work into separate requirements, design, and task artifacts; EARS is used for requirements." },
+    "sourceIds": ["kiro-specs"],
     "subjectIds": ["aws-kiro"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî kiro.dev sayfası üç aşamalı belirtim akışını ve onay döngüsünü açıkça anlatır.", "en": "The official kiro.dev page explicitly describes the three-stage spec flow and approval loop." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "kiro-agent-hooks",
     "kind": "evidence",
-    "text": { "tr": "Kiro ajan tetikleyicileri dosya kaydetme, PR açma ve depo olaylarında ajan eylemlerini otomatik başlatır.", "en": "Kiro's agent hooks trigger agent actions on file save, PR open, and other repository events." },
-    "sourceIds": ["kiro-docs"],
+    "text": { "tr": "Kiro dosya değişiklikleri, araç kullanımı ve görev yürütümü gibi olaylara tetikleyici bağlar; desteklenen olaylar IDE ve CLI arasında değişir.", "en": "Kiro attaches hooks to events such as file changes, tool use, and task execution; supported events differ between IDE and CLI." },
+    "sourceIds": ["kiro-hooks"],
     "subjectIds": ["aws-kiro"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Resmî sayfada olay güdümlü tetikleyiciler özellik olarak listelenir.", "en": "Event-driven hooks are listed as a feature on the official page." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "kiro-multi-model-bedrock",
     "kind": "evidence",
-    "text": { "tr": "Kiro Bedrock üzerinden Claude Sonnet ve Amazon Nova arasında görev türüne göre yönlendirme yapar.", "en": "Kiro routes between Claude Sonnet and Amazon Nova via Bedrock based on task type." },
-    "sourceIds": ["kiro-docs"],
+    "text": { "tr": "Kiro model seçimi ve Auto yönlendirmesi sunar; belirli bir Claude/Nova çifti bütün görevler için sabit bir sözleşme değildir.", "en": "Kiro offers model selection and Auto routing; a particular Claude/Nova pair is not a fixed contract for all tasks." },
+    "sourceIds": ["kiro-models"],
     "subjectIds": ["aws-kiro"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "Kiro.dev sayfası Bedrock model yönlendirmesini açıklar.", "en": "The kiro.dev page documents Bedrock-based model routing." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "kiro-radar-watch",
@@ -623,20 +623,20 @@
   {
     "id": "weekly-canonicalization",
     "kind": "synthesis",
-    "text": { "tr": "Kodlama ajanı ekosistemi; GitHub yıldız sayısı, lisans ve dil seçimine göre farklılaşan üç kanonik referans etrafında kristalleşiyor: Claude Code (kapalı kaynak, sağlayıcı modelleri), OpenAI Codex CLI (Rust, çekirdek korumalı alanı) ve OpenCode (MIT, sağlayıcıdan bağımsız).", "en": "The coding-agent ecosystem is crystallizing around three canonical references differentiated by stars, license, and language: Claude Code (proprietary, vendor models), OpenAI Codex CLI (Rust, kernel sandbox), and OpenCode (MIT, provider-agnostic)." },
-    "sourceIds": ["claude-code-whats-new-w32", "codex-cli-repo", "opencode-repo"],
+    "text": { "tr": "Claude Code, Codex CLI ve OpenCode izin, yürütme ve sağlayıcı tercihlerini karşılaştırmak için üç örnektir; bu seçki pazar liderliği veya evrensel üstünlük göstermez.", "en": "Claude Code, Codex CLI, and OpenCode are three examples for comparing permission, execution, and provider choices; this selection does not establish market leadership or universal superiority." },
+    "sourceIds": ["claude-permissions", "codex-sandbox-presets", "opencode-agents"],
     "subjectIds": ["claude-code", "openai-codex-cli", "opencode"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS sentezi; bağımsız pazar ölçümü değildir, ancak üç çözümün belirgin teknik farkları resmî kaynaklarla desteklenir.", "en": "HNS synthesis: not an independent market measurement, but the three solutions' distinct technical choices are supported by official sources." }
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "HNS editoryal sentezi; ortak bir karşılaştırmalı çalışma testi veya pazar ölçümü değildir.", "en": "HNS editorial synthesis; not a shared comparative runtime test or market measurement." }
   },
   {
     "id": "weekly-permission-divergence",
     "kind": "synthesis",
-    "text": { "tr": "Kodlama ajanları izin ve korumalı alan stratejilerinde belirgin biçimde ayrışıyor: çekirdek seviyesinde korumalı alan (Codex CLI), uygulama seviyesinde izin modları (Claude Code) ve eylem bazında onay (Cline, Aider).", "en": "Coding agents are visibly diverging on permission and sandbox strategy: kernel-level sandbox (Codex CLI), application-level permission modes (Claude Code), and per-action approval (Cline, Aider)." },
-    "sourceIds": ["codex-cli-repo", "claude-code-whats-new-w32", "cline-repo", "aider-repo"],
-    "subjectIds": ["openai-codex-cli", "claude-code", "cline", "aider"],
-    "reviewedAt": "2026-09-02",
-    "confidence": { "tr": "HNS sentezi; dört çözümün resmî belgelerinde farklı güvenlik modelleri açıkça anlatılır.", "en": "HNS synthesis: the four solutions' official documentation explicitly describes different security models." }
+    "text": { "tr": "İşletim sistemi yalıtımı, araç izinleri ve insan onayı ayrı denetimlerdir. Codex, Claude Code ve Cline incelemeleri etkin yapılandırmayı ayrıca kaydetmeyi gerektirir.", "en": "OS isolation, tool permissions, and human approval are separate controls. Reviews of Codex, Claude Code, and Cline require recording the active configuration." },
+    "sourceIds": ["codex-sandbox-presets", "claude-permissions", "cline-auto-approve"],
+    "subjectIds": ["openai-codex-cli", "claude-code", "cline"],
+    "reviewedAt": "2026-09-21",
+    "confidence": { "tr": "HNS editoryal sentezi; ortak bir karşılaştırmalı çalışma testi veya pazar ölçümü değildir.", "en": "HNS editorial synthesis; not a shared comparative runtime test or market measurement." }
   },
   {
     "id": "weekly-open-governance",
@@ -700,5 +700,25 @@
     "subjectIds": ["lmstudio-bionic"],
     "reviewedAt": "2026-09-06",
     "confidence": { "tr": "HNS yorumu; resmî belgeler yetenekleri doğruluyor, ancak Temmuz 2026 çıkışlı ürün için geniş bağımsız olgunluk verisi henüz sınırlı.", "en": "HNS interpretation: official documentation verifies the capabilities, while broad independent maturity evidence remains limited for a product launched in July 2026." }
+  },
+  {
+    "id": "bionic-september-release",
+    "kind": "evidence",
+    "text": {
+      "tr": "Bionic 1.1.4 geçmiş oturumlara başvuru ve geri yükleme sınırını aşan dosya işlemleri için onay istemleri ekledi. 1.1.5, 19 Eylül 2026 tarihli resmî sürümdür.",
+      "en": "Bionic 1.1.4 added session-history references and approval prompts for file operations beyond checkpoint limits. Version 1.1.5 has official release notes dated 19 September 2026."
+    },
+    "sourceIds": [
+      "lmstudio-bionic-changelog-1-1-4",
+      "lmstudio-bionic-changelog-1-1-5"
+    ],
+    "subjectIds": [
+      "lmstudio-bionic"
+    ],
+    "reviewedAt": "2026-09-21",
+    "confidence": {
+      "tr": "Resmî sürüm notlarına dayanır; hız veya güvenlik sonucu ölçülmedi.",
+      "en": "Based on official release notes; no performance or safety outcome was measured."
+    }
   }
 ]
