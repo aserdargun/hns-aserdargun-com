@@ -10,6 +10,7 @@ export const copy = {
     patterns: { tr: 'Desenler', en: 'Patterns' },
     timeline: { tr: 'Zaman Çizgisi', en: 'Timeline' },
     methodology: { tr: 'Metodoloji', en: 'Methodology' },
+    sources: { tr: 'Kaynaklar', en: 'Sources' },
   },
   menu: { tr: 'Menü', en: 'Menu' },
   notFound: { tr: 'Sayfa bulunamadı', en: 'Page not found' },

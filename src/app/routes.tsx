@@ -10,6 +10,8 @@ import { KnowledgePage } from '../features/library/KnowledgePage'
 import { PatternsPage } from '../features/library/PatternsPage'
 import { TimelinePage } from '../features/library/TimelinePage'
 import { MethodologyPage } from '../features/library/MethodologyPage'
+import { SourcesPage } from '../features/library/SourcesPage'
+import { catalog } from '../content/catalog'
 
 function NotFound({ locale }: { locale: Locale }) {
   return (
@@ -29,6 +31,7 @@ function LocalizedRoutes({ locale }: { locale: Locale }) {
       <Route path="patterns" element={<PatternsPage locale={locale} />} />
       <Route path="timeline" element={<TimelinePage locale={locale} />} />
       <Route path="methodology" element={<MethodologyPage locale={locale} />} />
+      <Route path="sources" element={<SourcesPage catalog={catalog} locale={locale} />} />
       <Route path="*" element={<NotFound locale={locale} />} />
     </Routes></AppShell>
   )

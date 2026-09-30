@@ -7,6 +7,7 @@ import { LanguageSwitch } from './LanguageSwitch'
 const routes = [
   ['', 'weekly'], ['/radar', 'radar'], ['/compare', 'compare'], ['/knowledge', 'knowledge'],
   ['/patterns', 'patterns'], ['/timeline', 'timeline'], ['/methodology', 'methodology'],
+  ['/sources', 'sources'],
 ] as const
 
 export function GlobalHeader({ locale }: { locale: Locale }) {

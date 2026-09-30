@@ -67,3 +67,21 @@
   .method-grid { grid-template-columns: 1fr; }
   .method-grid article { min-height: 0; padding: 24px 0; border-right: 0; }
 }
+
+/* Source index: every recorded source, with the claims it supports. */
+.sources-summary { margin: 20px 0 0; color: var(--muted); font-size: 0.9rem; }
+.sources-search { display: grid; gap: 6px; margin: 22px 0 8px; max-width: 420px; }
+.sources-search span { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.sources-search input { width: 100%; padding: 10px 12px; border: 1px solid var(--rule-strong); border-radius: 2px; background: var(--surface, #fff); color: inherit; font: inherit; }
+.sources-list { list-style: none; margin: 26px 0 0; padding: 0; border-top: 1px solid var(--rule-strong); }
+.sources-row { display: grid; gap: 8px; padding: 20px 0; border-bottom: 1px solid var(--rule); }
+.sources-row[data-used='false'] { opacity: 0.72; }
+.sources-row-head h2 { margin: 0 0 6px; font-size: 1.06rem; font-weight: 600; }
+.sources-row-head a { color: inherit; text-decoration-color: var(--rule-strong); }
+.sources-row-head a:hover { text-decoration-color: var(--accent); }
+.sources-row-meta { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0; color: var(--muted); font-size: 0.78rem; }
+.sources-row-summary { margin: 0; max-width: 68ch; }
+.sources-row-dates { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 0; color: var(--muted); font-size: 0.76rem; }
+.sources-row-claims { margin: 0; color: var(--accent-dark); font-size: 0.8rem; }
+.sources-row[data-used='false'] .sources-row-claims { color: var(--muted); font-style: italic; }
+.sources-empty { margin: 26px 0 0; color: var(--muted); }
