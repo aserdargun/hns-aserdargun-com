@@ -616,6 +616,34 @@
     }
   },
   {
+    "id": "lmstudio-bionic-changelog-1-1-6",
+    "title": "LM Studio Bionic 1.1.6",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/changelog/bionic-v1.1.6",
+    "publishedAt": "2026-09-23",
+    "checkedAt": "2026-10-04",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Bionic 1.1.6 için tarihli resmî sürüm notları.",
+      "en": "Dated official release notes for Bionic 1.1.6."
+    }
+  },
+  {
+    "id": "lmstudio-bionic-changelog-1-1-7",
+    "title": "LM Studio Bionic 1.1.7",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/changelog/bionic-v1.1.7",
+    "publishedAt": "2026-10-01",
+    "checkedAt": "2026-10-04",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Bionic 1.1.7 için tarihli resmî sürüm notları.",
+      "en": "Dated official release notes for Bionic 1.1.7."
+    }
+  },
+  {
     "id": "codex-state-store",
     "title": "Codex — State metadata store",
     "publisher": "OpenAI",
