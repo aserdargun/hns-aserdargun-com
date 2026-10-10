@@ -644,6 +644,20 @@
     }
   },
   {
+    "id": "lmstudio-bionic-changelog-1-1-8",
+    "title": "LM Studio Bionic 1.1.8",
+    "publisher": "LM Studio",
+    "url": "https://lmstudio.ai/changelog/bionic-v1.1.8",
+    "publishedAt": "2026-10-09",
+    "checkedAt": "2026-10-10",
+    "kind": "official-engineering",
+    "access": "available",
+    "summary": {
+      "tr": "Bionic 1.1.8 için tarihli resmî sürüm notları.",
+      "en": "Dated official release notes for Bionic 1.1.8."
+    }
+  },
+  {
     "id": "codex-state-store",
     "title": "Codex — State metadata store",
     "publisher": "OpenAI",
