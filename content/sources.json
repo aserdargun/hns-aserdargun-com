@@ -5,7 +5,7 @@
     "publisher": "OpenAI",
     "url": "https://openai.com/index/harness-engineering/",
     "publishedAt": "2026-02-11",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -19,7 +19,7 @@
     "publisher": "OpenAI",
     "url": "https://openai.com/index/open-source-codex-orchestration-symphony/",
     "publishedAt": "2026-04-27",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -33,7 +33,7 @@
     "publisher": "Anthropic",
     "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
     "publishedAt": "2025-11-26",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -47,7 +47,7 @@
     "publisher": "Anthropic",
     "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
     "publishedAt": "2026-03-24",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -61,7 +61,7 @@
     "publisher": "Anthropic",
     "url": "https://www.anthropic.com/engineering/managed-agents",
     "publishedAt": "2026-04-08",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -75,7 +75,7 @@
     "publisher": "DeepSeek AI",
     "url": "https://github.com/deepseek-ai/deepseek-harness",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -89,7 +89,7 @@
     "publisher": "Microsoft",
     "url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
     "publishedAt": "2026-07-22",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -103,7 +103,7 @@
     "publisher": "LangChain",
     "url": "https://docs.langchain.com/oss/python/concepts/products",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -117,7 +117,7 @@
     "publisher": "Google",
     "url": "https://adk.dev/integrations/code-exec-agent-runtime/",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -131,7 +131,7 @@
     "publisher": "Google",
     "url": "https://adk.dev/integrations/restate/",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -145,7 +145,7 @@
     "publisher": "OpenHands",
     "url": "https://docs.openhands.dev/sdk/index",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -159,7 +159,7 @@
     "publisher": "SWE-agent",
     "url": "https://github.com/SWE-agent/mini-swe-agent",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -173,7 +173,7 @@
     "publisher": "Pydantic",
     "url": "https://pydantic.dev/docs/ai/capabilities/durable_execution/overview/",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -187,7 +187,7 @@
     "publisher": "Nous Research",
     "url": "https://github.com/NousResearch/hermes-agent",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -201,7 +201,7 @@
     "publisher": "Nous Research",
     "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/overview",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -215,7 +215,7 @@
     "publisher": "Anthropic",
     "url": "https://code.claude.com/docs/en/sub-agents",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -229,7 +229,7 @@
     "publisher": "Anthropic",
     "url": "https://code.claude.com/docs/en/whats-new/2026-w32",
     "publishedAt": "2026-08-07",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -243,7 +243,7 @@
     "publisher": "Anomaly",
     "url": "https://github.com/anomalyco/opencode",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -257,7 +257,7 @@
     "publisher": "Aider-AI",
     "url": "https://github.com/Aider-AI/aider",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -271,7 +271,7 @@
     "publisher": "Cline",
     "url": "https://github.com/cline/cline",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -285,7 +285,7 @@
     "publisher": "AAIF / Linux Foundation",
     "url": "https://goose-docs.ai/blog/2026/04/07/goose-moves-to-aaif/",
     "publishedAt": "2026-04-07",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -299,7 +299,7 @@
     "publisher": "Linux Foundation",
     "url": "https://www.prnewswire.com/news-releases/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation-aaif-anchored-by-new-project-contributions-including-model-context-protocol-mcp-goose-and-agentsmd-302636897.html",
     "publishedAt": "2025-12-09",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -313,7 +313,7 @@
     "publisher": "OpenAI",
     "url": "https://github.com/openai/codex",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -327,7 +327,7 @@
     "publisher": "Amazon Web Services",
     "url": "https://kiro.dev/",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -341,7 +341,7 @@
     "publisher": "Butterfly Effect (Manus)",
     "url": "https://manus.im/blog/manus-sandbox",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -355,7 +355,7 @@
     "publisher": "Butterfly Effect (Manus)",
     "url": "https://manus.im/blog/introducing-wide-research",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -369,7 +369,7 @@
     "publisher": "Butterfly Effect (Manus)",
     "url": "https://manus.im/en/blog/manus-browser-operator",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -383,7 +383,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/docs/bionic",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -397,7 +397,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/docs/bionic/agent/code-project",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -411,7 +411,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/docs/bionic/projects-and-sessions",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -425,7 +425,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
     "publishedAt": "2026-07-16",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -439,7 +439,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/blog/how-auto-review-works",
     "publishedAt": "2026-08-27",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -453,7 +453,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/changelog/bionic-v1.1.1",
     "publishedAt": "2026-08-31",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -467,7 +467,7 @@
     "publisher": "Anthropic",
     "url": "https://code.claude.com/docs/en/permissions",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -481,7 +481,7 @@
     "publisher": "Cline",
     "url": "https://docs.cline.bot/features/auto-approve",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -495,7 +495,7 @@
     "publisher": "Anomaly",
     "url": "https://opencode.ai/docs/agents/",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -509,7 +509,7 @@
     "publisher": "Amazon Web Services",
     "url": "https://kiro.dev/docs/specs/",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -523,7 +523,7 @@
     "publisher": "Amazon Web Services",
     "url": "https://kiro.dev/docs/hooks/",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -537,7 +537,7 @@
     "publisher": "Amazon Web Services",
     "url": "https://kiro.dev/docs/models/",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -551,7 +551,7 @@
     "publisher": "Amazon Web Services",
     "url": "https://kiro.dev/blog/general-availability/",
     "publishedAt": "2025-11-17",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -565,7 +565,7 @@
     "publisher": "goose",
     "url": "https://goose-docs.ai/docs/guides/custom-distributions/",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-docs",
     "access": "available",
     "summary": {
@@ -579,7 +579,7 @@
     "publisher": "OpenAI",
     "url": "https://github.com/openai/codex/blob/main/sdk/python/src/openai_codex/_sandbox.py",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -593,7 +593,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/changelog/bionic-v1.1.4",
     "publishedAt": "2026-09-17",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -607,7 +607,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/changelog/bionic-v1.1.5",
     "publishedAt": "2026-09-19",
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -621,7 +621,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/changelog/bionic-v1.1.6",
     "publishedAt": "2026-09-23",
-    "checkedAt": "2026-10-04",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -635,7 +635,7 @@
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/changelog/bionic-v1.1.7",
     "publishedAt": "2026-10-01",
-    "checkedAt": "2026-10-04",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -648,8 +648,8 @@
     "title": "LM Studio Bionic 1.1.8",
     "publisher": "LM Studio",
     "url": "https://lmstudio.ai/changelog/bionic-v1.1.8",
-    "publishedAt": "2026-10-09",
-    "checkedAt": "2026-10-10",
+    "publishedAt": "2026-10-12",
+    "checkedAt": "2026-10-13",
     "kind": "official-engineering",
     "access": "available",
     "summary": {
@@ -663,7 +663,7 @@
     "publisher": "OpenAI",
     "url": "https://github.com/openai/codex/blob/main/codex-rs/state/src/lib.rs",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-repository",
     "access": "available",
     "summary": {
@@ -677,7 +677,7 @@
     "publisher": "OpenAI",
     "url": "https://github.com/openai/codex/blob/main/codex-rs/linux-sandbox/src/lib.rs",
     "publishedAt": null,
-    "checkedAt": "2026-09-21",
+    "checkedAt": "2026-10-13",
     "kind": "official-repository",
     "access": "available",
     "summary": {
