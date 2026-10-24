@@ -389,11 +389,11 @@
   {
     "id": "opencode-build-plan-agents",
     "kind": "evidence",
-    "text": { "tr": "OpenCode, Build ve Plan birincil ajanlarını General, Explore ve Scout alt ajanlarından ayırır. Plan kipinin araç erişimi izinlerle yapılandırılır.", "en": "OpenCode distinguishes Build and Plan primary agents from General, Explore, and Scout subagents. Plan tool access is configured through permissions." },
+    "text": { "tr": "OpenCode, Build ve Plan olmak üzere iki yerleşik birincil ajanla, General ve Explore olmak üzere iki yerleşik alt ajanla gelir; Scout artık sayfada belgelenmiyor. Plan kipinin araç erişimi izinlerle yapılandırılır.", "en": "OpenCode comes with two built-in primary agents, Build and Plan, and two built-in subagents, General and Explore; Scout is no longer documented. Plan tool access is configured through permissions." },
     "sourceIds": ["opencode-agents"],
     "subjectIds": ["opencode"],
-    "reviewedAt": "2026-09-21",
-    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
+    "reviewedAt": "2026-10-24",
+    "confidence": { "tr": "24 Ekim 2026 tarihinde resmî kaynakla karşılaştırıldı; sayfa iki alt ajanı adlandırıyor ama özet satırında hâlâ üç yerleşik alt ajandan söz ediyor, belgelenen davranıştır ve bağımsız çalışma testi değildir.", "en": "Compared with the official source on 24 October 2026; the page names two subagents while its summary line still says three built-in subagents, documented behavior and not an independent runtime test." }
   },
   {
     "id": "opencode-radar-adopt",
@@ -551,11 +551,11 @@
   {
     "id": "kiro-spec-driven",
     "kind": "evidence",
-    "text": { "tr": "Kiro belirtim akışı gereksinimleri, tasarımı ve görevleri ayrı kayıtlarla yapılandırır; EARS gereksinim yazımı için kullanılır.", "en": "Kiro structures specification work into separate requirements, design, and task artifacts; EARS is used for requirements." },
+    "text": { "tr": "Kiro belirtim akışını requirements.md (ya da bugfix.md), design.md ve tasks.md olarak ayrı kayıtlarla yapılandırır; gereksinimler kullanıcı hikâyeleri ve kabul ölçütleriyle yazılır.", "en": "Kiro structures specification work into separate requirements.md (or bugfix.md), design.md, and tasks.md artifacts; requirements are written as user stories with acceptance criteria." },
     "sourceIds": ["kiro-specs"],
     "subjectIds": ["aws-kiro"],
-    "reviewedAt": "2026-09-21",
-    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
+    "reviewedAt": "2026-10-24",
+    "confidence": { "tr": "24 Ekim 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 24 October 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "kiro-agent-hooks",
@@ -569,11 +569,11 @@
   {
     "id": "kiro-multi-model-bedrock",
     "kind": "evidence",
-    "text": { "tr": "Kiro model seçimi ve Auto yönlendirmesi sunar; belirli bir Claude/Nova çifti bütün görevler için sabit bir sözleşme değildir.", "en": "Kiro offers model selection and Auto routing; a particular Claude/Nova pair is not a fixed contract for all tasks." },
+    "text": { "tr": "Kiro model seçimi ve Auto yönlendirmesi sunar; katalog GPT-5.6, Claude Fable/Opus/Sonnet/Haiku, Kimi K3, DeepSeek 3.2, MiniMax, GLM-5 ve Qwen3 Coder Next modellerini kapsadığı için bütün görevler için sabit bir model çifti sözleşmesi değildir.", "en": "Kiro offers model selection and Auto routing; the catalog spans GPT-5.6, Claude Fable/Opus/Sonnet/Haiku, Kimi K3, DeepSeek 3.2, MiniMax, GLM-5, and Qwen3 Coder Next, so no particular model pair is a fixed contract for all tasks." },
     "sourceIds": ["kiro-models"],
     "subjectIds": ["aws-kiro"],
-    "reviewedAt": "2026-09-21",
-    "confidence": { "tr": "21 Eylül 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 21 September 2026; documented behavior, not an independent runtime test." }
+    "reviewedAt": "2026-10-24",
+    "confidence": { "tr": "24 Ekim 2026 tarihinde resmî kaynakla karşılaştırıldı; belgelenen davranıştır, bağımsız çalışma testi değildir.", "en": "Compared with the official source on 24 October 2026; documented behavior, not an independent runtime test." }
   },
   {
     "id": "kiro-radar-watch",
