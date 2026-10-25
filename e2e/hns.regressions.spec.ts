@@ -34,7 +34,7 @@ test('multiword search, selection, reload, language change and edit selection st
 
 test('mobile filters, evidence confidence and keyboard menu work', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
-  await page.clock.setFixedTime(new Date('2026-10-24T12:00:00Z'))
+  await page.clock.setFixedTime(new Date('2026-10-25T12:00:00Z'))
   await page.goto('/en/radar')
   await page.getByRole('combobox', { name: /^Organization/ }).selectOption('LM Studio')
   await page.getByRole('combobox', { name: /^Review freshness/ }).selectOption('90')
